@@ -292,7 +292,7 @@ public class validate {
             fileConsolidate.write(Files.readAllBytes( Paths.get("template.html")));
             String contentLocation  = null;
             //String contentResponse = IOUtils.toString(response.getEntity().getContent(), StandardCharsets.UTF_8);
-            String init ="Echec par la valdiation du valdiateur : "+ validator;
+            String init ="Echec :  " + file.getName() + "(" validator +")";
             Files.write( Paths.get(pathtoWrite+ "."  + "cdaReports.xml"), init.getBytes());
             Files.write( Paths.get(pathtoWrite+ "."  + "cdaReports.xml.html"), init.getBytes());
             long startTime = System.currentTimeMillis();
