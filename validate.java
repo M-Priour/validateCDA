@@ -448,6 +448,12 @@ public class validate {
                     transformer.setParameter("elapsedTime", TimeUnit.MILLISECONDS.toSeconds(estimatedTime));
                     transformer.transform(xmlSource, result);
          
+                    content = new String(Files.readAllBytes(Paths.get(pathtoWrite + "report.svrl.html")), "UTF-8");
+                    content = content.replaceAll("panelsStayOpen-collapsexxxxx", "panelsStayOpen-collapse"+ UUID.randomUUID().toString());
+                    Files.write(Paths.get(pathtoWrite + "report.svrl.html"), content.getBytes("UTF-8"));  
+                    
+                
+
                     fileConsolidate.write(Files.readAllBytes( Paths.get(pathtoWrite + "report.svrl.html")));     
 
 
