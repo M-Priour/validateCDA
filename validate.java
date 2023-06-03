@@ -319,7 +319,7 @@ public class validate {
                     Document doc = dBuilder.parse(inputStream);
                 
                     XPath xPath = XPathFactory.newInstance().newXPath();
-                    String expression = "/ClinicalDocument/templateId";
+                    String expression = "//ClinicalDocument/templateId";
                     NodeList nList = (NodeList) xPath.compile(expression).evaluate(doc, XPathConstants.NODESET);
 
                     
@@ -334,6 +334,7 @@ public class validate {
         
                             }
                     }
+                    System.out.println(validator);
                     String cdaFile = Files.readString(file.toPath());
 
                     String contentLocation  = null;
