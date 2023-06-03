@@ -20,7 +20,8 @@
       <xsl:when test="@result='PASSED'">
         <button class="accordion-button collapsed" style="background-color:#438552;color:white" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsexxxxx" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
         Validation ph-schematron : <xsl:value-of select="$Validateur" />
-
+                 <br/>Nombre d'erreurs : <xsl:value-of select="count(//svrl:failed-assert[@role!='warning' and not( contains(svrl:text, 'SHALL be distinct')) and not( contains(svrl:text, 'SHALL NOT have nullFlavor'))]) " />
+ <br/>Nombre de warnings :  <xsl:value-of select="count(//svrl:failed-assert[@role='warning'])" />
         <br/>Temps d'execution :  <xsl:value-of select="$elapsedTime"/>
 
         </button>
@@ -28,7 +29,8 @@
        <xsl:otherwise>
         <button class="accordion-button collapsed" style="background-color:#438552;color:white" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsexxxxx" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
         Validation ph-schematron : <xsl:value-of select="$Validateur" />
-
+                <br/>Nombre d'erreurs : <xsl:value-of select="count(//svrl:failed-assert[@role!='warning' and not( contains(svrl:text, 'SHALL be distinct')) and not( contains(svrl:text, 'SHALL NOT have nullFlavor'))]) " />
+   <br/>Nombre de warnings :  <xsl:value-of select="count(//svrl:failed-assert[@role='warning'])" />
         <br/>Temps d'execution :  <xsl:value-of select="$elapsedTime"/>
 
         </button>
