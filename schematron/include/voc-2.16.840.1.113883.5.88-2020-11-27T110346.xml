@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <valueSet xmlns="" id="2.16.840.1.113883.5.88" name="TRE_R259-HL7ParticipationFunction" displayName="TRE_R259-HL7ParticipationFunction" statusCode="final" canonicalUri="https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction" effectiveDate="2020-11-27T11:03:46" ident="CI-SIS-JDV-" url="https://o3sis.esante.gouv.fr/decor/services/" referencedFrom="FRCP-">
+        <sourceCodeSystem id="2.16.840.1.113883.5.88" identifierName="" canonicalUri="https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction" canonicalUriDSTU2="https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction" canonicalUriSTU3="https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction" canonicalUriR4="https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction"/>
+        <publishingAuthority name="Coordonnateur de session"/>
+        <completeCodeSystem codeSystem="2.16.840.1.113883.5.88"/>
+        <conceptList>
+            <concept code="ADMPHYS" codeSystem="2.16.840.1.113883.5.88" displayName="Responsable de l'admission" level="0" type="L"/>
+            <concept code="ATTPHYS" codeSystem="2.16.840.1.113883.5.88" displayName="Référent - Responsable du patient dans la structure de soins" level="0" type="L"/>
+            <concept code="DISPHYS" codeSystem="2.16.840.1.113883.5.88" displayName="Responsable de la sortie" level="0" type="L"/>
+            <concept code="PCP" codeSystem="2.16.840.1.113883.5.88" displayName="Médecin traitant" level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+</valueSets>

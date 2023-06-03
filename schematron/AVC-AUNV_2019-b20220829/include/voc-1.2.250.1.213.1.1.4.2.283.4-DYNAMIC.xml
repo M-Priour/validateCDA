@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <valueSet xmlns="" id="1.2.250.1.213.1.1.4.2.283.4" name="JDV_SocialHistoryCodes-CISIS" displayName="JDV_SocialHistoryCodes-CISIS" effectiveDate="2021-03-15T00:00:00" statusCode="final" versionLabel="1.0" ident="CI-SIS-JDV-" url="https://o3sis.esante.gouv.fr/decor/services/" referencedFrom="ASIP-AVC-">
+        <sourceCodeSystem id="1.2.250.1.213.2.12" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.2.12" canonicalUriDSTU2="urn:oid:1.2.250.1.213.2.12" canonicalUriSTU3="urn:oid:1.2.250.1.213.2.12" canonicalUriR4="urn:oid:1.2.250.1.213.2.12"/>
+        <sourceCodeSystem id="2.16.840.1.113883.6.1" identifierName="Logical&#160;Observation&#160;Identifier&#160;Names&#160;and&#160;Codes" canonicalUri="http://loinc.org" canonicalUriDSTU2="http://loinc.org" canonicalUriSTU3="http://loinc.org" canonicalUriR4="http://loinc.org"/>
+        <publishingAuthority name="Souad Ben Mustapha"/>
+        <conceptList>
+            <concept code="A-70500" displayName="Exercice physique" codeSystem="1.2.250.1.213.2.12" level="0" type="L"/>
+            <concept code="73985-4" displayName="Exercice physique" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+            <concept code="92944-8" displayName="Exposition à des produits toxiques" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+            <concept code="11295-3" displayName="Facteur social relié à la vie professionnelle" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+            <concept code="74013-4" displayName="Consommation d'alcool" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+            <concept code="42831-8" displayName="Consommation de drogue" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+            <concept code="11345-6" displayName="Autre élément social" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+            <concept code="81663-7" displayName="Régime" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+            <concept code="74011-8" displayName="Consommation tabagique" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+            <concept code="29556-8" displayName="Trouble du comportement" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+            <concept code="72166-2" displayName="Statut tabagique" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+</valueSets>

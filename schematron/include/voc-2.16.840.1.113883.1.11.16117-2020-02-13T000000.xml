@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <valueSet xmlns="" id="2.16.840.1.113883.1.11.16117" name="JDV_HL7_ROIOverlayShape-CISIS" displayName="JDV_HL7_ROIOverlayShape-CISIS" effectiveDate="2020-02-13T00:00:00" statusCode="final" versionLabel="1.0" ident="CI-SIS-JDV-" url="https://o3sis.esante.gouv.fr/decor/services/" referencedFrom="FRCP-">
+        <sourceCodeSystem id="2.16.840.1.113883.5.4" identifierName="" canonicalUri="urn:oid:2.16.840.1.113883.5.4" canonicalUriDSTU2="urn:oid:2.16.840.1.113883.5.4" canonicalUriSTU3="urn:oid:2.16.840.1.113883.5.4" canonicalUriR4="urn:oid:2.16.840.1.113883.5.4"/>
+        <publishingAuthority name="Coordonnateur de session"/>
+        <conceptList>
+            <concept code="CIRCLE" displayName="Cercle" codeSystem="2.16.840.1.113883.5.4" level="0" type="L"/>
+            <concept code="ELLIPSE" displayName="Elipse" codeSystem="2.16.840.1.113883.5.4" level="0" type="L"/>
+            <concept code="POINT" displayName="Point" codeSystem="2.16.840.1.113883.5.4" level="0" type="L"/>
+            <concept code="POLY" displayName="Multi" codeSystem="2.16.840.1.113883.5.4" level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+</valueSets>

@@ -100,6 +100,22 @@ import java.util.regex.Pattern;
 import  org.apache.commons.lang3.StringUtils;
 import java.util.concurrent.TimeUnit;
 import java.io.*;
+
+import com.helger.schematron.pure.SchematronResourcePure; 
+import com.helger.schematron.sch.SchematronResourceSCH;
+import com.helger.schematron.*;
+import com.helger.schematron.pure.model.*;
+import com.helger.schematron.pure.exchange.PSReader;
+import com.helger.schematron.pure.errorhandler.IPSErrorHandler;
+import com.helger.commons.io.resource.FileSystemResource;
+import com.helger.schematron.pure.errorhandler.DoNothingPSErrorHandler;
+import com.helger.schematron.pure.binding.IPSQueryBinding;
+import com.helger.schematron.pure.binding.PSQueryBindingRegistry;
+import com.helger.schematron.pure.preprocess.PSPreprocessor;
+import com.helger.xml.serialize.read.DOMReader;
+import com.helger.schematron.pure.bound.IPSBoundSchema;
+import com.helger.commons.io.file.FileHelper;
+
 public class validate {
 
     public   static void  writeReports (String contentLocation, String nameFile, long iTime,String nameCDAFile) {
@@ -139,6 +155,7 @@ public class validate {
             System.out.println(exception.getMessage());
         }
     }
+    
 
     public   static String validateCda(String cdaContent, String nameFile,String validator) {
         String contentLocation = null;
@@ -214,7 +231,32 @@ public class validate {
     }
 
 
-
+    public   static Document validatePhCda(String pathCda, String fileShematron) {
+       
+        File fCda = new File(pathCda);
+        long startTime = System.currentTimeMillis();
+        boolean modePure = true;
+        ISchematronResource aResPure;
+              
+        if(modePure)
+             aResPure = SchematronResourcePure.fromFile (fileShematron);
+        else 		
+             aResPure = SchematronResourceSCH.fromFile (fileShematron);
+        if(!aResPure.isValidSchematron ())
+            throw new IllegalArgumentException ("Invalid Schematron!");
+        long estimatedTime = System.currentTimeMillis() - startTime;
+        System.out.println("Chargement du schematron : " + estimatedTime);		
+        try{
+            final Document aDoc =  aResPure.applySchematronValidation (new StreamSource (fCda)); 
+            return aDoc;
+        }catch (Exception exception)
+        {
+            System.out.print("Parse error: ");
+            System.out.println(exception.getMessage());
+        }
+       
+        return null;
+    }
 
 
 
@@ -365,7 +407,53 @@ public class validate {
                     content = content.replaceAll("panelsStayOpen-collapsexxxxx", "panelsStayOpen-collapse"+ UUID.randomUUID().toString());
                     Files.write(Paths.get(pathtoWrite+ "." + "semantiqueReports.xml.html"), content.getBytes("UTF-8"));      
 
-                    fileConsolidate.write(Files.readAllBytes( Paths.get(pathtoWrite+ "." + "semantiqueReports.xml.html")));                
+                    fileConsolidate.write(Files.readAllBytes( Paths.get(pathtoWrite+ "." + "semantiqueReports.xml.html")));     
+                    
+                    
+
+
+                    //Validation avec PH-Shematron
+                    validator = "ANS-Structuration_minimale";
+                    String fileShematron = "./schematron/" + validator + "/schematron.sch";
+        
+                    System.out.println("Schematron : " + fileShematron);
+                    //Chemin d'écriture du rapport de validation
+                    Path path = Paths.get(file.getAbsolutePath());
+
+                    String pathtoWrite2 = pathtoWrite+ "."  + ".phschematron.svrl" ;
+
+                    System.setProperty ("javax.XML.transformer.TransformerFactory", " net.sf.Saxon.TransformerFactoryImpl");
+                    TransformerFactory tf = TransformerFactory.newInstance();
+                    Transformer transformer; 
+                    transformer = tf.newTransformer();
+
+                    FileOutputStream outStream = new FileOutputStream(pathtoWrite2); 
+
+
+                    startTime = System.currentTimeMillis();
+                    final Document aDoc = validatePhCda(file.getAbsolutePath(), fileShematron);
+                    estimatedTime = System.currentTimeMillis() - startTime;
+                    System.out.println("Validation par ph-schematron : " + estimatedTime);
+         
+                    //Ecriture du rapport de validation
+                    transformer.transform(new DOMSource(aDoc), new StreamResult(outStream));
+                    final Source xmlSource = new javax.xml.transform.stream.StreamSource(pathtoWrite2);
+                    final Source xsltSource = new javax.xml.transform.stream.StreamSource("./ph-svrl-to-html.xsl");
+                    final Result result = new javax.xml.transform.stream.StreamResult(pathtoWrite + "report.svrl.html");
+            
+                    TransformerFactory tFactory = TransformerFactory.newInstance();
+                    transformer = tf.newTransformer(xsltSource);
+                    transformer.setParameter("title",file.getName()); 
+                    transformer.setParameter("Validateur",validator); 
+                    transformer.setParameter("elapsedTime", TimeUnit.MILLISECONDS.toSeconds(estimatedTime));
+                    transformer.transform(xmlSource, result);
+         
+                    fileConsolidate.write(Files.readAllBytes( Paths.get(pathtoWrite + "report.svrl.html")));     
+
+
+
+
+
                 }
                 catch(Exception e) {
                     System.out.println(e.toString());

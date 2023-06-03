@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <valueSet xmlns="" id="1.2.250.1.213.1.6.1.107" name="TRE_R85-RolePriseCharge" displayName="TRE_R85-RolePriseCharge" statusCode="final" canonicalUri="https://mos.esante.gouv.fr/NOS/TRE_R85-RolePriseCharg" versionLabel="2021-07-15" effectiveDate="2020-11-27T11:18:41" ident="CI-SIS-JDV-" url="https://o3sis.esante.gouv.fr/decor/services/" referencedFrom="FRCP-">
+        <sourceCodeSystem id="1.2.250.1.213.1.6.1.107" identifierName="" canonicalUri="https://mos.esante.gouv.fr/NOS/TRE_R85-RolePriseCharg" canonicalUriDSTU2="https://mos.esante.gouv.fr/NOS/TRE_R85-RolePriseCharg" canonicalUriSTU3="https://mos.esante.gouv.fr/NOS/TRE_R85-RolePriseCharg" canonicalUriR4="https://mos.esante.gouv.fr/NOS/TRE_R85-RolePriseCharg"/>
+        <publishingAuthority name="Coordonnateur de session"/>
+        <completeCodeSystem codeSystem="1.2.250.1.213.1.6.1.107"/>
+        <conceptList>
+            <concept code="300" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Assistant de service social (PAERPA)" level="0" type="L"/>
+            <concept code="301" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Coordination territoriale d'appui (PAERPA)" level="0" type="L"/>
+            <concept code="302" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Aide et accompagnement à domicile (PAERPA)" level="0" type="L"/>
+            <concept code="303" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Avocat participant aux processus de soins sans consentement (eSSS)" level="0" type="L"/>
+            <concept code="304" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Assistant de service social (Expérimentation MAIA)" level="0" type="L"/>
+            <concept code="305" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Psychologue (Expérimentation MAIA)" level="0" type="L"/>
+            <concept code="306" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Psychothérapeute (Expérimentation MAIA)" level="0" type="L"/>
+            <concept code="307" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Mandataire judiciaire à la protection des majeurs (MJPM)" level="0" type="L"/>
+            <concept code="308" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Pilote MAIA" level="0" type="L"/>
+            <concept code="309" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Gestionnaire de cas MAIA" level="0" type="L"/>
+            <concept code="310" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Equipe médico-sociale APA" level="0" type="L"/>
+            <concept code="311" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Autre acteur mettant en oeuvre la méthode MAIA" level="0" type="L"/>
+            <concept code="312" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Autre salarié ou intervenant au sein d'un ESMS" level="0" type="L"/>
+            <concept code="313" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Aide-soignant" level="0" type="L"/>
+            <concept code="314" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Ambulancier" level="0" type="L"/>
+            <concept code="315" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Auxiliaire de puériculture" level="0" type="L"/>
+            <concept code="316" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Préparateur en pharmacie hospitalière" level="0" type="L"/>
+            <concept code="317" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Préparateur en pharmacie (officine)" level="0" type="L"/>
+            <concept code="318" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Auxiliaire de vie sociale" level="0" type="L"/>
+            <concept code="319" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Technicien de l'intervention sociale et familiale" level="0" type="L"/>
+            <concept code="320" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Conseiller en économie sociale et familiale" level="0" type="L"/>
+            <concept code="321" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Médiateur familial" level="0" type="L"/>
+            <concept code="322" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Assistant familial" level="0" type="L"/>
+            <concept code="323" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Aide médico-psychologique (AMP)" level="0" type="L"/>
+            <concept code="324" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Moniteur éducateur" level="0" type="L"/>
+            <concept code="325" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Educateur de jeunes enfants" level="0" type="L"/>
+            <concept code="326" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Educateur spécialisé" level="0" type="L"/>
+            <concept code="327" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Educateur technique spécialisé" level="0" type="L"/>
+            <concept code="328" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Accompagnant éducatif et social" level="0" type="L"/>
+            <concept code="329" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Conseiller en génétique" level="0" type="L"/>
+            <concept code="350" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Aide à domicile" level="0" type="L"/>
+            <concept code="351" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Assistant(e) maternel(le)" level="0" type="L"/>
+            <concept code="353" codeSystem="1.2.250.1.213.1.6.1.107" displayName="Membre de l'équipe de soins" level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+</valueSets>

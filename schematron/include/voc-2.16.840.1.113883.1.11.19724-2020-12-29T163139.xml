@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <valueSet xmlns="" id="2.16.840.1.113883.1.11.19724" name="JDV_HL7_HumanSubstanceAdministrationSite-CISIS" displayName="JDV_HL7_HumanSubstanceAdministrationSite-CISIS" statusCode="final" versionLabel="1.1" effectiveDate="2020-12-29T16:31:39" ident="CI-SIS-JDV-" url="https://o3sis.esante.gouv.fr/decor/services/" referencedFrom="FRCP-">
+        <sourceCodeSystem id="2.16.840.1.113883.5.1052" identifierName="" canonicalUri="urn:oid:2.16.840.1.113883.5.1052" canonicalUriDSTU2="urn:oid:2.16.840.1.113883.5.1052" canonicalUriSTU3="urn:oid:2.16.840.1.113883.5.1052" canonicalUriR4="urn:oid:2.16.840.1.113883.5.1052"/>
+        <publishingAuthority name="Coordonnateur de session"/>
+        <conceptList>
+            <concept code="BE" codeSystem="2.16.840.1.113883.5.1052" displayName="dans les deux oreilles" level="0" type="L"/>
+            <concept code="BN" codeSystem="2.16.840.1.113883.5.1052" displayName="dans les deux narines" level="0" type="L"/>
+            <concept code="BU" codeSystem="2.16.840.1.113883.5.1052" displayName="Fesse" level="0" type="L"/>
+            <concept code="LA" codeSystem="2.16.840.1.113883.5.1052" displayName="bras gauche" level="0" type="L"/>
+            <concept code="LAC" codeSystem="2.16.840.1.113883.5.1052" displayName="poitrine antérieure gauche" level="0" type="L"/>
+            <concept code="LACF" codeSystem="2.16.840.1.113883.5.1052" displayName="région cubitale antérieure gauche" level="0" type="L"/>
+            <concept code="LD" codeSystem="2.16.840.1.113883.5.1052" displayName="deltoïde gauche" level="0" type="L"/>
+            <concept code="LE" codeSystem="2.16.840.1.113883.5.1052" displayName="Oreille gauche" level="0" type="L"/>
+            <concept code="LEJ" codeSystem="2.16.840.1.113883.5.1052" displayName="jugulaire externe gauche" level="0" type="L"/>
+            <concept code="LF" codeSystem="2.16.840.1.113883.5.1052" displayName="pied gauche" level="0" type="L"/>
+            <concept code="LG" codeSystem="2.16.840.1.113883.5.1052" displayName="muscle moyen fessier gauche" level="0" type="L"/>
+            <concept code="LH" codeSystem="2.16.840.1.113883.5.1052" displayName="main gauche" level="0" type="L"/>
+            <concept code="LIJ" codeSystem="2.16.840.1.113883.5.1052" displayName="jugulaire interne gauche" level="0" type="L"/>
+            <concept code="LLAQ" codeSystem="2.16.840.1.113883.5.1052" displayName="quadrant inférieur gauche de l'abdomen" level="0" type="L"/>
+            <concept code="LLFA" codeSystem="2.16.840.1.113883.5.1052" displayName="avant-bras inférieur gauche" level="0" type="L"/>
+            <concept code="LMFA" codeSystem="2.16.840.1.113883.5.1052" displayName="avant-bras moyen gauche" level="0" type="L"/>
+            <concept code="LN" codeSystem="2.16.840.1.113883.5.1052" displayName="narine gauche" level="0" type="L"/>
+            <concept code="LPC" codeSystem="2.16.840.1.113883.5.1052" displayName="poitrine postérieure gauche" level="0" type="L"/>
+            <concept code="LSC" codeSystem="2.16.840.1.113883.5.1052" displayName="sous-clavière gauche" level="0" type="L"/>
+            <concept code="LT" codeSystem="2.16.840.1.113883.5.1052" displayName="cuisse gauche" level="0" type="L"/>
+            <concept code="LUA" codeSystem="2.16.840.1.113883.5.1052" displayName="bras supérieur gauche" level="0" type="L"/>
+            <concept code="LUAQ" codeSystem="2.16.840.1.113883.5.1052" displayName="quadrant supérieur gauche de l'abdomen" level="0" type="L"/>
+            <concept code="LUFA" codeSystem="2.16.840.1.113883.5.1052" displayName="avant-bras supérieur gauche" level="0" type="L"/>
+            <concept code="LVG" codeSystem="2.16.840.1.113883.5.1052" displayName="muscle fessier antérieur gauche" level="0" type="L"/>
+            <concept code="LVL" codeSystem="2.16.840.1.113883.5.1052" displayName="muscle vaste externe gauche" level="0" type="L"/>
+            <concept code="OD" codeSystem="2.16.840.1.113883.5.1052" displayName="oeil droit" level="0" type="L"/>
+            <concept code="OS" codeSystem="2.16.840.1.113883.5.1052" displayName="oeil gauche" level="0" type="L"/>
+            <concept code="OU" codeSystem="2.16.840.1.113883.5.1052" displayName="dans les deux yeux" level="0" type="L"/>
+            <concept code="PA" codeSystem="2.16.840.1.113883.5.1052" displayName="péri-anal" level="0" type="L"/>
+            <concept code="PERIN" codeSystem="2.16.840.1.113883.5.1052" displayName="périnéal" level="0" type="L"/>
+            <concept code="RA" codeSystem="2.16.840.1.113883.5.1052" displayName="bras droit" level="0" type="L"/>
+            <concept code="RAC" codeSystem="2.16.840.1.113883.5.1052" displayName="poitrine antérieure droite" level="0" type="L"/>
+            <concept code="RACF" codeSystem="2.16.840.1.113883.5.1052" displayName="région cubitale antérieure droite" level="0" type="L"/>
+            <concept code="RD" codeSystem="2.16.840.1.113883.5.1052" displayName="deltoïde droit" level="0" type="L"/>
+            <concept code="RE" codeSystem="2.16.840.1.113883.5.1052" displayName="oreille droite" level="0" type="L"/>
+            <concept code="REJ" codeSystem="2.16.840.1.113883.5.1052" displayName="jugulaire externe droite" level="0" type="L"/>
+            <concept code="RF" codeSystem="2.16.840.1.113883.5.1052" displayName="pied droit" level="0" type="L"/>
+            <concept code="RG" codeSystem="2.16.840.1.113883.5.1052" displayName="muscle moyen fessier droite" level="0" type="L"/>
+            <concept code="RH" codeSystem="2.16.840.1.113883.5.1052" displayName="main droite" level="0" type="L"/>
+            <concept code="RIJ" codeSystem="2.16.840.1.113883.5.1052" displayName="jugulaire interne droite" level="0" type="L"/>
+            <concept code="RLAQ" codeSystem="2.16.840.1.113883.5.1052" displayName="quadrant inférieur droit de l'abdomen" level="0" type="L"/>
+            <concept code="RLFA" codeSystem="2.16.840.1.113883.5.1052" displayName="avant-bras inférieur droite" level="0" type="L"/>
+            <concept code="RMFA" codeSystem="2.16.840.1.113883.5.1052" displayName="avant-bras moyen droit" level="0" type="L"/>
+            <concept code="RN" codeSystem="2.16.840.1.113883.5.1052" displayName="narine droite" level="0" type="L"/>
+            <concept code="RPC" codeSystem="2.16.840.1.113883.5.1052" displayName="poitrine postérieure droite" level="0" type="L"/>
+            <concept code="RSC" codeSystem="2.16.840.1.113883.5.1052" displayName="sous-clavière droite" level="0" type="L"/>
+            <concept code="RT" codeSystem="2.16.840.1.113883.5.1052" displayName="cuisse droite" level="0" type="L"/>
+            <concept code="RUA" codeSystem="2.16.840.1.113883.5.1052" displayName="bras supérieur droit" level="0" type="L"/>
+            <concept code="RUAQ" codeSystem="2.16.840.1.113883.5.1052" displayName="quadrant supérieur droit de l'abdomen" level="0" type="L"/>
+            <concept code="RUFA" codeSystem="2.16.840.1.113883.5.1052" displayName="avant-bras supérieur droite" level="0" type="L"/>
+            <concept code="RVG" codeSystem="2.16.840.1.113883.5.1052" displayName="muscle fessier antérieur droit" level="0" type="L"/>
+            <concept code="RVL" codeSystem="2.16.840.1.113883.5.1052" displayName="muscle vaste externe droit" level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+</valueSets>

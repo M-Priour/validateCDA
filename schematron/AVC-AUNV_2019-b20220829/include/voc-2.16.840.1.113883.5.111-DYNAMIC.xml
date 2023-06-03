@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <valueSet xmlns="" id="2.16.840.1.113883.5.111" name="TRE_R216-HL7RoleCode" displayName="TRE_R216-HL7RoleCode" effectiveDate="2021-03-15T00:00:00" statusCode="final" versionLabel="1.0" ident="CI-SIS-JDV-" url="https://o3sis.esante.gouv.fr/decor/services/" referencedFrom="ASIP-AVC-">
+        <sourceCodeSystem id="2.16.840.1.113883.5.111" identifierName="Role&#160;Code" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-RoleCode" canonicalUriDSTU2="http://hl7.org/fhir/v3/RoleCode" canonicalUriSTU3="http://hl7.org/fhir/v3/RoleCode" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+        <publishingAuthority name="Souad Ben Mustapha"/>
+        <conceptList>
+            <concept code="MTH" displayName="Mère" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="FTH" displayName="Père" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="NMTH" displayName="Mère biologique" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="NFTH" displayName="Père biologique" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="STPMTH" displayName="Belle-mère - épouse du père ou de la mère" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="STPFTH" displayName="Beau-père - époux du père ou de la mère" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="GRMTH" displayName="Grand-mère" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="GRFTH" displayName="Grand-père" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="GGRMTH" displayName="Arrière-grand-mère" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="GGRFTH" displayName="Arrière-grand-père" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="DAU" displayName="Fille biologique" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="SON" displayName="Fils biologique" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="BRO" displayName="Frère" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="SIS" displayName="Soeur" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="HBRO" displayName="Demi-frère" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="HSIS" displayName="Demi-soeur" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="GRNDDAU" displayName="Petite-fille" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="GRNDSO" displayName="Petit-fils" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="UNCLE" displayName="Oncle" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="AUNT" displayName="Tante" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="NEPHEW" displayName="Neveu" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="NIECE" displayName="Nièce" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="COUSIN" displayName="Cousin(e)" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="HUSB" displayName="Epoux" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="WIFE" displayName="Epouse" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="DOMPART" displayName="Concubin(e) ou partenaire PACS" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="ROOM" displayName="Personne vivant sous le même toit" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="FRND" displayName="Autre proche" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="NBOR" displayName="Voisin(e)" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="FAMMEMB" displayName="Autre membre de la famille" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="EXT" displayName="Autre membre de la famille sans lien génétique direct" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="SPS" displayName="Epoux ou épouse" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="RESPRSN" displayName="Responsable légal non membre de la famille" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="ADOPTF" displayName="Père adoptif" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="ADOPTM" displayName="Mère adoptive" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="ADOPTP" displayName="Parent adoptif, au sens père ou mère" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="BROINLAW" displayName="Beau-frÃ¨re" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="CHILD" displayName="Enfant" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="CHLDADOPT" displayName="Enfant adopté" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="CHLDFOST" displayName="Enfant placé en famille d'accueil" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="CHLDINLAW" displayName="Gendre ou belle-fille" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="COUSN" displayName="Cousin(e)" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="DAUADOPT" displayName="Fille adoptive" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="DAUC" displayName="Fille" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="DAUFOST" displayName="Fille placée en famille d'accueil" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="DAUINLAW" displayName="Belle-fille" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="FTHFOST" displayName="Assistant familial - Famille d'accueil" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="FTHINLAW" displayName="Beau-père" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="GESTM" displayName="Mère porteuse" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="GGRPRN" displayName="Arrière-grand-parent" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="GRNDCHILD" displayName="Petit-enfant" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="GRPRN" displayName="Grand-parent" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="HSIB" displayName="Demi-frère ou demi-soeur" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="MTHFOST" displayName="Assistante familiale - Famille d'accueil" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="MTHINLAW" displayName="Belle-mère" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="NBRO" displayName="Frère biologique" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="NIENEPH" displayName="Neveu ou nièce" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="NPRN" displayName="Parent biologique, au sens père ou mère" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="NSIB" displayName="Frère ou soeur biologique" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="NSIS" displayName="Soeur biologique" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="PRN" displayName="Parent, au sens père ou mère" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="PRNINLAW" displayName="Beau-père ou belle-mère" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="SIB" displayName="Frère ou soeur" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="SIBINLAW" displayName="Beau-frère ou belle-soeur" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="SIGOTHR" displayName="Conjoint" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="SISINLAW" displayName="Belle-soeur" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="SONADOPT" displayName="Fils adoptif" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="SONC" displayName="Fils" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="SONFOST" displayName="Garçon placé en famille d'accueil" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="STPBRO" displayName="Fils du beau-père ou de la belle-mère" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="STPCHLD" displayName="Enfant du conjoint, issu d'un mariage précédent" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="STPDAU" displayName="Fille du conjoint, issue d'un mariage précédent" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="STPPRN" displayName="Beau-père ou belle-mère - époux(se) du père ou de la mère" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="STPSIB" displayName="Enfant du beau-père ou de la belle-mère" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="STPSIS" displayName="Fille du beau-père ou de la belle-mère" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="STPSON" displayName="Fils du conjoint, issu d'un mariage pécédent" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="TWIN" displayName="Frère jumeau ou soeur jumelle" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="TWINBRO" displayName="Frère jumeau" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="TWINSIS" displayName="Soeur jumelle" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+</valueSets>

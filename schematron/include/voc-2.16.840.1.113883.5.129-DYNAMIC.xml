@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <valueSet xmlns="" id="2.16.840.1.113883.5.129" name="JDV_HL7_SpecimenType-CISIS" displayName="JDV_HL7_SpecimenType-CISIS" statusCode="final" versionLabel="1.0" effectiveDate="2020-12-29T17:14:34" ident="CI-SIS-JDV-" url="https://o3sis.esante.gouv.fr/decor/services/" referencedFrom="FRCP-">
+        <sourceCodeSystem id="2.16.840.1.113883.5.129" identifierName="" canonicalUri="urn:oid:2.16.840.1.113883.5.129" canonicalUriDSTU2="urn:oid:2.16.840.1.113883.5.129" canonicalUriSTU3="urn:oid:2.16.840.1.113883.5.129" canonicalUriR4="urn:oid:2.16.840.1.113883.5.129"/>
+        <publishingAuthority name="Coordonnateur de session"/>
+        <conceptList>
+            <concept code="ABS" codeSystem="2.16.840.1.113883.5.129" displayName="Abcès" level="0" type="L"/>
+            <concept code="AMN" codeSystem="2.16.840.1.113883.5.129" displayName="Liquide amniotique" level="0" type="L"/>
+            <concept code="ASP" codeSystem="2.16.840.1.113883.5.129" displayName="Liquide d'aspiration" level="0" type="L"/>
+            <concept code="BBL" codeSystem="2.16.840.1.113883.5.129" displayName="Poche de sang" level="0" type="L"/>
+            <concept code="BDY" codeSystem="2.16.840.1.113883.5.129" displayName="Tout le corps" level="0" type="L"/>
+            <concept code="BIFL" codeSystem="2.16.840.1.113883.5.129" displayName="Bile" level="0" type="L"/>
+            <concept code="BLD" codeSystem="2.16.840.1.113883.5.129" displayName="Sang" level="0" type="L"/>
+            <concept code="BLDA" codeSystem="2.16.840.1.113883.5.129" displayName="Sang artériel" level="0" type="L"/>
+            <concept code="BLDC" codeSystem="2.16.840.1.113883.5.129" displayName="Sang capillaire" level="0" type="L"/>
+            <concept code="BLDCO" codeSystem="2.16.840.1.113883.5.129" displayName="Sang de cordon" level="0" type="L"/>
+            <concept code="BLDV" codeSystem="2.16.840.1.113883.5.129" displayName="Sang veineux" level="0" type="L"/>
+            <concept code="BON" codeSystem="2.16.840.1.113883.5.129" displayName="Os" level="0" type="L"/>
+            <concept code="BPH" codeSystem="2.16.840.1.113883.5.129" displayName="Basophils" level="0" type="L"/>
+            <concept code="BPU" codeSystem="2.16.840.1.113883.5.129" displayName="Produit sanguin labile" level="0" type="L"/>
+            <concept code="BRN" codeSystem="2.16.840.1.113883.5.129" displayName="Brûlure" level="0" type="L"/>
+            <concept code="BRO" codeSystem="2.16.840.1.113883.5.129" displayName="Prélèvement bronchoalvéolaire" level="0" type="L"/>
+            <concept code="BRTH" codeSystem="2.16.840.1.113883.5.129" displayName="Exhaled gas (=breath) Breath (use EXG)" level="0" type="L"/>
+            <concept code="CALC" codeSystem="2.16.840.1.113883.5.129" displayName="Calcul" level="0" type="L"/>
+            <concept code="CDM" codeSystem="2.16.840.1.113883.5.129" displayName="Muscle cardiaque" level="0" type="L"/>
+            <concept code="CNJT" codeSystem="2.16.840.1.113883.5.129" displayName="Conjonctive" level="0" type="L"/>
+            <concept code="CNL" codeSystem="2.16.840.1.113883.5.129" displayName="Canule" level="0" type="L"/>
+            <concept code="COL" codeSystem="2.16.840.1.113883.5.129" displayName="Colostrum" level="0" type="L"/>
+            <concept code="CRN" codeSystem="2.16.840.1.113883.5.129" displayName="Cornée" level="0" type="L"/>
+            <concept code="CSF" codeSystem="2.16.840.1.113883.5.129" displayName="Liquide céphalorachidien" level="0" type="L"/>
+            <concept code="CTP" codeSystem="2.16.840.1.113883.5.129" displayName="Cathéter" level="0" type="L"/>
+            <concept code="CUR" codeSystem="2.16.840.1.113883.5.129" displayName="Curetage" level="0" type="L"/>
+            <concept code="CVM" codeSystem="2.16.840.1.113883.5.129" displayName="Mucus cervical" level="0" type="L"/>
+            <concept code="CVX" codeSystem="2.16.840.1.113883.5.129" displayName="Col de l'utérus" level="0" type="L"/>
+            <concept code="CYST" codeSystem="2.16.840.1.113883.5.129" displayName="Kyste" level="0" type="L"/>
+            <concept code="DIAF" codeSystem="2.16.840.1.113883.5.129" displayName="Liquide de dialyse" level="0" type="L"/>
+            <concept code="DOSE" codeSystem="2.16.840.1.113883.5.129" displayName="Médicament ou substance" level="0" type="L"/>
+            <concept code="DRN" codeSystem="2.16.840.1.113883.5.129" displayName="Drain" level="0" type="L"/>
+            <concept code="DUFL" codeSystem="2.16.840.1.113883.5.129" displayName="Liquide duodénal" level="0" type="L"/>
+            <concept code="EAR" codeSystem="2.16.840.1.113883.5.129" displayName="Oreille" level="0" type="L"/>
+            <concept code="EARW" codeSystem="2.16.840.1.113883.5.129" displayName="Cérumen" level="0" type="L"/>
+            <concept code="ELT" codeSystem="2.16.840.1.113883.5.129" displayName="Electrode" level="0" type="L"/>
+            <concept code="ENDC" codeSystem="2.16.840.1.113883.5.129" displayName="Endocarde" level="0" type="L"/>
+            <concept code="ENDM" codeSystem="2.16.840.1.113883.5.129" displayName="Endomètre" level="0" type="L"/>
+            <concept code="EOS" codeSystem="2.16.840.1.113883.5.129" displayName="Éosinophiles" level="0" type="L"/>
+            <concept code="EXG" codeSystem="2.16.840.1.113883.5.129" displayName="Gaz expiré" level="0" type="L"/>
+            <concept code="EYE" codeSystem="2.16.840.1.113883.5.129" displayName="Oeil" level="0" type="L"/>
+            <concept code="FIB" codeSystem="2.16.840.1.113883.5.129" displayName="Fibroblastes" level="0" type="L"/>
+            <concept code="FIST" codeSystem="2.16.840.1.113883.5.129" displayName="Fistule" level="0" type="L"/>
+            <concept code="FLT" codeSystem="2.16.840.1.113883.5.129" displayName="Filtre" level="0" type="L"/>
+            <concept code="FLU" codeSystem="2.16.840.1.113883.5.129" displayName="Liquide biologique" level="0" type="L"/>
+            <concept code="FOOD" codeSystem="2.16.840.1.113883.5.129" displayName="Aliment" level="0" type="L"/>
+            <concept code="GAS" codeSystem="2.16.840.1.113883.5.129" displayName="Gaz" level="0" type="L"/>
+            <concept code="GAST" codeSystem="2.16.840.1.113883.5.129" displayName="Liquide gastrique" level="0" type="L"/>
+            <concept code="GEN" codeSystem="2.16.840.1.113883.5.129" displayName="Prélèvement génital" level="0" type="L"/>
+            <concept code="GENC" codeSystem="2.16.840.1.113883.5.129" displayName="Col de l'utérus" level="0" type="L"/>
+            <concept code="GENF" codeSystem="2.16.840.1.113883.5.129" displayName="Liquide génital" level="0" type="L"/>
+            <concept code="GENL" codeSystem="2.16.840.1.113883.5.129" displayName="Lochies" level="0" type="L"/>
+            <concept code="GENV" codeSystem="2.16.840.1.113883.5.129" displayName="Prélèvement cervicovaginal" level="0" type="L"/>
+            <concept code="HAR" codeSystem="2.16.840.1.113883.5.129" displayName="Cheveux" level="0" type="L"/>
+            <concept code="IHG" codeSystem="2.16.840.1.113883.5.129" displayName="Gaz inhalé" level="0" type="L"/>
+            <concept code="ISLT" codeSystem="2.16.840.1.113883.5.129" displayName="Isolat" level="0" type="L"/>
+            <concept code="IT" codeSystem="2.16.840.1.113883.5.129" displayName="Intubateur" level="0" type="L"/>
+            <concept code="LAM" codeSystem="2.16.840.1.113883.5.129" displayName="Lamelle" level="0" type="L"/>
+            <concept code="LIQ" codeSystem="2.16.840.1.113883.5.129" displayName="Milieux divers" level="0" type="L"/>
+            <concept code="LN" codeSystem="2.16.840.1.113883.5.129" displayName="Ligne" level="0" type="L"/>
+            <concept code="LNA" codeSystem="2.16.840.1.113883.5.129" displayName="Ligne artérielle" level="0" type="L"/>
+            <concept code="LNV" codeSystem="2.16.840.1.113883.5.129" displayName="Ligne veineuse" level="0" type="L"/>
+            <concept code="LYM" codeSystem="2.16.840.1.113883.5.129" displayName="Lymphocytes" level="0" type="L"/>
+            <concept code="MAC" codeSystem="2.16.840.1.113883.5.129" displayName="Macrophages" level="0" type="L"/>
+            <concept code="MAR" codeSystem="2.16.840.1.113883.5.129" displayName="Moelle osseuse" level="0" type="L"/>
+            <concept code="MBLD" codeSystem="2.16.840.1.113883.5.129" displayName="Menstrues" level="0" type="L"/>
+            <concept code="MEC" codeSystem="2.16.840.1.113883.5.129" displayName="Méconium" level="0" type="L"/>
+            <concept code="MILK" codeSystem="2.16.840.1.113883.5.129" displayName="Lait maternel" level="0" type="L"/>
+            <concept code="MLK" codeSystem="2.16.840.1.113883.5.129" displayName="Lait" level="0" type="L"/>
+            <concept code="NAIL" codeSystem="2.16.840.1.113883.5.129" displayName="Ongle" level="0" type="L"/>
+            <concept code="NOS" codeSystem="2.16.840.1.113883.5.129" displayName="Nez" level="0" type="L"/>
+            <concept code="PAFL" codeSystem="2.16.840.1.113883.5.129" displayName="Liquide pancréatique (aspiration fine)" level="0" type="L"/>
+            <concept code="PAT" codeSystem="2.16.840.1.113883.5.129" displayName="Patient" level="0" type="L"/>
+            <concept code="PLAS" codeSystem="2.16.840.1.113883.5.129" displayName="Plasma" level="0" type="L"/>
+            <concept code="PLB" codeSystem="2.16.840.1.113883.5.129" displayName="Poche de plasma" level="0" type="L"/>
+            <concept code="PLC" codeSystem="2.16.840.1.113883.5.129" displayName="Placenta" level="0" type="L"/>
+            <concept code="PLR" codeSystem="2.16.840.1.113883.5.129" displayName="Liquide pleural" level="0" type="L"/>
+            <concept code="PMN" codeSystem="2.16.840.1.113883.5.129" displayName="Polymorphonucléaires neutrophiles" level="0" type="L"/>
+            <concept code="PPP" codeSystem="2.16.840.1.113883.5.129" displayName="Plasma pauvre en plaquettes" level="0" type="L"/>
+            <concept code="PRP" codeSystem="2.16.840.1.113883.5.129" displayName="Plasma riche en plaquettes" level="0" type="L"/>
+            <concept code="PRT" codeSystem="2.16.840.1.113883.5.129" displayName="Ascite" level="0" type="L"/>
+            <concept code="PUS" codeSystem="2.16.840.1.113883.5.129" displayName="Pus" level="0" type="L"/>
+            <concept code="RBC" codeSystem="2.16.840.1.113883.5.129" displayName="Erythrocytes" level="0" type="L"/>
+            <concept code="SAL" codeSystem="2.16.840.1.113883.5.129" displayName="Salive" level="0" type="L"/>
+            <concept code="SER" codeSystem="2.16.840.1.113883.5.129" displayName="Sérum" level="0" type="L"/>
+            <concept code="SKM" codeSystem="2.16.840.1.113883.5.129" displayName="Muscle squelettique" level="0" type="L"/>
+            <concept code="SKN" codeSystem="2.16.840.1.113883.5.129" displayName="Peau" level="0" type="L"/>
+            <concept code="SMN" codeSystem="2.16.840.1.113883.5.129" displayName="Liquide séminal" level="0" type="L"/>
+            <concept code="SMPLS" codeSystem="2.16.840.1.113883.5.129" displayName="Plasma séminal" level="0" type="L"/>
+            <concept code="SNV" codeSystem="2.16.840.1.113883.5.129" displayName="Liquide synovial" level="0" type="L"/>
+            <concept code="SPRM" codeSystem="2.16.840.1.113883.5.129" displayName="Spermatozoïdes" level="0" type="L"/>
+            <concept code="SPT" codeSystem="2.16.840.1.113883.5.129" displayName="Crachat, expectoration" level="0" type="L"/>
+            <concept code="SPTC" codeSystem="2.16.840.1.113883.5.129" displayName="Crachats - toux" level="0" type="L"/>
+            <concept code="SPTT" codeSystem="2.16.840.1.113883.5.129" displayName="Crachat, aspiration trachéale" level="0" type="L"/>
+            <concept code="STL" codeSystem="2.16.840.1.113883.5.129" displayName="Selles" level="0" type="L"/>
+            <concept code="STON" codeSystem="2.16.840.1.113883.5.129" displayName="Calculus (=Stone) Stone (use CALC)" level="0" type="L"/>
+            <concept code="SWT" codeSystem="2.16.840.1.113883.5.129" displayName="Sueur" level="0" type="L"/>
+            <concept code="TEAR" codeSystem="2.16.840.1.113883.5.129" displayName="Larmes" level="0" type="L"/>
+            <concept code="THRB" codeSystem="2.16.840.1.113883.5.129" displayName="Plaquettes" level="0" type="L"/>
+            <concept code="THRT" codeSystem="2.16.840.1.113883.5.129" displayName="Gorge" level="0" type="L"/>
+            <concept code="TISG" codeSystem="2.16.840.1.113883.5.129" displayName="Tissu de vésicule biliaire" level="0" type="L"/>
+            <concept code="TISPL" codeSystem="2.16.840.1.113883.5.129" displayName="Tissu placentaire" level="0" type="L"/>
+            <concept code="TISS" codeSystem="2.16.840.1.113883.5.129" displayName="Tissu" level="0" type="L"/>
+            <concept code="TISU" codeSystem="2.16.840.1.113883.5.129" displayName="Tissue ulcéreux" level="0" type="L"/>
+            <concept code="TLGI" codeSystem="2.16.840.1.113883.5.129" displayName="Tissu gros intestin" level="0" type="L"/>
+            <concept code="TLNG" codeSystem="2.16.840.1.113883.5.129" displayName="Tissu pulmonaire" level="0" type="L"/>
+            <concept code="TSMI" codeSystem="2.16.840.1.113883.5.129" displayName="Tissue intestin grêle" level="0" type="L"/>
+            <concept code="TUB" codeSystem="2.16.840.1.113883.5.129" displayName="Tube" level="0" type="L"/>
+            <concept code="ULC" codeSystem="2.16.840.1.113883.5.129" displayName="Ulcère" level="0" type="L"/>
+            <concept code="UMB" codeSystem="2.16.840.1.113883.5.129" displayName="Sang ombilical" level="0" type="L"/>
+            <concept code="UMED" codeSystem="2.16.840.1.113883.5.129" displayName="Médicament inconnu" level="0" type="L"/>
+            <concept code="UR" codeSystem="2.16.840.1.113883.5.129" displayName="Urine" level="0" type="L"/>
+            <concept code="URC" codeSystem="2.16.840.1.113883.5.129" displayName="Prise propre d'urine" level="0" type="L"/>
+            <concept code="URNS" codeSystem="2.16.840.1.113883.5.129" displayName="Urine sédiments" level="0" type="L"/>
+            <concept code="URT" codeSystem="2.16.840.1.113883.5.129" displayName="Cathéter urinaire" level="0" type="L"/>
+            <concept code="URTH" codeSystem="2.16.840.1.113883.5.129" displayName="Urètre" level="0" type="L"/>
+            <concept code="USUB" codeSystem="2.16.840.1.113883.5.129" displayName="Substance inconnue" level="0" type="L"/>
+            <concept code="VOM" codeSystem="2.16.840.1.113883.5.129" displayName="Vomissement" level="0" type="L"/>
+            <concept code="WAT" codeSystem="2.16.840.1.113883.5.129" displayName="Eau" level="0" type="L"/>
+            <concept code="WBC" codeSystem="2.16.840.1.113883.5.129" displayName="Leucocytes" level="0" type="L"/>
+            <concept code="WICK" codeSystem="2.16.840.1.113883.5.129" displayName="Déchet" level="0" type="L"/>
+            <concept code="WND" codeSystem="2.16.840.1.113883.5.129" displayName="Plaie" level="0" type="L"/>
+            <concept code="WNDA" codeSystem="2.16.840.1.113883.5.129" displayName="Abcès de plaie" level="0" type="L"/>
+            <concept code="WNDD" codeSystem="2.16.840.1.113883.5.129" displayName="Drain de plaie" level="0" type="L"/>
+            <concept code="WNDE" codeSystem="2.16.840.1.113883.5.129" displayName="Exsudat" level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+</valueSets>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <valueSet xmlns="" id="1.2.250.1.213.1.1.4.2.283.2" name="JDV_ClinicalStatusCodes-CISIS" displayName="JDV_ClinicalStatusCodes-CISIS" effectiveDate="2021-03-15T00:00:00" statusCode="final" versionLabel="1.0" ident="CI-SIS-JDV-" url="https://o3sis.esante.gouv.fr/decor/services/" referencedFrom="ASIP-AVC-">
+        <sourceCodeSystem id="1.2.250.1.213.1.1.4.2.286" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.1.1.4.2.286" canonicalUriDSTU2="urn:oid:1.2.250.1.213.1.1.4.2.286" canonicalUriSTU3="urn:oid:1.2.250.1.213.1.1.4.2.286" canonicalUriR4="urn:oid:1.2.250.1.213.1.1.4.2.286"/>
+        <sourceCodeSystem id="1.2.250.1.213.2.12" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.2.12" canonicalUriDSTU2="urn:oid:1.2.250.1.213.2.12" canonicalUriSTU3="urn:oid:1.2.250.1.213.2.12" canonicalUriR4="urn:oid:1.2.250.1.213.2.12"/>
+        <publishingAuthority name="Souad Ben Mustapha"/>
+        <conceptList>
+            <concept code="CDA_002" displayName="Résolu" codeSystem="1.2.250.1.213.1.1.4.2.286" level="0" type="L"/>
+            <concept code="G-A201" displayName="Exclus" codeSystem="1.2.250.1.213.2.12" level="0" type="L"/>
+            <concept code="G-A202" displayName="Ecarté" codeSystem="1.2.250.1.213.2.12" level="0" type="L"/>
+            <concept code="G-A230" displayName="Actif" codeSystem="1.2.250.1.213.2.12" level="0" type="L"/>
+            <concept code="G-A270" displayName="Chronique" codeSystem="1.2.250.1.213.2.12" level="0" type="L"/>
+            <concept code="G-A378" displayName="Inactif" codeSystem="1.2.250.1.213.2.12" level="0" type="L"/>
+            <concept code="G-A397" displayName="Intermittent" codeSystem="1.2.250.1.213.2.12" level="0" type="L"/>
+            <concept code="G-A500" displayName="Récurrent" codeSystem="1.2.250.1.213.2.12" level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+</valueSets>

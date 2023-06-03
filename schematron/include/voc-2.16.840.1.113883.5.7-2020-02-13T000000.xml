@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <valueSet xmlns="" id="2.16.840.1.113883.5.7" name="JDV_HL7_ActPriority-CISIS" displayName="JDV_HL7_ActPriority-CISIS" effectiveDate="2020-02-13T00:00:00" statusCode="final" versionLabel="1.0" ident="CI-SIS-JDV-" url="https://o3sis.esante.gouv.fr/decor/services/" referencedFrom="FRCP-">
+        <sourceCodeSystem id="2.16.840.1.113883.5.7" identifierName="" canonicalUri="urn:oid:2.16.840.1.113883.5.7" canonicalUriDSTU2="urn:oid:2.16.840.1.113883.5.7" canonicalUriSTU3="urn:oid:2.16.840.1.113883.5.7" canonicalUriR4="urn:oid:2.16.840.1.113883.5.7"/>
+        <publishingAuthority name="Coordonnateur de session"/>
+        <conceptList>
+            <concept code="A" displayName="Aussi vite que possible" codeSystem="2.16.840.1.113883.5.7" level="0" type="L"/>
+            <concept code="EL" displayName="Bénéfique pour le patient mais pas essentiel pour sa survie" codeSystem="2.16.840.1.113883.5.7" level="0" type="L"/>
+            <concept code="EM" displayName="Très urgent" codeSystem="2.16.840.1.113883.5.7" level="0" type="L"/>
+            <concept code="P" displayName="A réaliser avant l'intervention" codeSystem="2.16.840.1.113883.5.7" level="0" type="L"/>
+            <concept code="PRN" displayName="Si nécessaire" codeSystem="2.16.840.1.113883.5.7" level="0" type="L"/>
+            <concept code="R" displayName="A réaliser aux heures ouvrées" codeSystem="2.16.840.1.113883.5.7" level="0" type="L"/>
+            <concept code="S" displayName="Immédiatement" codeSystem="2.16.840.1.113883.5.7" level="0" type="L"/>
+            <concept code="T" displayName="Plannification à respecter" codeSystem="2.16.840.1.113883.5.7" level="0" type="L"/>
+            <concept code="UR" displayName="Urgent" codeSystem="2.16.840.1.113883.5.7" level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+</valueSets>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <valueSet xmlns="" id="1.2.250.1.213.1.1.5.84.2" name="ConduiteATenir_3" displayName="ConduiteATenir_3" effectiveDate="2018-01-05T00:00:00" statusCode="final" versionLabel="1.0">
+        <sourceCodeSystem id="1.2.250.1.213.1.1.4.322" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriDSTU2="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriSTU3="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriR4="urn:oid:1.2.250.1.213.1.1.4.322"/>
+        <publishingAuthority name="ASIP Santé"/>
+        <conceptList>
+            <concept code="MED-012" displayName="Avis spécialisé" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+            <concept code="MED-044" displayName="Prélèvement" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+</valueSets>

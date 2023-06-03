@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <valueSet xmlns="" id="1.2.250.1.213.1.1.5.504" name="JDV_ScoreBradenComponent-CISIS" displayName="JDV_ScoreBradenComponent-CISIS" statusCode="final" versionLabel="1.0" effectiveDate="2020-07-09T15:49:12" ident="CI-SIS-JDV-" url="https://o3sis.esante.gouv.fr/decor/services/" referencedFrom="FRCP-">
+        <sourceCodeSystem id="2.16.840.1.113883.6.1" identifierName="" canonicalUri="urn:oid:2.16.840.1.113883.6.1" canonicalUriDSTU2="urn:oid:2.16.840.1.113883.6.1" canonicalUriSTU3="urn:oid:2.16.840.1.113883.6.1" canonicalUriR4="urn:oid:2.16.840.1.113883.6.1"/>
+        <publishingAuthority name="Coordonnateur de session"/>
+        <conceptList>
+            <concept code="38222-6" codeSystem="2.16.840.1.113883.6.1" displayName="Perception sensorielle" level="0" type="L"/>
+            <concept code="38229-1" codeSystem="2.16.840.1.113883.6.1" displayName="Humidité" level="0" type="L"/>
+            <concept code="38224-2" codeSystem="2.16.840.1.113883.6.1" displayName="Mobilité" level="0" type="L"/>
+            <concept code="38223-4" codeSystem="2.16.840.1.113883.6.1" displayName="Activité" level="0" type="L"/>
+            <concept code="38225-9" codeSystem="2.16.840.1.113883.6.1" displayName="Nutrition" level="0" type="L"/>
+            <concept code="38226-7" codeSystem="2.16.840.1.113883.6.1" displayName="Friction et cisaillement" level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+</valueSets>

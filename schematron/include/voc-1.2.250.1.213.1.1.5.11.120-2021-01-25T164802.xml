@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <valueSet xmlns="" id="1.2.250.1.213.1.1.5.11.120" name="JDV_HL7_SpecimenAdditiveEntity-CISIS" displayName="JDV_HL7_SpecimenAdditiveEntity-CISIS" effectiveDate="2021-01-25T16:48:02" statusCode="draft" ident="CI-SIS-JDV-" url="https://o3sis.esante.gouv.fr/decor/services/" referencedFrom="FRCP-">
+        <sourceCodeSystem id="2.16.840.1.113883.5.1060" identifierName="" canonicalUri="urn:oid:2.16.840.1.113883.5.1060" canonicalUriDSTU2="urn:oid:2.16.840.1.113883.5.1060" canonicalUriSTU3="urn:oid:2.16.840.1.113883.5.1060" canonicalUriR4="urn:oid:2.16.840.1.113883.5.1060"/>
+        <publishingAuthority name="Coordonnateur de session"/>
+        <conceptList>
+            <concept code="ACDA" codeSystem="2.16.840.1.113883.5.1060" displayName="ACD Solution A" level="0" type="L"/>
+            <concept code="ACDB" codeSystem="2.16.840.1.113883.5.1060" displayName="ACD Solution B" level="0" type="L"/>
+            <concept code="ACET" codeSystem="2.16.840.1.113883.5.1060" displayName="Acetic Acid" level="0" type="L"/>
+            <concept code="AMIES" codeSystem="2.16.840.1.113883.5.1060" displayName="Amies transport medium" level="0" type="L"/>
+            <concept code="BACTM" codeSystem="2.16.840.1.113883.5.1060" displayName="Bacterial Transport medium" level="0" type="L"/>
+            <concept code="BF10" codeSystem="2.16.840.1.113883.5.1060" displayName="Buffered 10% formalin" level="0" type="L"/>
+            <concept code="BOR" codeSystem="2.16.840.1.113883.5.1060" displayName="Boric Acid" level="0" type="L"/>
+            <concept code="BOUIN" codeSystem="2.16.840.1.113883.5.1060" displayName="Bouin's solution" level="0" type="L"/>
+            <concept code="BSKM" codeSystem="2.16.840.1.113883.5.1060" displayName="Buffered skim milk" level="0" type="L"/>
+            <concept code="C32" codeSystem="2.16.840.1.113883.5.1060" displayName="3.2% Citrate" level="0" type="L"/>
+            <concept code="C38" codeSystem="2.16.840.1.113883.5.1060" displayName="3.8% Citrate" level="0" type="L"/>
+            <concept code="CARS" codeSystem="2.16.840.1.113883.5.1060" displayName="Carson's Modified 10% formalin" level="0" type="L"/>
+            <concept code="CARY" codeSystem="2.16.840.1.113883.5.1060" displayName="Cary Blair Medium" level="0" type="L"/>
+            <concept code="CHLTM" codeSystem="2.16.840.1.113883.5.1060" displayName="Chlamydia transport medium" level="0" type="L"/>
+            <concept code="CTAD" codeSystem="2.16.840.1.113883.5.1060" displayName="CTAD" level="0" type="L"/>
+            <concept code="EDTK15" codeSystem="2.16.840.1.113883.5.1060" displayName="Potassium/K EDTA 15%" level="0" type="L"/>
+            <concept code="EDTK75" codeSystem="2.16.840.1.113883.5.1060" displayName="Potassium/K EDTA 7.5%" level="0" type="L"/>
+            <concept code="EDTN" codeSystem="2.16.840.1.113883.5.1060" displayName="Sodium/Na EDTA" level="0" type="L"/>
+            <concept code="ENT" codeSystem="2.16.840.1.113883.5.1060" displayName="Enteric bacteria transport medium" level="0" type="L"/>
+            <concept code="F10" codeSystem="2.16.840.1.113883.5.1060" displayName="10% Formalin" level="0" type="L"/>
+            <concept code="FDP" codeSystem="2.16.840.1.113883.5.1060" displayName="Thrombin NIH; soybean trypsin inhibitor" level="0" type="L"/>
+            <concept code="FL10" codeSystem="2.16.840.1.113883.5.1060" displayName="Sodium Fluoride, 10mg" level="0" type="L"/>
+            <concept code="FL100" codeSystem="2.16.840.1.113883.5.1060" displayName="Sodium Fluoride, 100mg" level="0" type="L"/>
+            <concept code="HCL6" codeSystem="2.16.840.1.113883.5.1060" displayName="6N HCL" level="0" type="L"/>
+            <concept code="HEPA" codeSystem="2.16.840.1.113883.5.1060" displayName="Ammonium heparin" level="0" type="L"/>
+            <concept code="HEPL" codeSystem="2.16.840.1.113883.5.1060" displayName="Lithium/Li Heparin" level="0" type="L"/>
+            <concept code="HEPN" codeSystem="2.16.840.1.113883.5.1060" displayName="Sodium/Na Heparin" level="0" type="L"/>
+            <concept code="HNO3" codeSystem="2.16.840.1.113883.5.1060" displayName="Nitric Acid" level="0" type="L"/>
+            <concept code="JKM" codeSystem="2.16.840.1.113883.5.1060" displayName="Jones Kendrick Medium" level="0" type="L"/>
+            <concept code="KARN" codeSystem="2.16.840.1.113883.5.1060" displayName="Karnovsky's fixative" level="0" type="L"/>
+            <concept code="KOX" codeSystem="2.16.840.1.113883.5.1060" displayName="Potassium Oxalate" level="0" type="L"/>
+            <concept code="LIA" codeSystem="2.16.840.1.113883.5.1060" displayName="Lithium iodoacetate" level="0" type="L"/>
+            <concept code="M4" codeSystem="2.16.840.1.113883.5.1060" displayName="M4" level="0" type="L"/>
+            <concept code="M4RT" codeSystem="2.16.840.1.113883.5.1060" displayName="M4-RT" level="0" type="L"/>
+            <concept code="M5" codeSystem="2.16.840.1.113883.5.1060" displayName="M5" level="0" type="L"/>
+            <concept code="MICHTM" codeSystem="2.16.840.1.113883.5.1060" displayName="Michel's transport medium" level="0" type="L"/>
+            <concept code="MMDTM" codeSystem="2.16.840.1.113883.5.1060" displayName="MMD transport medium" level="0" type="L"/>
+            <concept code="NAF" codeSystem="2.16.840.1.113883.5.1060" displayName="Sodium Fluoride" level="0" type="L"/>
+            <concept code="NONE" codeSystem="2.16.840.1.113883.5.1060" displayName="None" level="0" type="L"/>
+            <concept code="PAGE" codeSystem="2.16.840.1.113883.5.1060" displayName="Page's Saline" level="0" type="L"/>
+            <concept code="PHENOL" codeSystem="2.16.840.1.113883.5.1060" displayName="Phenol" level="0" type="L"/>
+            <concept code="PVA" codeSystem="2.16.840.1.113883.5.1060" displayName="Polyvinylalcohol" level="0" type="L"/>
+            <concept code="RLM" codeSystem="2.16.840.1.113883.5.1060" displayName="Reagan Lowe Medium" level="0" type="L"/>
+            <concept code="SILICA" codeSystem="2.16.840.1.113883.5.1060" displayName="Siliceous earth" level="0" type="L"/>
+            <concept code="SPS" codeSystem="2.16.840.1.113883.5.1060" displayName="Sodium polyanethol sulfonate 0.35% in 0.85% sodium chloride" level="0" type="L"/>
+            <concept code="SST" codeSystem="2.16.840.1.113883.5.1060" displayName="Serum Separator Tube" level="0" type="L"/>
+            <concept code="STUTM" codeSystem="2.16.840.1.113883.5.1060" displayName="Stuart transport medium" level="0" type="L"/>
+            <concept code="THROM" codeSystem="2.16.840.1.113883.5.1060" displayName="Thrombin" level="0" type="L"/>
+            <concept code="THYMOL" codeSystem="2.16.840.1.113883.5.1060" displayName="Thymol" level="0" type="L"/>
+            <concept code="THYO" codeSystem="2.16.840.1.113883.5.1060" displayName="Thyoglycolate broth" level="0" type="L"/>
+            <concept code="TOLU" codeSystem="2.16.840.1.113883.5.1060" displayName="Toluene" level="0" type="L"/>
+            <concept code="URETM" codeSystem="2.16.840.1.113883.5.1060" displayName="Ureaplasma transport medium" level="0" type="L"/>
+            <concept code="VIRTM" codeSystem="2.16.840.1.113883.5.1060" displayName="Viral Transport medium" level="0" type="L"/>
+            <concept code="WEST" codeSystem="2.16.840.1.113883.5.1060" codeSystemName="EntityClass" displayName="Buffered Citrate" level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+</valueSets>
