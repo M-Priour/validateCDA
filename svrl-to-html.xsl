@@ -11,10 +11,20 @@
 
   <xsl:template match="gvr:validationReport ">
 
-    <h2 ><xsl:value-of select="$nameFile"/></h2>
-	  <h3 ><xsl:value-of select="/gvr:validationReport/gvr:validationOverview/gvr:validationServiceName" />-<xsl:value-of select="/gvr:validationReport/gvr:validationOverview/gvr:validatorID" /> : <xsl:value-of select="@result" /> </h3>
-    <h3 >Temps d'execution :  <xsl:value-of select="$elapsedTime"/></h3>
-<table class="table table-striped table-hover">
+  
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsexxxxx" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+       <xsl:value-of select="/gvr:validationReport/gvr:validationOverview/gvr:validationServiceName" />-<xsl:value-of select="/gvr:validationReport/gvr:validationOverview/gvr:validatorID" /> : <xsl:value-of select="@result" />
+       
+       <br/>Nombre d'erreurs : <xsl:value-of select="//gvr:counters/@numberOfErrors" />
+       <br/>Nombre de warnings :  <xsl:value-of select="//gvr:counters/@numberOfWarnings" />
+       <br/>Temps d'execution :  <xsl:value-of select="$elapsedTime"/>
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapsexxxxx" class="accordion-collapse collapse ">
+      <div class="accordion-body">
+   <table class="table table-striped table-hover">
   <thead>
     <tr>
       <th scope="col">Validation</th>
@@ -26,6 +36,11 @@
 		
   </tbody>
 </table>		
+     </div>
+    </div>
+  </div>
+
+
 
   </xsl:template>
 

@@ -10,7 +10,7 @@ import java.nio.charset.StandardCharsets;
 import java.io.StringWriter;
 import java.io.StringReader;
 import java.net.http.HttpClient;
-
+import java.util.UUID;
 import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.Option;
 import org.apache.commons.cli.Options;
@@ -243,74 +243,138 @@ public class validate {
             options.addOption(option_i);
             options.addOption(option_o);	
             commandLine = parser.parse(options, args);
-            String cdaFile = null;
+    
 
 
             Path dddDirectoryPath = Paths.get(commandLine.getOptionValue("i") );
             int nameCount = dddDirectoryPath.getNameCount();
             String pathtoWrite = dddDirectoryPath.getName(nameCount - 1).toString();
-            File file = new File(commandLine.getOptionValue("i"));
+
            
-            pathtoWrite =commandLine.getOptionValue("o") +"/" + file.getName();
+            
 
             Properties appProps = new Properties();
             appProps.load(new FileInputStream("mapping.properties"));
 
 
+            File directoryPath = new File( commandLine.getOptionValue("i") );
 
-                      
+            FilenameFilter textFilefilter = new FilenameFilter(){
+                public boolean accept(File dir, String name) {
+                   String lowercaseName = name.toLowerCase();
+                   if (lowercaseName.endsWith(".xml")) {
+                      return true;
+                   } else {
+                      return false;
+                   }
+                }
+             };
 
-            cdaFile = Files.readString(Paths.get(commandLine.getOptionValue("i")));
-            String validator = ".Structuration minimale des documents de santé v1.12";
+             File filesList[];
+             //List of all the text files
+             if(directoryPath.isDirectory())
+                  filesList = directoryPath.listFiles(textFilefilter);
+              else {
+                 filesList =  new File[1];
+                 filesList[0] = directoryPath;
+              }  
+              
+              FileOutputStream  fileConsolidate = new FileOutputStream(commandLine.getOptionValue("o") +"/"  + "index.html",true);
+              fileConsolidate.write(Files.readAllBytes( Paths.get("template.html")));        
+              DateFormat format = new SimpleDateFormat("dd/MM/yyyy  HH:mm:ss");
+              Date date = new Date();      
+              fileConsolidate.write(("<h1 class='display-5'>Rapport de validation ( "+ format.format(date)  + ")</h1>").getBytes("UTF-8"));
+              for(File file : filesList) {
+                pathtoWrite =commandLine.getOptionValue("o") +"/" + file.getName();
+                System.out.println("File name: "+file.getName());
+                System.out.println("File path: "+file.getAbsolutePath());
+                System.out.println("Size :"+file.getTotalSpace());                      
+                fileConsolidate.write(("""
+                    <div class='col-12 col-xl-10 order-1 order-xl-0'>
+                    <div class='card text-bg-secondary mb-3'>
+                      <div class='card-header p-4 border-bottom border-300 bg-soft'>
+                        <div class='row g-3 justify-content-between align-items-center'>
+                          <div class='col-12 col-md'>
+                            <h4 class='text-900 mb-0' data-anchor='data-anchor' id='accordion-example'>"""
+                                    + file.getName() + 
+                            """
+                            </h4>
+                          </div>
+                        </div>
+                      </div> 
+                      <div class='accordion' >             
+                        """).getBytes("UTF-8"));
 
+
+
+    
+                String validator = ".Structuration minimale des documents de santé v1.12";
+
+                
+                //Chargement du XMl pour récuper le valdiator
+                DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+                DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+                
+                InputSource inputStream = new InputSource(file.getAbsolutePath());
+                Document doc = dBuilder.parse(inputStream);
             
-            //Chargement du XMl pour récuper le valdiator
-            DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
-            DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
-            
-            InputSource inputStream = new InputSource(new StringReader(cdaFile));
-            Document doc = dBuilder.parse(inputStream);
-        
-            XPath xPath = XPathFactory.newInstance().newXPath();
-            String expression = "/ClinicalDocument/templateId";
-            NodeList nList = (NodeList) xPath.compile(expression).evaluate(doc, XPathConstants.NODESET);
+                XPath xPath = XPathFactory.newInstance().newXPath();
+                String expression = "/ClinicalDocument/templateId";
+                NodeList nList = (NodeList) xPath.compile(expression).evaluate(doc, XPathConstants.NODESET);
 
-            
-            for (int i= 0; i< nList.getLength(); i++) {
-                Node nNode = nList.item(i);
-                if (nNode.getNodeType() == Node.ELEMENT_NODE) {
-                        Element eElement = (Element) nNode;
+                
+                for (int i= 0; i< nList.getLength(); i++) {
+                    Node nNode = nList.item(i);
+                    if (nNode.getNodeType() == Node.ELEMENT_NODE) {
+                            Element eElement = (Element) nNode;
 
-                        String FindValidator = appProps.getProperty(eElement.getAttribute("root")+"." + eElement.getAttribute("extension"));
-                        if(FindValidator != null)
-                            validator = FindValidator;
- 
-                    }
-            }
+                            String FindValidator = appProps.getProperty(eElement.getAttribute("root")+"." + eElement.getAttribute("extension"));
+                            if(FindValidator != null)
+                                validator = FindValidator;
+    
+                        }
+                }
+                String cdaFile = Files.readString(file.toPath());
 
-            FileOutputStream  fileConsolidate = new FileOutputStream(commandLine.getOptionValue("o") +"/"  + "index.html",true);
-            fileConsolidate.write(Files.readAllBytes( Paths.get("template.html")));
-            String contentLocation  = null;
-            //String contentResponse = IOUtils.toString(response.getEntity().getContent(), StandardCharsets.UTF_8);
-            String init ="Echec :  " + file.getName() + "("+ validator +")";
-            Files.write( Paths.get(pathtoWrite+ "."  + "cdaReports.xml"), init.getBytes());
-            Files.write( Paths.get(pathtoWrite+ "."  + "cdaReports.xml.html"), init.getBytes());
-            long startTime = System.currentTimeMillis();
-            contentLocation = validateCda (cdaFile,file.getName(),validator) ; 
-            long estimatedTime = System.currentTimeMillis() - startTime;
-            contentLocation = contentLocation + "/report?severityThreshold=WARNING";
-            writeReports(contentLocation,pathtoWrite+ "." + "cdaReports.xml", estimatedTime,file.getName());
-            fileConsolidate.write(Files.readAllBytes( Paths.get(pathtoWrite+ "." + "cdaReports.xml.html")));
-            validator = ".Validation sémantique (bêta)";
-            startTime = System.currentTimeMillis();
-            contentLocation = validateCda (cdaFile,file.getName(),validator) ; 
-            estimatedTime = System.currentTimeMillis() - startTime;
-            contentLocation = contentLocation + "/report?severityThreshold=WARNING";
-            writeReports(contentLocation,pathtoWrite+ "." + "semantiqueReports.xml", estimatedTime,file.getName());    
-            fileConsolidate.write(Files.readAllBytes( Paths.get(pathtoWrite+ "." + "semantiqueReports.xml.html")));      
+                String contentLocation  = null;
+                //String contentResponse = IOUtils.toString(response.getEntity().getContent(), StandardCharsets.UTF_8);
+                String init ="Echec :  " + file.getName() + "("+ validator +")";
+                Files.write( Paths.get(pathtoWrite+ "."  + "cdaReports.xml"), init.getBytes());
+                Files.write( Paths.get(pathtoWrite+ "."  + "cdaReports.xml.html"), init.getBytes());
+                long startTime = System.currentTimeMillis();
+                contentLocation = validateCda (cdaFile,file.getName(),validator) ; 
+                long estimatedTime = System.currentTimeMillis() - startTime;
+                contentLocation = contentLocation + "/report?severityThreshold=WARNING";
+                writeReports(contentLocation,pathtoWrite+ "." + "cdaReports.xml", estimatedTime,file.getName());
+
+
+                String content = new String(Files.readAllBytes(Paths.get(pathtoWrite+ "." + "cdaReports.xml.html")), "UTF-8");
+                content = content.replaceAll("panelsStayOpen-collapsexxxxx", "panelsStayOpen-collapse"+ UUID.randomUUID().toString());
+                Files.write(Paths.get(pathtoWrite+ "." + "cdaReports.xml.html"), content.getBytes("UTF-8"));      
+
+                fileConsolidate.write(Files.readAllBytes( Paths.get(pathtoWrite+ "." + "cdaReports.xml.html")));
+                validator = ".Validation sémantique (bêta)";
+                startTime = System.currentTimeMillis();
+                contentLocation = validateCda (cdaFile,file.getName(),validator) ; 
+                estimatedTime = System.currentTimeMillis() - startTime;
+                contentLocation = contentLocation + "/report?severityThreshold=WARNING";
+                writeReports(contentLocation,pathtoWrite+ "." + "semantiqueReports.xml", estimatedTime,file.getName());   
+
+                content = new String(Files.readAllBytes(Paths.get(pathtoWrite+ "." + "semantiqueReports.xml.html")), "UTF-8");
+                content = content.replaceAll("panelsStayOpen-collapsexxxxx", "panelsStayOpen-collapse"+ UUID.randomUUID().toString());
+                Files.write(Paths.get(pathtoWrite+ "." + "semantiqueReports.xml.html"), content.getBytes("UTF-8"));      
+
+                fileConsolidate.write(Files.readAllBytes( Paths.get(pathtoWrite+ "." + "semantiqueReports.xml.html")));                
+                
+
+                fileConsolidate.write(("""
+                    </div>
+                        </div>
+                      </div>              
+                        """).getBytes("UTF-8"));
+            }                     
+              
             fileConsolidate.write(" </div> </body> </html>".getBytes("UTF-8"));
-                              
-   
   
 
 
