@@ -20,6 +20,7 @@
        <br/>Nombre d'erreurs : <xsl:value-of select="//gvr:counters/@numberOfErrors" />
        <br/>Nombre de warnings :  <xsl:value-of select="//gvr:counters/@numberOfWarnings" />
        <br/>Temps d'execution :  <xsl:value-of select="$elapsedTime"/>
+       <br/>Nombre de règles:  <xsl:value-of select="//gvr:counters/$numberOfConstraints"/>
       </button>
     </h2>
     <div id="panelsStayOpen-collapsexxxxx" class="accordion-collapse collapse ">
