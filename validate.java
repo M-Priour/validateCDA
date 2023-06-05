@@ -140,13 +140,14 @@ public class validate {
             //transformer = tf.newTransformer();
             //transformer.transform(new DOMSource(contentResponse), new StreamResult(outStream));
 
+            System.out.println("Write NameFile "  + nameFile);
             final Source xmlSource = new javax.xml.transform.stream.StreamSource(new File(nameFile));
             final Source xsltSource = new javax.xml.transform.stream.StreamSource(new File("svrl-to-html.xsl"));
             final Result result = new javax.xml.transform.stream.StreamResult(nameFile+".html");
     
             transformer = tf.newTransformer(xsltSource);
             transformer.setParameter("elapsedTime", TimeUnit.MILLISECONDS.toSeconds(iTime));
-            transformer.setParameter("nameFile", nameCDAFile);
+            transformer.setParameter("nameFile", nameFile);
             transformer.transform(xmlSource, result);
 
         }catch (Exception exception)
