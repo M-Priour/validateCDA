@@ -122,7 +122,7 @@ public class validate {
 
         nameFile =  StringUtils.stripAccents(nameFile);
         System.out.println("namefile :" +nameFile);
-       // try{
+        try{
             CloseableHttpClient httpClient = HttpClients.custom().build();
             final var post = new HttpGet(contentLocation);
             post.setHeader("Accept", "application/xml");
@@ -133,7 +133,7 @@ public class validate {
             // extract response of validation request
             String contentResponse = IOUtils.toString(response.getEntity().getContent());
             Files.write( Paths.get(nameFile), contentResponse.getBytes());
-
+            System.out.println(contentResponse);
 
             TransformerFactory tf = TransformerFactory.newInstance();
             Transformer transformer;
