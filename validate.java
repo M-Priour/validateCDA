@@ -382,38 +382,54 @@ public class validate {
                     String cdaFile = Files.readString(file.toPath());
 
                     String contentLocation  = null;
-                    //String contentResponse = IOUtils.toString(response.getEntity().getContent(), StandardCharsets.UTF_8);
-                    String init ="Echec :  " + file.getName() + "("+ validator +")";
-                    Files.write( Paths.get(pathtoWrite+ "."  + "cdaReports.xml"), init.getBytes());
-                    Files.write( Paths.get(pathtoWrite+ "."  + "cdaReports.xml.html"), init.getBytes());
-                    long startTime = System.currentTimeMillis();
-                    contentLocation = validateCda (cdaFile,file.getName(),validator) ; 
-                    long estimatedTime = System.currentTimeMillis() - startTime;
-                    contentLocation = contentLocation + "/report?severityThreshold=WARNING";
-                    writeReports(contentLocation,pathtoWrite+ "." + "cdaReports.xml", estimatedTime,file.getName());
+                    Long startTime ;
+                    long estimatedTime;
+                    String content;
+                    try{
+                        //String contentResponse = IOUtils.toString(response.getEntity().getContent(), StandardCharsets.UTF_8);
+                        String init ="Echec :  " + file.getName() + "("+ validator +")";
+                        Files.write( Paths.get(pathtoWrite+ "."  + "cdaReports.xml"), init.getBytes());
+                        Files.write( Paths.get(pathtoWrite+ "."  + "cdaReports.xml.html"), init.getBytes());
+                        startTime = System.currentTimeMillis();
+                        contentLocation = validateCda (cdaFile,file.getName(),validator) ; 
+                        estimatedTime = System.currentTimeMillis() - startTime;
+                        contentLocation = contentLocation + "/report?severityThreshold=WARNING";
+                        writeReports(contentLocation,pathtoWrite+ "." + "cdaReports.xml", estimatedTime,file.getName());
 
 
-                    String content = new String(Files.readAllBytes(Paths.get(pathtoWrite+ "." + "cdaReports.xml.html")), "UTF-8");
-                    content = content.replaceAll("panelsStayOpen-collapsexxxxx", "panelsStayOpen-collapse"+ UUID.randomUUID().toString());
-                    Files.write(Paths.get(pathtoWrite+ "." + "cdaReports.xml.html"), content.getBytes("UTF-8"));      
+                        content = new String(Files.readAllBytes(Paths.get(pathtoWrite+ "." + "cdaReports.xml.html")), "UTF-8");
+                        content = content.replaceAll("panelsStayOpen-collapsexxxxx", "panelsStayOpen-collapse"+ UUID.randomUUID().toString());
+                        Files.write(Paths.get(pathtoWrite+ "." + "cdaReports.xml.html"), content.getBytes("UTF-8"));      
 
-                    fileConsolidate.write(Files.readAllBytes( Paths.get(pathtoWrite+ "." + "cdaReports.xml.html")));
+                        fileConsolidate.write(Files.readAllBytes( Paths.get(pathtoWrite+ "." + "cdaReports.xml.html")));
+                        
+                     } catch (Exception exception) {
+                        System.out.print("Parse error: ");
+                        System.out.println(exception.getMessage());
+                     }
 
 
-                    validator = ".Validation sémantique (bêta)";
-                    startTime = System.currentTimeMillis();
-                    contentLocation = validateCda (cdaFile,file.getName(),validator) ; 
-                    estimatedTime = System.currentTimeMillis() - startTime;
-                    contentLocation = contentLocation + "/report?severityThreshold=WARNING";
-                    writeReports(contentLocation,pathtoWrite+ "." + "semReports.xml", estimatedTime,file.getName());   
+                     try{
+                        String init ="Echec :  " + file.getName() + "("+ validator +")";
+                        Files.write( Paths.get(pathtoWrite+ "."  + "semReports.xml"), init.getBytes());
+                        Files.write( Paths.get(pathtoWrite+ "."  + "semReports.xml.html"), init.getBytes());
+                        validator = ".Validation sémantique (bêta)";
+                        startTime = System.currentTimeMillis();
+                        contentLocation = validateCda (cdaFile,file.getName(),validator) ; 
+                        estimatedTime = System.currentTimeMillis() - startTime;
+                        contentLocation = contentLocation + "/report?severityThreshold=WARNING";
+                        writeReports(contentLocation,pathtoWrite+ "." + "semReports.xml", estimatedTime,file.getName());   
 
-                    content = new String(Files.readAllBytes(Paths.get(pathtoWrite+ "." + "semReports.xml.html")), "UTF-8");
-                    content = content.replaceAll("panelsStayOpen-collapsexxxxx", "panelsStayOpen-collapse"+ UUID.randomUUID().toString());
-                    Files.write(Paths.get(pathtoWrite+ "." + "semReports.xml.html"), content.getBytes("UTF-8"));      
+                        content = new String(Files.readAllBytes(Paths.get(pathtoWrite+ "." + "semReports.xml.html")), "UTF-8");
+                        content = content.replaceAll("panelsStayOpen-collapsexxxxx", "panelsStayOpen-collapse"+ UUID.randomUUID().toString());
+                        Files.write(Paths.get(pathtoWrite+ "." + "semReports.xml.html"), content.getBytes("UTF-8"));      
 
-                    fileConsolidate.write(Files.readAllBytes( Paths.get(pathtoWrite+ "." + "semReports.xml.html")));     
+                        fileConsolidate.write(Files.readAllBytes( Paths.get(pathtoWrite+ "." + "semReports.xml.html")));     
                     
-                    
+                     } catch (Exception exception) {
+                        System.out.print("Parse error: ");
+                        System.out.println(exception.getMessage());
+                     }
 
 
                     //Validation avec PH-Shematron
