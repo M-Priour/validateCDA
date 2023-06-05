@@ -149,11 +149,11 @@ public class validate {
             transformer.setParameter("nameFile", nameCDAFile);
             transformer.transform(xmlSource, result);
 
-       /* }catch (Exception exception)
+        }catch (Exception exception)
         {
             System.out.print("Parse error: ");
             System.out.println(exception.getMessage());
-        }*/
+        }
     }
     
 
