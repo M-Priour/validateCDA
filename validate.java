@@ -140,8 +140,8 @@ public class validate {
             //transformer = tf.newTransformer();
             //transformer.transform(new DOMSource(contentResponse), new StreamResult(outStream));
 
-            final Source xmlSource = new javax.xml.transform.stream.StreamSource( nameFile);
-            final Source xsltSource = new javax.xml.transform.stream.StreamSource("svrl-to-html.xsl");
+            final Source xmlSource = new javax.xml.transform.stream.StreamSource(new File(nameFile));
+            final Source xsltSource = new javax.xml.transform.stream.StreamSource(new File("svrl-to-html.xsl"));
             final Result result = new javax.xml.transform.stream.StreamResult(nameFile+".html");
     
             transformer = tf.newTransformer(xsltSource);
@@ -397,6 +397,8 @@ public class validate {
                     Files.write(Paths.get(pathtoWrite+ "." + "cdaReports.xml.html"), content.getBytes("UTF-8"));      
 
                     fileConsolidate.write(Files.readAllBytes( Paths.get(pathtoWrite+ "." + "cdaReports.xml.html")));
+
+
                     validator = ".Validation sémantique (bêta)";
                     startTime = System.currentTimeMillis();
                     contentLocation = validateCda (cdaFile,file.getName(),validator) ; 
