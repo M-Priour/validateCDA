@@ -405,13 +405,13 @@ public class validate {
                     contentLocation = validateCda (cdaFile,file.getName(),validator) ; 
                     estimatedTime = System.currentTimeMillis() - startTime;
                     contentLocation = contentLocation + "/report?severityThreshold=WARNING";
-                    writeReports(contentLocation,pathtoWrite+ "." + "semantiqueReports.xml", estimatedTime,file.getName());   
+                    writeReports(contentLocation,pathtoWrite+ "." + "semReports.xml", estimatedTime,file.getName());   
 
-                    content = new String(Files.readAllBytes(Paths.get(pathtoWrite+ "." + "semantiqueReports.xml.html")), "UTF-8");
+                    content = new String(Files.readAllBytes(Paths.get(pathtoWrite+ "." + "semReports.xml.html")), "UTF-8");
                     content = content.replaceAll("panelsStayOpen-collapsexxxxx", "panelsStayOpen-collapse"+ UUID.randomUUID().toString());
-                    Files.write(Paths.get(pathtoWrite+ "." + "semantiqueReports.xml.html"), content.getBytes("UTF-8"));      
+                    Files.write(Paths.get(pathtoWrite+ "." + "semReports.xml.html"), content.getBytes("UTF-8"));      
 
-                    fileConsolidate.write(Files.readAllBytes( Paths.get(pathtoWrite+ "." + "semantiqueReports.xml.html")));     
+                    fileConsolidate.write(Files.readAllBytes( Paths.get(pathtoWrite+ "." + "semReports.xml.html")));     
                     
                     
 
