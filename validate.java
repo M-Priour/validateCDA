@@ -133,7 +133,7 @@ public class validate {
             // extract response of validation request
             String contentResponse = IOUtils.toString(response.getEntity().getContent());
             Files.write( Paths.get(nameFile), contentResponse.getBytes());
-            System.out.println(contentResponse);
+
 
             TransformerFactory tf = TransformerFactory.newInstance();
             Transformer transformer;
@@ -153,6 +153,7 @@ public class validate {
         {
             System.out.print("Parse error: ");
             System.out.println(exception.getMessage());
+            exception.printStackTrace(System.out);
         }
     }
     
