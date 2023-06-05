@@ -122,7 +122,7 @@ public class validate {
 
         nameFile =  StringUtils.stripAccents(nameFile);
         System.out.println("namefile :" +nameFile);
-        try{
+       // try{
             CloseableHttpClient httpClient = HttpClients.custom().build();
             final var post = new HttpGet(contentLocation);
             post.setHeader("Accept", "application/xml");
@@ -149,11 +149,11 @@ public class validate {
             transformer.setParameter("nameFile", nameCDAFile);
             transformer.transform(xmlSource, result);
 
-        }catch (Exception exception)
+       /* }catch (Exception exception)
         {
             System.out.print("Parse error: ");
             System.out.println(exception.getMessage());
-        }
+        }*/
     }
     
 
