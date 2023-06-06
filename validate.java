@@ -234,11 +234,11 @@ public class validate {
     }
 
 
-    public   static Document validatePhCda(String pathCda, String fileShematron) {
+    public   static Document validatePhCda(String pathCda, String fileShematron, Boolean modePure) {
        
         File fCda = new File(pathCda);
         long startTime = System.currentTimeMillis();
-        boolean modePure = true;
+        //boolean modePure = false;
         ISchematronResource aResPure;
               
         if(modePure)
@@ -409,14 +409,14 @@ public class validate {
                         System.out.println(exception.getMessage());
                      }
 
-
+                    String validatorB;
                      try{
                         String init ="Echec :  " + file.getName() + "("+ validator +")";
                         Files.write( Paths.get(pathtoWrite+ "."  + "semReports.xml"), init.getBytes());
                         Files.write( Paths.get(pathtoWrite+ "."  + "semReports.xml.html"), init.getBytes());
-                        validator = ".Validation sémantique (bêta)";
+                        validatorB = ".Validation sémantique (bêta)";
                         startTime = System.currentTimeMillis();
-                        contentLocation = validateCda (cdaFile,file.getName(),validator) ; 
+                        contentLocation = validateCda (cdaFile,file.getName(),validatorB) ; 
                         estimatedTime = System.currentTimeMillis() - startTime;
                         contentLocation = contentLocation + "/report?severityThreshold=WARNING";
                         writeReports(contentLocation,pathtoWrite+ "." + "semReports.xml", estimatedTime,file.getName());   
@@ -434,9 +434,11 @@ public class validate {
 
 
                     //Validation avec PH-Shematron
-                    validator = "ANS-Structuration_minimale";
+                    //validator = "ANS-Structuration_minimale";
                     String fileShematron = "./schematron/" + validator + "/schematron.sch";
-        
+                    File fShematron = new File(fileShematron);
+                    if(!fShematron.exists())
+                        validator = "ANS-Structuration_minimale";
                     System.out.println("Schematron : " + fileShematron);
                     //Chemin d'écriture du rapport de validation
                     Path path = Paths.get(file.getAbsolutePath());
@@ -452,7 +454,7 @@ public class validate {
 
 
                     startTime = System.currentTimeMillis();
-                    final Document aDoc = validatePhCda(file.getAbsolutePath(), fileShematron);
+                    final Document aDoc = validatePhCda(file.getAbsolutePath(), fileShematron, false);
                     estimatedTime = System.currentTimeMillis() - startTime;
                     System.out.println("Validation par ph-schematron : " + estimatedTime);
          
@@ -469,6 +471,7 @@ public class validate {
                     transformer.setParameter("elapsedTime", TimeUnit.MILLISECONDS.toSeconds(estimatedTime));
                     transformer.transform(xmlSource, result);
          
+                    
                     content = new String(Files.readAllBytes(Paths.get(pathtoWrite + "report.svrl.html")), "UTF-8");
                     content = content.replaceAll("panelsStayOpen-collapsexxxxx", "panelsStayOpen-collapse"+ UUID.randomUUID().toString());
                     Files.write(Paths.get(pathtoWrite + "report.svrl.html"), content.getBytes("UTF-8"));  
