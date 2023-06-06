@@ -12,12 +12,13 @@
 
   <xsl:template match="svrl:schematron-output">
 
+<xsl:variable name="nbErreur"  select="count(//svrl:failed-assert[@role!='warning' and not( contains(svrl:text, 'SHALL be distinct')) and not( contains(svrl:text, 'SHALL NOT have nullFlavor'))]) " />
 
 
   <div class="accordion-item">
     <h2 class="accordion-header">
     <xsl:choose>
-      <xsl:when test="@result='PASSED'">
+      <xsl:when test="$nbErreur=0">
         <button class="accordion-button collapsed" style="background-color:#438552;color:white" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsexxxxx" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
         Validation ph-schematron : <xsl:value-of select="$Validateur" />
                  <br/>Nombre d'erreurs : <xsl:value-of select="count(//svrl:failed-assert[@role!='warning' and not( contains(svrl:text, 'SHALL be distinct')) and not( contains(svrl:text, 'SHALL NOT have nullFlavor'))]) " />
@@ -27,7 +28,7 @@
         </button>
       </xsl:when>
        <xsl:otherwise>
-        <button class="accordion-button collapsed" style="background-color:#438552;color:white" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsexxxxx" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+        <button class="accordion-button collapsed" style="background-color:#894f55;color:white" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsexxxxx" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
         Validation ph-schematron : <xsl:value-of select="$Validateur" />
                 <br/>Nombre d'erreurs : <xsl:value-of select="count(//svrl:failed-assert[@role!='warning' and not( contains(svrl:text, 'SHALL be distinct')) and not( contains(svrl:text, 'SHALL NOT have nullFlavor'))]) " />
    <br/>Nombre de warnings :  <xsl:value-of select="count(//svrl:failed-assert[@role='warning'])" />
