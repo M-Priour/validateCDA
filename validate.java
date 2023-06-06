@@ -144,7 +144,7 @@ public class validate {
             final Source xmlSource = new javax.xml.transform.stream.StreamSource(new FileInputStream(nameFile));
             final Source xsltSource = new javax.xml.transform.stream.StreamSource(new FileInputStream("svrl-to-html.xsl"));
             //final Result result = new javax.xml.transform.stream.StreamResult(nameFile+".html");
-            final Result result = new javax.xml.transform.stream.StreamResult(new StringWriter());
+            final Result result = new javax.xml.transform.stream.StreamResult(new File(nameFile+".html"));
 
             transformer = tf.newTransformer(xsltSource);
             transformer.setParameter("elapsedTime", TimeUnit.MILLISECONDS.toSeconds(iTime));
