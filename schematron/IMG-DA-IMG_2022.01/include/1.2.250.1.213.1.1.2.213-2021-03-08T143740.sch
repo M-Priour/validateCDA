@@ -499,8 +499,8 @@ Item: (FR-DICOM-Quantite)
         <let name="theUnit" value="@unit"/>
         <let name="UCUMtest" value="doc('include/voc-UCUM.xml')/*/ucum[@unit=$theUnit]/@message"/>
         <assert role="warning" see="https://o3sis.esante.gouv.fr/art-decor/decor-templates--IMG-DA-IMG_2022-?id=1.2.250.1.213.1.1.3.154" test="$UCUMtest='OK' or string-length($UCUMtest)=0">(FR-DICOM-Quantite): value/@unit (PQ) SHALL be a valid UCUM unit (<value-of select="$UCUMtest"/>).</assert>
-        <let name="xsiLocalName" value="if (contains(@xsi:type, ':')) then substring-after(@xsi:type,':') else @xsi:type"/>
-        <let name="xsiLocalNS" value="if (contains(@xsi:type, ':')) then namespace-uri-for-prefix(substring-before(@xsi:type,':'),.) else namespace-uri-for-prefix('',.)"/>
+        <let name="xsiLocalName" value=" substring-after(@xsi:type,':')" />
+        <let name="xsiLocalNS" value="namespace-uri-for-prefix(substring-before(@xsi:type,':'),.)"/>
         <assert role="error" see="https://o3sis.esante.gouv.fr/art-decor/decor-templates--IMG-DA-IMG_2022-?id=1.2.250.1.213.1.1.3.154" test="@nullFlavor or ($xsiLocalName='PQ' and $xsiLocalNS='urn:hl7-org:v3')">(FR-DICOM-Quantite): If an @xsi:type instruction is present it SHALL be valued "{urn:hl7-org:v3}:PQ". Found "{<value-of select="namespace-uri-from-QName(resolve-QName(@xsi:type,.))"/>}:<value-of select="local-name-from-QName(resolve-QName(@xsi:type,.))"/>"</assert>
         <assert role="error" see="https://o3sis.esante.gouv.fr/art-decor/decor-templates--IMG-DA-IMG_2022-?id=1.2.250.1.213.1.1.3.154" test="not(@xsi:type) or string-length(@xsi:type)&gt;0">(FR-DICOM-Quantite): Attribute @xsi:type SHALL be of data type 'st'  - '<value-of select="@xsi:type"/>'</assert>
         <assert role="error" see="https://o3sis.esante.gouv.fr/art-decor/decor-templates--IMG-DA-IMG_2022-?id=1.2.250.1.213.1.1.3.154" test="@value">(FR-DICOM-Quantite): attribute @value SHALL be present.</assert>

@@ -9143,9 +9143,9 @@ Item: (FR-Statut-du-probleme)
         <let name="theCode" value="@code"/>
         <let name="theCodeSystem" value="@codeSystem"/>
         <assert role="error" see="https://o3sis.esante.gouv.fr/art-decor/decor-templates--OBP-SCE-?id=1.2.250.1.213.1.1.3.30" test="@nullFlavor or exists(doc('schematron/COMMON/VALUESETS/voc-2.16.840.1.113883.4.642.3.164-DYNAMIC.xml')//valueSet[1][conceptList/concept[@code = $theCode][@codeSystem = $theCodeSystem]]) or exists(doc('schematron/COMMON/VALUESETS/voc-2.16.840.1.113883.4.642.3.1372-DYNAMIC.xml')//valueSet[1][conceptList/concept[@code = $theCode][@codeSystem = $theCodeSystem]])">(FR-Statut-du-probleme): The element value SHALL be one of '2.16.840.1.113883.4.642.3.164 JDV_HL7_ConditionClinical-CISIS (DYNAMIC) or 2.16.840.1.113883.4.642.3.1372 JDV_HL7_allergyintolerance-clinical-CISIS (DYNAMIC)'.</assert>
-        <let name="xsiLocalName" value="if (contains(@xsi:type, ':')) then substring-after(@xsi:type,':') else @xsi:type"/>
-        <let name="xsiLocalNS" value="if (contains(@xsi:type, ':')) then namespace-uri-for-prefix(substring-before(@xsi:type,':'),.) else namespace-uri-for-prefix('',.)"/>
-        <assert role="error" see="https://o3sis.esante.gouv.fr/art-decor/decor-templates--OBP-SCE-?id=1.2.250.1.213.1.1.3.30" test="@nullFlavor or ($xsiLocalName='CE' and $xsiLocalNS='urn:hl7-org:v3') or not(@xsi:type)">(FR-Statut-du-probleme): If an @xsi:type instruction is present it SHALL be valued "{urn:hl7-org:v3}:CE". Found "{<value-of select="namespace-uri-from-QName(resolve-QName(@xsi:type,.))"/>}:<value-of select="local-name-from-QName(resolve-QName(@xsi:type,.))"/>"</assert>
+        <let name="xsiLocalName" value=" substring-after(@xsi:type,':')" />
+        <let name="xsiLocalNS" value="namespace-uri-for-prefix(substring-before(@xsi:type,':'),.)"/>
+        <assert role="error" see="https://o3sis.esante.gouv.fr/art-decor/decor-templates--OBP-SCE-?id=1.2.250.1.213.1.1.3.30" test="@nullFlavor or ((if (contains(@xsi:type, ':')) then substring-after(@xsi:type,':') else @xsi:type)='CE' and (if (contains(@xsi:type, ':')) then namespace-uri-for-prefix(substring-before(@xsi:type,':'),.) else namespace-uri-for-prefix('',.))='urn:hl7-org:v3') or not(@xsi:type)">(FR-Statut-du-probleme): If an @xsi:type instruction is present it SHALL be valued "{urn:hl7-org:v3}:CE". Found "{<value-of select="namespace-uri-from-QName(resolve-QName(@xsi:type,.))"/>}:<value-of select="local-name-from-QName(resolve-QName(@xsi:type,.))"/>"</assert>
     </rule>
 
    <!--
