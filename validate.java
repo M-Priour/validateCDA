@@ -453,7 +453,7 @@ public class validate {
                     FileOutputStream outStream = new FileOutputStream(pathtoWrite2); 
 
 
-                  /*   startTime = System.currentTimeMillis();
+                    startTime = System.currentTimeMillis();
                     final Document aDoc = validatePhCda(file.getAbsolutePath(), fileShematron, true);
                     estimatedTime = System.currentTimeMillis() - startTime;
                     System.out.println("Validation par ph-schematron : " + estimatedTime);
@@ -479,7 +479,7 @@ public class validate {
 
                     fileConsolidate.write(Files.readAllBytes( Paths.get(pathtoWrite + "report.svrl.html")));     
 
-*/
+
 
 
 
