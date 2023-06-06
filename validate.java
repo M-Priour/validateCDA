@@ -453,8 +453,8 @@ public class validate {
                     FileOutputStream outStream = new FileOutputStream(pathtoWrite2); 
 
 
-                    startTime = System.currentTimeMillis();
-                    final Document aDoc = validatePhCda(file.getAbsolutePath(), fileShematron, false);
+                  /*   startTime = System.currentTimeMillis();
+                    final Document aDoc = validatePhCda(file.getAbsolutePath(), fileShematron, true);
                     estimatedTime = System.currentTimeMillis() - startTime;
                     System.out.println("Validation par ph-schematron : " + estimatedTime);
          
@@ -462,7 +462,6 @@ public class validate {
                     transformer.transform(new DOMSource(aDoc), new StreamResult(outStream));
                     final Source xmlSource = new javax.xml.transform.stream.StreamSource(pathtoWrite2);
                     final Source xsltSource = new javax.xml.transform.stream.StreamSource("./ph-svrl-to-html.xsl");
-                    //final Result result = new javax.xml.transform.stream.StreamResult(pathtoWrite + "report.svrl.html");
                     final Result result = new javax.xml.transform.stream.StreamResult(new File(pathtoWrite + "report.svrl.html"));
                     TransformerFactory tFactory = TransformerFactory.newInstance();
                     transformer = tf.newTransformer(xsltSource);
@@ -480,7 +479,7 @@ public class validate {
 
                     fileConsolidate.write(Files.readAllBytes( Paths.get(pathtoWrite + "report.svrl.html")));     
 
-
+*/
 
 
 
