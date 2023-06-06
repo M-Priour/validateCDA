@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <valueSet xmlns="" id="2.16.840.1.113883.1.11.20386" name="JDV_HL7_SeverityObservationCode-CISIS" displayName="JDV_HL7_SeverityObservationCode-CISIS" effectiveDate="2021-03-15T00:00:00" statusCode="final" versionLabel="1.0">
+        <sourceCodeSystem id="2.16.840.1.113883.5.4" identifierName="Act&#160;Code" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-ActCode" canonicalUriDSTU2="http://hl7.org/fhir/v3/ActCode" canonicalUriSTU3="http://hl7.org/fhir/v3/ActCode" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+        <publishingAuthority name="Stéphane Croci"/>
+        <conceptList>
+            <concept code="SEV" displayName="Sévérité" codeSystem="2.16.840.1.113883.5.4" level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+</valueSets>

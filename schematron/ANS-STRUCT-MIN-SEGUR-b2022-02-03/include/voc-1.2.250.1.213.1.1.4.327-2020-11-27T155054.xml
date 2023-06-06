@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:local="http://art-decor.org/functions">
+    <valueSet xmlns="" id="1.2.250.1.213.1.1.4.327" name="TRE_R217-ProtectionJuridique" displayName="TRE_R217-ProtectionJuridique" statusCode="final" canonicalUri="https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique" effectiveDate="2020-11-27T15:50:54" ident="CI-SIS-JDV-" url="https://o3sis.esante.gouv.fr/decor/services/" referencedFrom="ASIP-STRUCT-MIN-">
+        <sourceCodeSystem id="1.2.250.1.213.1.1.4.327" identifierName="" canonicalUri="https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique" canonicalUriDSTU2="https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique" canonicalUriSTU3="https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique" canonicalUriR4="https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique"/>
+        <publishingAuthority name="ASIP Santé"/>
+        <completeCodeSystem codeSystem="1.2.250.1.213.1.1.4.327"/>
+        <conceptList>
+            <concept code="TUTEUR" codeSystem="1.2.250.1.213.1.1.4.327" displayName="Tuteur" level="0" type="L"/>
+            <concept code="CURATEUR" codeSystem="1.2.250.1.213.1.1.4.327" displayName="Curateur" level="0" type="L"/>
+            <concept code="MSVG" codeSystem="1.2.250.1.213.1.1.4.327" displayName="Mandataire de sauvegarde" level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+</valueSets>

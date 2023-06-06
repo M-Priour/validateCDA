@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <valueSet xmlns="" id="1.2.250.1.213.1.1.4.2.281.2" name="JDV_OMSInterpret-CISIS" displayName="JDV_OMSInterpret-CISIS" effectiveDate="2021-03-15T00:00:00" statusCode="final" versionLabel="1.0">
+        <sourceCodeSystem id="1.2.250.1.213.1.1.4.322" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriDSTU2="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriSTU3="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriR4="urn:oid:1.2.250.1.213.1.1.4.322"/>
+        <publishingAuthority name="Stéphane Croci"/>
+        <conceptList>
+            <concept code="MED-241" displayName="Capable d'une activité identique à celle précédant la maladie sans aucune restriction." codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+            <concept code="MED-260" displayName="Activité physique diminuée mais ambulatoire et capable de mener un travail" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+            <concept code="MED-261" displayName="Ambulatoire et capable de prendre soin de soi-même, incapable de travailler. Alité moins de 50 % de son temps" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+            <concept code="MED-262" displayName="Capable seulement de quelques soins. Alité ou en chaise plus de 50 % du temps" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+            <concept code="MED-263" displayName="Incapable de prendre soins de soi-même. Alité ou en chaise en permanence" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+</valueSets>

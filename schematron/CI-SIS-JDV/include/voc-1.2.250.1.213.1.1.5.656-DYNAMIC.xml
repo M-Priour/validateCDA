@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <valueSet xmlns="" id="1.2.250.1.213.1.1.5.656" name="JDV_MesureLentilleDelivree-CISIS" displayName="JDV_MesureLentilleDelivree-CISIS" effectiveDate="2021-03-15T00:00:00" statusCode="final" versionLabel="1.0">
+        <sourceCodeSystem id="2.16.840.1.113883.6.1" identifierName="Logical&#160;Observation&#160;Identifier&#160;Names&#160;and&#160;Codes" canonicalUri="http://loinc.org" canonicalUriDSTU2="http://loinc.org" canonicalUriSTU3="http://loinc.org" canonicalUriR4="http://loinc.org"/>
+        <sourceCodeSystem id="1.2.250.1.213.1.1.4.322" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriDSTU2="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriSTU3="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriR4="urn:oid:1.2.250.1.213.1.1.4.322"/>
+        <sourceCodeSystem id="2.16.840.1.113883.3.26.1.1" identifierName="NCI&#160;Thesaurus" canonicalUri="urn:oid:2.16.840.1.113883.3.26.1.1" canonicalUriDSTU2="urn:oid:2.16.840.1.113883.3.26.1.1" canonicalUriSTU3="urn:oid:2.16.840.1.113883.3.26.1.1" canonicalUriR4="urn:oid:2.16.840.1.113883.3.26.1.1"/>
+        <publishingAuthority name="Stéphane Croci"/>
+        <conceptList>
+            <concept code="11778-8" displayName="Date De délivrance" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+            <concept code="80418-7" displayName="Produit d'entretien" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+            <concept code="28866-2" displayName="Type de lentille" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+            <concept code="GEN-292" displayName="Commentaire" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+            <concept code="C53610" displayName="Renouvellement" codeSystem="2.16.840.1.113883.3.26.1.1" level="0" type="L"/>
+            <concept code="C43383" displayName="Marque et Modèle" codeSystem="2.16.840.1.113883.3.26.1.1" level="0" type="L"/>
+            <concept code="MED-1089" displayName="Diamètre lentille - lentille délivrée" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+            <concept code="MED-1090" displayName="Rayon 1 lentille - lentille délivrée" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+            <concept code="MED-1091" displayName="Rayon 2 lentille - lentille délivrée" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+            <concept code="MED-896" displayName="Autres paramètres" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+            <concept code="MED-1092" displayName="Puissance de la sphère - lentille délivrée" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+            <concept code="MED-1093" displayName="Puissance du cylindre - lentille délivrée" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+            <concept code="95325-7" displayName="Axe en degrés des lentilles" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+            <concept code="28814-2" displayName="Addition - grandeur" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+            <concept code="28815-9" displayName="Addition - valeur" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+</valueSets>

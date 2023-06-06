@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <valueSet xmlns="" id="1.2.250.1.213.1.1.5.90" name="JDV_BIO_Chapitres-CISIS" displayName="JDV_BIO_Chapitres-CISIS" effectiveDate="2021-03-15T00:00:00" statusCode="final" versionLabel="1.0">
+        <sourceCodeSystem id="2.16.840.1.113883.6.1" identifierName="Logical&#160;Observation&#160;Identifier&#160;Names&#160;and&#160;Codes" canonicalUri="http://loinc.org" canonicalUriDSTU2="http://loinc.org" canonicalUriSTU3="http://loinc.org" canonicalUriR4="http://loinc.org"/>
+        <sourceCodeSystem id="1.2.250.1.213.1.1.5.130" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.1.1.5.130" canonicalUriDSTU2="urn:oid:1.2.250.1.213.1.1.5.130" canonicalUriSTU3="urn:oid:1.2.250.1.213.1.1.5.130" canonicalUriR4="urn:oid:1.2.250.1.213.1.1.5.130"/>
+        <publishingAuthority name="Stéphane Croci"/>
+        <conceptList>
+            <concept code="18716-1" displayName="Allergie" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+            <concept code="18717-9" displayName="Immunohématologie" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+            <concept code="18718-7" displayName="Marqueurs cellulaires" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+            <concept code="18719-5" displayName="Biochimie" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+            <concept code="18720-3" displayName="Hémostase, coagulation" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+            <concept code="18721-1" displayName="Dosages de médicaments et substances" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+            <concept code="18722-9" displayName="Fertilité" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+            <concept code="18723-7" displayName="Hématologie" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+            <concept code="18724-5" displayName="HLA" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+            <concept code="18725-2" displayName="Microbiologie" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+            <concept code="18727-8" displayName="Auto-immunité" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+            <concept code="18728-6" displayName="Toxicologie" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+            <concept code="18729-4" displayName="Examens urinaires - cristallurie" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+            <concept code="18767-4" displayName="Gaz du sang" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+            <concept code="18768-2" displayName="NFS - Hémogramme" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+            <concept code="18769-0" displayName="Antibiogramme" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+            <concept code="26435-8" displayName="Génétique humaine" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+            <concept code="26436-6" displayName="Biologie polyvalente" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+            <concept code="26437-4" displayName="Épreuves dynamiques" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+            <concept code="26438-2" displayName="Cytologie" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+            <concept code="26439-0" displayName="Chirurgie" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+            <concept code="27898-6" displayName="Pathologie" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+            <concept code="82314-6" displayName="Prélèvement transmis à un laboratoire spécialisé" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+            <concept code="92892-9" displayName="Sérologie parasitaire" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+            <concept code="92893-7" displayName="Sérologie virale" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+            <concept code="92894-5" displayName="Sérologie bactérienne" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+            <concept code="92895-2" displayName="Endocrinologie" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+            <concept code="600238" displayName="Examens sur LCR" codeSystem="1.2.250.1.213.1.1.5.130" level="0" type="L"/>
+            <concept code="692344" displayName="Examens sur liquide de ponction" codeSystem="1.2.250.1.213.1.1.5.130" level="0" type="L"/>
+            <concept code="572177" displayName="HPA" codeSystem="1.2.250.1.213.1.1.5.130" level="0" type="L"/>
+            <concept code="859127" displayName="Examens sur selles" codeSystem="1.2.250.1.213.1.1.5.130" level="0" type="L"/>
+            <concept code="930894" displayName="Biologie moléculaire" codeSystem="1.2.250.1.213.1.1.5.130" level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+</valueSets>

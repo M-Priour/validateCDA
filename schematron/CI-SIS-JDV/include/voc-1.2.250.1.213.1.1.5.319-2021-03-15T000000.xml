@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <valueSet xmlns="" id="1.2.250.1.213.1.1.5.319" name="JDV_Larynx-pN-carcinome-sauf-melanome-muqueux-malin-CISIS" displayName="JDV_Larynx-pN-carcinome-sauf-melanome-muqueux-malin-CISIS" effectiveDate="2021-03-15T00:00:00" statusCode="final" versionLabel="1.0">
+        <sourceCodeSystem id="1.3.6.1.4.1.19376.1.8.2.1" identifierName="PathLex&#160;Anatomic&#160;Pathology&#160;Lexicon" canonicalUri="urn:oid:1.3.6.1.4.1.19376.1.8.2.1" canonicalUriDSTU2="urn:oid:1.3.6.1.4.1.19376.1.8.2.1" canonicalUriSTU3="urn:oid:1.3.6.1.4.1.19376.1.8.2.1" canonicalUriR4="urn:oid:1.3.6.1.4.1.19376.1.8.2.1"/>
+        <publishingAuthority name="Stéphane Croci"/>
+        <conceptList>
+            <concept code="1404" displayName="pN0: No regional lymph node metastasis" codeSystem="1.3.6.1.4.1.19376.1.8.2.1" level="0" type="L"/>
+            <concept code="1405" displayName="pN1: Metastasis in a single ipsilateral lymph node, 3 cm or less in greatest dimension" codeSystem="1.3.6.1.4.1.19376.1.8.2.1" level="0" type="L"/>
+            <concept code="1406" displayName="pN2: Metastasis in a single ipsilateral lymph node, more than 3 cm but not more than 6 cm in greatest dimension, or in multiple ipsilateral lymph nodes, none more than 6 cm in greatest dimension, or in bilateral or contralateral lymph nodes, none more than 6 cm in greatest dimension" codeSystem="1.3.6.1.4.1.19376.1.8.2.1" level="0" type="L"/>
+            <concept code="1407" displayName="pN2a: Metastasis in a single ipsilateral lymph node, more than 3 cm but not more than 6 cm in greatest dimension" codeSystem="1.3.6.1.4.1.19376.1.8.2.1" level="0" type="L"/>
+            <concept code="1408" displayName="pN2b: Metastasis in multiple ipsilateral lymph nodes, none more than 6 cm in greatest dimension" codeSystem="1.3.6.1.4.1.19376.1.8.2.1" level="0" type="L"/>
+            <concept code="1409" displayName="pN2c: Metastasis in bilateral or contralateral lymph nodes, none more than 6 cm in greatest dimension" codeSystem="1.3.6.1.4.1.19376.1.8.2.1" level="0" type="L"/>
+            <concept code="1410" displayName="pN3: Metastasis in a lymph node more than 6 cm in greatest dimension" codeSystem="1.3.6.1.4.1.19376.1.8.2.1" level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+</valueSets>

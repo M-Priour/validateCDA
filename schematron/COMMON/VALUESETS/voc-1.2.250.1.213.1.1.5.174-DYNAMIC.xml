@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <valueSet xmlns="" id="1.2.250.1.213.1.1.5.174" name="JDV_AutreSymptomeExNeuro-CISIS" displayName="JDV_AutreSymptomeExNeuro-CISIS" effectiveDate="2021-03-15T00:00:00" statusCode="final" versionLabel="1.0">
+        <sourceCodeSystem id="1.2.250.1.213.1.1.4.321" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.1.1.4.321" canonicalUriDSTU2="urn:oid:1.2.250.1.213.1.1.4.321" canonicalUriSTU3="urn:oid:1.2.250.1.213.1.1.4.321" canonicalUriR4="urn:oid:1.2.250.1.213.1.1.4.321"/>
+        <sourceCodeSystem id="1.2.250.1.213.1.1.4.322" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriDSTU2="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriSTU3="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriR4="urn:oid:1.2.250.1.213.1.1.4.322"/>
+        <sourceCodeSystem id="1.2.250.1.213.2.12" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.2.12" canonicalUriDSTU2="urn:oid:1.2.250.1.213.2.12" canonicalUriSTU3="urn:oid:1.2.250.1.213.2.12" canonicalUriR4="urn:oid:1.2.250.1.213.2.12"/>
+        <sourceCodeSystem id="2.16.840.1.113883.6.3" identifierName="ICD10" canonicalUri="http://hl7.org/fhir/sid/icd-10" canonicalUriDSTU2="http://hl7.org/fhir/sid/icd-10" canonicalUriSTU3="http://hl7.org/fhir/sid/icd-10" canonicalUriR4="http://hl7.org/fhir/sid/icd-10"/>
+        <publishingAuthority name="Stéphane Croci"/>
+        <conceptList>
+            <concept code="AVC-126" displayName="Latéropulsion" codeSystem="1.2.250.1.213.1.1.4.321" level="0" type="L"/>
+            <concept code="MED-380" displayName="Déficit moteur de la main" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+            <concept code="MED-484" displayName="Latéropulsion" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+            <concept code="DA-41070" displayName="Affection du douxième nerf crânien" codeSystem="1.2.250.1.213.2.12" level="0" type="L"/>
+            <concept code="DA-48034" displayName="Syndrome de Claude Bernard-Horner" codeSystem="1.2.250.1.213.2.12" level="0" type="L"/>
+            <concept code="DA-74510" displayName="Diplopie" codeSystem="1.2.250.1.213.2.12" level="0" type="L"/>
+            <concept code="DA-74940" displayName="Cécité d'un oeil" codeSystem="1.2.250.1.213.2.12" level="0" type="L"/>
+            <concept code="DA-78500" displayName="Nystagmus" codeSystem="1.2.250.1.213.2.12" level="0" type="L"/>
+            <concept code="DF-D1670" displayName="Négligence" codeSystem="1.2.250.1.213.2.12" level="0" type="L"/>
+            <concept code="F-51702" displayName="Déglutition anormale" codeSystem="1.2.250.1.213.2.12" level="0" type="L"/>
+            <concept code="F-A5560" displayName="Trouble de la conscience" codeSystem="1.2.250.1.213.2.12" level="0" type="L"/>
+            <concept code="F-A5562" displayName="Confusion" codeSystem="1.2.250.1.213.2.12" level="0" type="L"/>
+            <concept code="F-A6000" displayName="Aphasie" codeSystem="1.2.250.1.213.2.12" level="0" type="L"/>
+            <concept code="F-A6660" displayName="Dysarthrie" codeSystem="1.2.250.1.213.2.12" level="0" type="L"/>
+            <concept code="F-F2020" displayName="Mydriase" codeSystem="1.2.250.1.213.2.12" level="0" type="L"/>
+            <concept code="F-F2030" displayName="Myosis" codeSystem="1.2.250.1.213.2.12" level="0" type="L"/>
+            <concept code="G98" displayName="Autres affections du système nerveux" codeSystem="2.16.840.1.113883.6.3" level="0" type="L"/>
+            <concept code="J39.2" displayName="Paralysie du pharynx" codeSystem="2.16.840.1.113883.6.3" level="0" type="L"/>
+            <concept code="K13.7" displayName="Paralysie du voile du palais" codeSystem="2.16.840.1.113883.6.3" level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+</valueSets>

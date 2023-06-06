@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <valueSet xmlns="" id="1.2.250.1.213.1.1.4.2.289.41" name="JDV_OBP_ModeSortie-CISIS" displayName="JDV_OBP_ModeSortie-CISIS" effectiveDate="2021-03-15T00:00:00" statusCode="final" versionLabel="1.0">
+        <sourceCodeSystem id="1.2.250.1.213.1.1.4.2.289" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.1.1.4.2.289" canonicalUriDSTU2="urn:oid:1.2.250.1.213.1.1.4.2.289" canonicalUriSTU3="urn:oid:1.2.250.1.213.1.1.4.2.289" canonicalUriR4="urn:oid:1.2.250.1.213.1.1.4.2.289"/>
+        <sourceCodeSystem id="1.2.250.1.213.2.12" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.2.12" canonicalUriDSTU2="urn:oid:1.2.250.1.213.2.12" canonicalUriSTU3="urn:oid:1.2.250.1.213.2.12" canonicalUriR4="urn:oid:1.2.250.1.213.2.12"/>
+        <sourceCodeSystem id="1.2.250.1.213.1.1.4.322" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriDSTU2="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriSTU3="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriR4="urn:oid:1.2.250.1.213.1.1.4.322"/>
+        <publishingAuthority name="Stéphane Croci"/>
+        <conceptList>
+            <concept code="OBS_228" displayName="Placement" codeSystem="1.2.250.1.213.1.1.4.2.289" level="0" type="L"/>
+            <concept code="OBS_270" displayName="Maison maternelle" codeSystem="1.2.250.1.213.1.1.4.2.289" level="0" type="L"/>
+            <concept code="OBS_271" displayName="Appartement thérapeutique" codeSystem="1.2.250.1.213.1.1.4.2.289" level="0" type="L"/>
+            <concept code="OBS_272" displayName="Famille d'accueil" codeSystem="1.2.250.1.213.1.1.4.2.289" level="0" type="L"/>
+            <concept code="OBS_273" displayName="Hôtel du SAMU social" codeSystem="1.2.250.1.213.1.1.4.2.289" level="0" type="L"/>
+            <concept code="OBS_307" displayName="Domicile - Bonne santé" codeSystem="1.2.250.1.213.1.1.4.2.289" level="0" type="L"/>
+            <concept code="OBS_308" displayName="Sage-femme dom. hors HAD" codeSystem="1.2.250.1.213.1.1.4.2.289" level="0" type="L"/>
+            <concept code="P0-20100" displayName="Départ de la patiente contre avis médical" codeSystem="1.2.250.1.213.2.12" level="0" type="L"/>
+            <concept code="P0-20300" displayName="Mutation (Transfert d'un patient dans un autre ES)" codeSystem="1.2.250.1.213.2.12" level="0" type="L"/>
+            <concept code="P0-20400" displayName="Transfert (Transfert du patient à l'intérieur de l'ES)" codeSystem="1.2.250.1.213.2.12" level="0" type="L"/>
+            <concept code="PA-63000" displayName="HAD" codeSystem="1.2.250.1.213.2.12" level="0" type="L"/>
+            <concept code="R99" displayName="Décès" codeSystem="1.2.250.1.213.2.12" level="0" type="L"/>
+            <concept code="GEN-092" displayName="Autre" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+</valueSets>

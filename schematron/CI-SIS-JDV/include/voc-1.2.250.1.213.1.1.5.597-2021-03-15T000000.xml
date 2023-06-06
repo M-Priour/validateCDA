@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <valueSet xmlns="" id="1.2.250.1.213.1.1.5.597" name="JDV_RCP-Appareil-CISIS" displayName="JDV_RCP-Appareil-CISIS" effectiveDate="2021-03-15T00:00:00" statusCode="final" versionLabel="1.0">
+        <sourceCodeSystem id="2.16.840.1.113883.3.26.1.1" identifierName="NCI&#160;Thesaurus" canonicalUri="urn:oid:2.16.840.1.113883.3.26.1.1" canonicalUriDSTU2="urn:oid:2.16.840.1.113883.3.26.1.1" canonicalUriSTU3="urn:oid:2.16.840.1.113883.3.26.1.1" canonicalUriR4="urn:oid:2.16.840.1.113883.3.26.1.1"/>
+        <publishingAuthority name="Stéphane Croci"/>
+        <conceptList>
+            <concept code="C16673" displayName="Hématologie" codeSystem="2.16.840.1.113883.3.26.1.1" level="0" type="L"/>
+            <concept code="C82347" displayName="Voies aéro-digestives supérieures" codeSystem="2.16.840.1.113883.3.26.1.1" level="0" type="L"/>
+            <concept code="C12470" displayName="Peau" codeSystem="2.16.840.1.113883.3.26.1.1" level="0" type="L"/>
+            <concept code="C12971" displayName="Sein" codeSystem="2.16.840.1.113883.3.26.1.1" level="0" type="L"/>
+            <concept code="C12366" displayName="Os" codeSystem="2.16.840.1.113883.3.26.1.1" level="0" type="L"/>
+            <concept code="C12471" displayName="Tissus mous" codeSystem="2.16.840.1.113883.3.26.1.1" level="0" type="L"/>
+            <concept code="C12799" displayName="Thorax et système respiratoire" codeSystem="2.16.840.1.113883.3.26.1.1" level="0" type="L"/>
+            <concept code="C12378" displayName="Système gastro-intestinal" codeSystem="2.16.840.1.113883.3.26.1.1" level="0" type="L"/>
+            <concept code="C12413" displayName="Système urinaire" codeSystem="2.16.840.1.113883.3.26.1.1" level="0" type="L"/>
+            <concept code="C61600" displayName="Système génital de la femme" codeSystem="2.16.840.1.113883.3.26.1.1" level="0" type="L"/>
+            <concept code="C61599" displayName="Système génital de l'homme" codeSystem="2.16.840.1.113883.3.26.1.1" level="0" type="L"/>
+            <concept code="C12755" displayName="Système nerveux" codeSystem="2.16.840.1.113883.3.26.1.1" level="0" type="L"/>
+            <concept code="C12401" displayName="Oeil" codeSystem="2.16.840.1.113883.3.26.1.1" level="0" type="L"/>
+            <concept code="C12704" displayName="Glande endocrine" codeSystem="2.16.840.1.113883.3.26.1.1" level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+</valueSets>

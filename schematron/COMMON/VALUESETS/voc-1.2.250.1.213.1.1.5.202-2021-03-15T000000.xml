@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <valueSet xmlns="" id="1.2.250.1.213.1.1.5.202" name="JDV_EtiologieHemorragie-CISIS" displayName="JDV_EtiologieHemorragie-CISIS" effectiveDate="2021-03-15T00:00:00" statusCode="final" versionLabel="1.0">
+        <sourceCodeSystem id="1.2.250.1.213.1.1.4.322" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriDSTU2="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriSTU3="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriR4="urn:oid:1.2.250.1.213.1.1.4.322"/>
+        <sourceCodeSystem id="1.2.250.1.213.2.12" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.2.12" canonicalUriDSTU2="urn:oid:1.2.250.1.213.2.12" canonicalUriSTU3="urn:oid:1.2.250.1.213.2.12" canonicalUriR4="urn:oid:1.2.250.1.213.2.12"/>
+        <publishingAuthority name="Stéphane Croci"/>
+        <conceptList>
+            <concept code="MED-473" displayName="Maladie petites artères" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+            <concept code="MED-474" displayName="Anticoagulant au long cours" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+            <concept code="MED-475" displayName="Angiopathie amyloïde" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+            <concept code="M-24600" displayName="Malformation vasculaire" codeSystem="1.2.250.1.213.2.12" level="0" type="L"/>
+            <concept code="GEN-092" displayName="Autre" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+</valueSets>

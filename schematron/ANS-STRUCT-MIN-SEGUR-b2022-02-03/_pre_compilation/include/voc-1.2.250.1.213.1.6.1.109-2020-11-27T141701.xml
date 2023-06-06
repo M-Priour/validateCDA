@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:local="http://art-decor.org/functions">
+    <valueSet xmlns="" id="1.2.250.1.213.1.6.1.109" name="TRE_R95-UsagerTitre" displayName="TRE_R95-UsagerTitre" statusCode="final" canonicalUri="https://mos.esante.gouv.fr/NOS/TRE_R95-UsagerTitre" effectiveDate="2020-11-27T14:17:01" ident="CI-SIS-JDV-" url="https://o3sis.esante.gouv.fr/decor/services/" referencedFrom="ASIP-STRUCT-MIN-">
+        <sourceCodeSystem id="1.2.250.1.213.1.6.1.109" identifierName="" canonicalUri="https://mos.esante.gouv.fr/NOS/TRE_R95-UsagerTitre" canonicalUriDSTU2="https://mos.esante.gouv.fr/NOS/TRE_R95-UsagerTitre" canonicalUriSTU3="https://mos.esante.gouv.fr/NOS/TRE_R95-UsagerTitre" canonicalUriR4="https://mos.esante.gouv.fr/NOS/TRE_R95-UsagerTitre"/>
+        <publishingAuthority name="ASIP Santé"/>
+        <completeCodeSystem codeSystem="1.2.250.1.213.1.6.1.109"/>
+        <conceptList>
+            <concept code="71" codeSystem="1.2.250.1.213.1.6.1.109" displayName="Ostéopathe" level="0" type="L"/>
+            <concept code="72" codeSystem="1.2.250.1.213.1.6.1.109" displayName="Psychothérapeute" level="0" type="L"/>
+            <concept code="73" codeSystem="1.2.250.1.213.1.6.1.109" displayName="Chiropracteur" level="0" type="L"/>
+            <concept code="93" codeSystem="1.2.250.1.213.1.6.1.109" displayName="Psychologue" level="0" type="L"/>
+            <concept code="97" codeSystem="1.2.250.1.213.1.6.1.109" displayName="Conseiller en génétique" level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+</valueSets>

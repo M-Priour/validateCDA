@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <valueSet xmlns="" id="1.2.250.1.213.1.1.5.181" name="JDV_NIHSSLoccInt-CISIS" displayName="JDV_NIHSSLoccInt-CISIS" statusCode="final" versionLabel="1.0" effectiveDate="2022-11-17T11:20:02">
+        <sourceCodeSystem id="2.16.840.1.113883.6.1" identifierName="Logical&#160;Observation&#160;Identifier&#160;Names&#160;and&#160;Codes" canonicalUri="http://loinc.org" canonicalUriDSTU2="http://loinc.org" canonicalUriSTU3="http://loinc.org" canonicalUriR4="http://loinc.org"/>
+        <publishingAuthority name="Stéphane Croci"/>
+        <conceptList>
+            <concept code="LA18443-4" codeSystem="2.16.840.1.113883.6.1" displayName="Exécute les deux ordres correctement." level="0" type="L"/>
+            <concept code="LA18444-2" codeSystem="2.16.840.1.113883.6.1" displayName="Exécute un seul ordre sur les deux." level="0" type="L"/>
+            <concept code="LA18445-9" codeSystem="2.16.840.1.113883.6.1" displayName="N'exécute aucun des deux ordres." level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+</valueSets>

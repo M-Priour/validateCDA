@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <valueSet xmlns="" id="1.2.250.1.213.1.1.4.2.289.38" name="JDV_OBP_LesionTraumatiqueObstetricale-CISIS" displayName="JDV_OBP_LesionTraumatiqueObstetricale-CISIS" effectiveDate="2021-03-15T00:00:00" statusCode="final" versionLabel="1.0">
+        <sourceCodeSystem id="2.16.840.1.113883.6.3" identifierName="ICD10" canonicalUri="http://hl7.org/fhir/sid/icd-10" canonicalUriDSTU2="http://hl7.org/fhir/sid/icd-10" canonicalUriSTU3="http://hl7.org/fhir/sid/icd-10" canonicalUriR4="http://hl7.org/fhir/sid/icd-10"/>
+        <publishingAuthority name="Stéphane Croci"/>
+        <conceptList>
+            <concept code="P11.3" displayName="Paralysie faciale due à un traumatisme obstétrical" codeSystem="2.16.840.1.113883.6.3" level="0" type="L"/>
+            <concept code="P13.4" displayName="Fracture de la clavicule due à un traumatisme obstétrical" codeSystem="2.16.840.1.113883.6.3" level="0" type="L"/>
+            <concept code="P14.3" displayName="Lésions du plexus brachial dues à un traumatisme obstétrical" codeSystem="2.16.840.1.113883.6.3" level="0" type="L"/>
+            <concept code="P15.4" displayName="Lésion faciale due à un traumatisme obstétrical" codeSystem="2.16.840.1.113883.6.3" level="0" type="L"/>
+            <concept code="P15.8" displayName="Autres traumatismes obstétricaux précisés" codeSystem="2.16.840.1.113883.6.3" level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+</valueSets>

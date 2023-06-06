@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <valueSet xmlns="" id="1.2.250.1.213.1.1.5.106" name="JDV_VaccinCSE9-CISIS" displayName="JDV_VaccinCSE9-CISIS" statusCode="deprecated" versionLabel="1.0" effectiveDate="2021-03-15T00:00:00">
+        <sourceCodeSystem id="1.2.250.1.213.1.1.4.322" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriDSTU2="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriSTU3="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriR4="urn:oid:1.2.250.1.213.1.1.4.322"/>
+        <sourceCodeSystem id="1.2.250.1.213.2.12" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.2.12" canonicalUriDSTU2="urn:oid:1.2.250.1.213.2.12" canonicalUriSTU3="urn:oid:1.2.250.1.213.2.12" canonicalUriR4="urn:oid:1.2.250.1.213.2.12"/>
+        <publishingAuthority name="Stéphane Croci"/>
+        <conceptList>
+            <concept code="MED-207" displayName="Vaccin contre la diphtérie, tétanos et poliomyélite (DT Polio)" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+            <concept code="C-B6140" displayName="Vaccin contre la coqueluche" codeSystem="1.2.250.1.213.2.12" level="0" type="L"/>
+            <concept code="C-B6060" displayName="Vaccin contre l'Haemophilus influenzae de type b" codeSystem="1.2.250.1.213.2.12" level="0" type="L"/>
+            <concept code="C-B6050" displayName="Vaccin contre l'hépatite B" codeSystem="1.2.250.1.213.2.12" level="0" type="L"/>
+            <concept code="C-B60A0" displayName="Vaccin contre le pneumocoque" codeSystem="1.2.250.1.213.2.12" level="0" type="L"/>
+            <concept code="C-B6010" displayName="Vaccin contre la tuberculose (BCG)" codeSystem="1.2.250.1.213.2.12" level="0" type="L"/>
+            <concept code="MED-205" displayName="Autres vaccins" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+            <concept code="MED-216" displayName="Vaccin contre le méningocoque C" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+</valueSets>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <valueSet xmlns="" id="1.2.250.1.213.1.1.4.2.283.4" name="JDV_SocialHistoryCodes-CISIS" displayName="JDV_SocialHistoryCodes-CISIS" statusCode="final" versionLabel="1.0" effectiveDate="2022-11-02T10:47:39">
+        <sourceCodeSystem id="2.16.840.1.113883.6.1" identifierName="Logical&#160;Observation&#160;Identifier&#160;Names&#160;and&#160;Codes" canonicalUri="http://loinc.org" canonicalUriDSTU2="http://loinc.org" canonicalUriSTU3="http://loinc.org" canonicalUriR4="http://loinc.org"/>
+        <publishingAuthority name="Stéphane Croci"/>
+        <conceptList>
+            <concept code="73985-4" codeSystem="2.16.840.1.113883.6.1" displayName="Exercice physique" level="0" type="L"/>
+            <concept code="92944-8" codeSystem="2.16.840.1.113883.6.1" displayName="Exposition à des produits toxiques" level="0" type="L"/>
+            <concept code="11295-3" codeSystem="2.16.840.1.113883.6.1" displayName="Facteur social relié à la vie professionnelle" level="0" type="L"/>
+            <concept code="74013-4" codeSystem="2.16.840.1.113883.6.1" displayName="Consommation d'alcool" level="0" type="L"/>
+            <concept code="42831-8" codeSystem="2.16.840.1.113883.6.1" displayName="Consommation de drogue" level="0" type="L"/>
+            <concept code="11345-6" codeSystem="2.16.840.1.113883.6.1" displayName="Autre élément social" level="0" type="L"/>
+            <concept code="81663-7" codeSystem="2.16.840.1.113883.6.1" displayName="Régime" level="0" type="L"/>
+            <concept code="74011-8" codeSystem="2.16.840.1.113883.6.1" displayName="Consommation tabagique" level="0" type="L"/>
+            <concept code="29556-8" codeSystem="2.16.840.1.113883.6.1" displayName="Trouble du comportement" level="0" type="L"/>
+            <concept code="72166-2" codeSystem="2.16.840.1.113883.6.1" displayName="Statut tabagique" level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+</valueSets>

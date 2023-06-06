@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <valueSet xmlns="" id="1.2.250.1.213.1.1.5.193" name="JDV_ExamenHematologieAUVN-CISIS" displayName="JDV_ExamenHematologieAUVN-CISIS" effectiveDate="2021-03-15T00:00:00" statusCode="final" versionLabel="1.0">
+        <sourceCodeSystem id="2.16.840.1.113883.6.1" identifierName="Logical&#160;Observation&#160;Identifier&#160;Names&#160;and&#160;Codes" canonicalUri="http://loinc.org" canonicalUriDSTU2="http://loinc.org" canonicalUriSTU3="http://loinc.org" canonicalUriR4="http://loinc.org"/>
+        <publishingAuthority name="Stéphane Croci"/>
+        <conceptList>
+            <concept code="789-8" displayName="Erythtocytes [Nombre/Volume] Sang ; Numérique ; Comptage automate" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+            <concept code="20509-6" displayName="Hémoglobine [Masse/Volume] Sang ; Numérique ; Résultat calculé" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+            <concept code="4544-3" displayName="Hématocrite [Fraction volumique] Sang ; Numérique ; Comptage automate" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+            <concept code="787-2" displayName="Volume globulaire moyen [Volume d'entité] Erythrocytes ; Numérique ; Comptage automate" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+            <concept code="786-4" displayName="Concentration corpusculaire moyenne en hémoglobine [Masse/Volume] Érythrocytes ; Numérique ; Comptage automate" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+            <concept code="785-6" displayName="Teneur corpusculaire moyenne en hémoglobine [Masse d'entité] Erythrocytes ; Numérique ; Comptage automate" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+            <concept code="777-3" displayName="Plaquettes [Nombre/Volume] Sang ; Numérique ; Comptage automate" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+            <concept code="6690-2" displayName="Leucocytes [Nombre/Volume] Sang ; Num&amp;#xE9;rique ; Comptage automate" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+            <concept code="770-8" displayName="Polynuclaires neutrophiles/100 leucocytes [Fraction de nombres] Sang ; Numérique ; Comptage automate" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+            <concept code="713-8" displayName="Polynuclaires éosinophiles/100 leucocytes [Fraction de nombres] Sang ; Numérique ; Comptage automate" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+            <concept code="706-2" displayName="Polynuclaires basophiles/100 leucocytes [Fraction de nombres] Sang ; Numérique ; Comptage automate" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+            <concept code="736-9" displayName="Lymphocytes/100 leucocytes [Fraction de nombres] Sang ; Numérique ; Comptage automate" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+            <concept code="5905-5" displayName="Monocytes/100 leucocytes [Fraction de nombres] Sang ; Num&amp;#xE9;rique ; Comptage automate" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+</valueSets>

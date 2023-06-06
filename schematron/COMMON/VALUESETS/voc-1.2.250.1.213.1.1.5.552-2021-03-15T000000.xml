@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <valueSet xmlns="" id="1.2.250.1.213.1.1.5.552" name="JDV_ExamenMacroscopieLocalisationZoneInteret_CISIS" displayName="JDV_ExamenMacroscopieLocalisationZoneInteret_CISIS" effectiveDate="2021-03-15T00:00:00" statusCode="final" versionLabel="1.0">
+        <sourceCodeSystem id="2.16.840.1.113883.3.26.1.1" identifierName="NCI&#160;Thesaurus" canonicalUri="urn:oid:2.16.840.1.113883.3.26.1.1" canonicalUriDSTU2="urn:oid:2.16.840.1.113883.3.26.1.1" canonicalUriSTU3="urn:oid:2.16.840.1.113883.3.26.1.1" canonicalUriR4="urn:oid:2.16.840.1.113883.3.26.1.1"/>
+        <sourceCodeSystem id="1.2.250.1.213.1.1.4.322" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriDSTU2="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriSTU3="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriR4="urn:oid:1.2.250.1.213.1.1.4.322"/>
+        <publishingAuthority name="Stéphane Croci"/>
+        <conceptList>
+            <concept code="C12381" displayName="Caecum" codeSystem="2.16.840.1.113883.3.26.1.1" level="0" type="L"/>
+            <concept code="C12265" displayName="Côlon ascendant" codeSystem="2.16.840.1.113883.3.26.1.1" level="0" type="L"/>
+            <concept code="C12266" displayName="Angle colique droit" codeSystem="2.16.840.1.113883.3.26.1.1" level="0" type="L"/>
+            <concept code="C12385" displayName="Côlon transverse" codeSystem="2.16.840.1.113883.3.26.1.1" level="0" type="L"/>
+            <concept code="C12267" displayName="Angle colique gauche" codeSystem="2.16.840.1.113883.3.26.1.1" level="0" type="L"/>
+            <concept code="C12268" displayName="Côlon descendant" codeSystem="2.16.840.1.113883.3.26.1.1" level="0" type="L"/>
+            <concept code="C12384" displayName="Côlon sigmoïde" codeSystem="2.16.840.1.113883.3.26.1.1" level="0" type="L"/>
+            <concept code="C103438" displayName="Colon rectosigmoïde" codeSystem="2.16.840.1.113883.3.26.1.1" level="0" type="L"/>
+            <concept code="C12390" displayName="Rectum" codeSystem="2.16.840.1.113883.3.26.1.1" level="0" type="L"/>
+            <concept code="GEN-021" displayName="Non déterminé" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+</valueSets>

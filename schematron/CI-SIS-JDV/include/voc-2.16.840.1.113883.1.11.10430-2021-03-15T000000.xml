@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <valueSet xmlns="" id="2.16.840.1.113883.1.11.10430" name="JDV_HL7_RoleClassIngredientEntity-CISIS" displayName="JDV_HL7_RoleClassIngredientEntity-CISIS" effectiveDate="2021-03-15T00:00:00" statusCode="final" versionLabel="1.0">
+        <sourceCodeSystem id="2.16.840.1.113883.5.110" identifierName="Role&#160;Class" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-RoleClass" canonicalUriDSTU2="http://hl7.org/fhir/v3/RoleClass" canonicalUriSTU3="http://hl7.org/fhir/v3/RoleClass" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
+        <publishingAuthority name="Stéphane Croci"/>
+        <conceptList>
+            <concept code="INGR" displayName="Ingrédient" codeSystem="2.16.840.1.113883.5.110" level="0" type="L"/>
+            <concept code="ACTI" displayName="Ingredient actif" codeSystem="2.16.840.1.113883.5.110" level="0" type="L"/>
+            <concept code="ADJV" displayName="Adjuvant" codeSystem="2.16.840.1.113883.5.110" level="0" type="L"/>
+            <concept code="ADTV" displayName="Additif" codeSystem="2.16.840.1.113883.5.110" level="0" type="L"/>
+            <concept code="BASE" displayName="Base" codeSystem="2.16.840.1.113883.5.110" level="0" type="L"/>
+            <concept code="CNTM" displayName="Ingredient contaminant" codeSystem="2.16.840.1.113883.5.110" level="0" type="L"/>
+            <concept code="IACT" displayName="Ingredient inactif" codeSystem="2.16.840.1.113883.5.110" level="0" type="L"/>
+            <concept code="MECH" displayName="Ingrédient mécanique" codeSystem="2.16.840.1.113883.5.110" level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+</valueSets>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <valueSet xmlns="" id="1.2.250.1.213.1.1.4.2.289.24" name="JDV_OBP_MotifDeclenchementTravail-CISIS" displayName="JDV_OBP_MotifDeclenchementTravail-CISIS" effectiveDate="2021-03-15T00:00:00" statusCode="final" versionLabel="1.0">
+        <sourceCodeSystem id="1.2.250.1.213.2.12" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.2.12" canonicalUriDSTU2="urn:oid:1.2.250.1.213.2.12" canonicalUriSTU3="urn:oid:1.2.250.1.213.2.12" canonicalUriR4="urn:oid:1.2.250.1.213.2.12"/>
+        <sourceCodeSystem id="1.2.250.1.213.1.1.4.2.289" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.1.1.4.2.289" canonicalUriDSTU2="urn:oid:1.2.250.1.213.1.1.4.2.289" canonicalUriSTU3="urn:oid:1.2.250.1.213.1.1.4.2.289" canonicalUriR4="urn:oid:1.2.250.1.213.1.1.4.2.289"/>
+        <sourceCodeSystem id="1.2.250.1.213.1.1.4.322" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriDSTU2="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriSTU3="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriR4="urn:oid:1.2.250.1.213.1.1.4.322"/>
+        <publishingAuthority name="Stéphane Croci"/>
+        <conceptList>
+            <concept code="D8-12200" displayName="Grossesse prolongée" codeSystem="1.2.250.1.213.2.12" level="0" type="L"/>
+            <concept code="D8-22120" displayName="Rupture prématurée des membranes" codeSystem="1.2.250.1.213.2.12" level="0" type="L"/>
+            <concept code="F-88450" displayName="Mort in utero" codeSystem="1.2.250.1.213.2.12" level="0" type="L"/>
+            <concept code="OBS_002" displayName="IMG" codeSystem="1.2.250.1.213.1.1.4.2.289" level="0" type="L"/>
+            <concept code="OBS_205" displayName="Sans indication médicale" codeSystem="1.2.250.1.213.1.1.4.2.289" level="0" type="L"/>
+            <concept code="MED-219" displayName="Cause Maternelle" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+            <concept code="MED-210" displayName="Cause Fotale" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+            <concept code="GEN-092" displayName="Autre" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+</valueSets>

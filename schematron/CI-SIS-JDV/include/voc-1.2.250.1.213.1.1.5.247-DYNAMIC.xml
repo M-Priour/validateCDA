@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <valueSet xmlns="" id="1.2.250.1.213.1.1.5.247" name="JDV_Col-Uterus-Type-histologique-lesion-neoplasique-maligne-invasive-CISIS" displayName="JDV_Col-Uterus-Type-histologique-lesion-neoplasique-maligne-invasive-CISIS" effectiveDate="2021-03-15T00:00:00" statusCode="final" versionLabel="1.0">
+        <sourceCodeSystem id="1.3.6.1.4.1.19376.1.8.2.1" identifierName="PathLex&#160;Anatomic&#160;Pathology&#160;Lexicon" canonicalUri="urn:oid:1.3.6.1.4.1.19376.1.8.2.1" canonicalUriDSTU2="urn:oid:1.3.6.1.4.1.19376.1.8.2.1" canonicalUriSTU3="urn:oid:1.3.6.1.4.1.19376.1.8.2.1" canonicalUriR4="urn:oid:1.3.6.1.4.1.19376.1.8.2.1"/>
+        <publishingAuthority name="Stéphane Croci"/>
+        <conceptList>
+            <concept code="507" displayName="Carcinome invasif (SAI)" codeSystem="1.3.6.1.4.1.19376.1.8.2.1" level="0" type="L"/>
+            <concept code="508" displayName="Adénocarcinome mucineux : endocervical" codeSystem="1.3.6.1.4.1.19376.1.8.2.1" level="0" type="L"/>
+            <concept code="509" displayName="Adénocarcinome mucineux : intestinal" codeSystem="1.3.6.1.4.1.19376.1.8.2.1" level="0" type="L"/>
+            <concept code="510" displayName="Adénocarcinome mucineux : à cellules en bague à chaton" codeSystem="1.3.6.1.4.1.19376.1.8.2.1" level="0" type="L"/>
+            <concept code="511" displayName="Adénocarcinome mucineux : à déviation minime" codeSystem="1.3.6.1.4.1.19376.1.8.2.1" level="0" type="L"/>
+            <concept code="512" displayName="Adénocarcinome mucineux : villoglandulaire" codeSystem="1.3.6.1.4.1.19376.1.8.2.1" level="0" type="L"/>
+            <concept code="513" displayName="Adénocarcinome endométrioïde" codeSystem="1.3.6.1.4.1.19376.1.8.2.1" level="0" type="L"/>
+            <concept code="514" displayName="Adénocarcinome à cellules claires" codeSystem="1.3.6.1.4.1.19376.1.8.2.1" level="0" type="L"/>
+            <concept code="515" displayName="Adénocarcinome séreux" codeSystem="1.3.6.1.4.1.19376.1.8.2.1" level="0" type="L"/>
+            <concept code="516" displayName="Adénocarcinome mésonéphrique" codeSystem="1.3.6.1.4.1.19376.1.8.2.1" level="0" type="L"/>
+            <concept code="517" displayName="Carcinome indifférencié" codeSystem="1.3.6.1.4.1.19376.1.8.2.1" level="0" type="L"/>
+            <concept code="518" displayName="Carcinome à petites cellules" codeSystem="1.3.6.1.4.1.19376.1.8.2.1" level="0" type="L"/>
+            <concept code="1437" displayName="Carcinome épidermoïde invasif (SAI)" codeSystem="1.3.6.1.4.1.19376.1.8.2.1" level="0" type="L"/>
+            <concept code="1438" displayName="Adénoarcinome invasif (SAI)" codeSystem="1.3.6.1.4.1.19376.1.8.2.1" level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+</valueSets>

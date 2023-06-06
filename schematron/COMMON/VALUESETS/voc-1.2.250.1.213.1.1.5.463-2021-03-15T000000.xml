@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <valueSet xmlns="" id="1.2.250.1.213.1.1.5.463" name="JDV_J08-XdsConfidentialityCode-CISIS" displayName="JDV_J08-XdsConfidentialityCode-CISIS" effectiveDate="2021-03-15T00:00:00" statusCode="final" versionLabel="1.0">
+        <sourceCodeSystem id="2.16.840.1.113883.5.25" identifierName="Confidentiality" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-Confidentiality" canonicalUriDSTU2="http://hl7.org/fhir/v3/Confidentiality" canonicalUriSTU3="http://hl7.org/fhir/v3/Confidentiality" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-Confidentiality"/>
+        <sourceCodeSystem id="1.2.250.1.213.1.1.4.13" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.1.1.4.13" canonicalUriDSTU2="urn:oid:1.2.250.1.213.1.1.4.13" canonicalUriSTU3="urn:oid:1.2.250.1.213.1.1.4.13" canonicalUriR4="urn:oid:1.2.250.1.213.1.1.4.13"/>
+        <publishingAuthority name="Stéphane Croci"/>
+        <conceptList>
+            <concept code="N" displayName="Normal" codeSystem="2.16.840.1.113883.5.25" level="0" type="L"/>
+            <concept code="R" displayName="Restreint" codeSystem="2.16.840.1.113883.5.25" level="0" type="L"/>
+            <concept code="V" displayName="Très restreint" codeSystem="2.16.840.1.113883.5.25" level="0" type="L"/>
+            <concept code="INVISIBLE_PATIENT" displayName="Non visible par le patient" codeSystem="1.2.250.1.213.1.1.4.13" level="0" type="L"/>
+            <concept code="INVISIBLE_REPRESENTANTS_LEGAUX" displayName="Non visible par les représentants légaux du patient" codeSystem="1.2.250.1.213.1.1.4.13" level="0" type="L"/>
+            <concept code="MASQUE_PS" displayName="Masqué aux professionnels de santé" codeSystem="1.2.250.1.213.1.1.4.13" level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+</valueSets>

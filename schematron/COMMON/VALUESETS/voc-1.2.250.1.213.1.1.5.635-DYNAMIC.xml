@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <valueSet xmlns="" id="1.2.250.1.213.1.1.5.635" name="JDV_PT_Melanome-CISIS" displayName="JDV_PT_Melanome-CISIS" effectiveDate="2021-03-15T00:00:00" statusCode="final" versionLabel="1.0">
+        <sourceCodeSystem id="1.2.250.1.213.1.1.4.322" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriDSTU2="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriSTU3="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriR4="urn:oid:1.2.250.1.213.1.1.4.322"/>
+        <sourceCodeSystem id="2.16.840.1.113883.6.43.1" identifierName="International&#160;Classification&#160;of&#160;Diseases&#160;for&#160;Oncology,&#160;version&#160;3." canonicalUri="urn:oid:2.16.840.1.113883.6.43.1" canonicalUriDSTU2="urn:oid:2.16.840.1.113883.6.43.1" canonicalUriSTU3="urn:oid:2.16.840.1.113883.6.43.1" canonicalUriR4="urn:oid:2.16.840.1.113883.6.43.1"/>
+        <publishingAuthority name="Stéphane Croci"/>
+        <conceptList>
+            <concept code="MED-942" displayName="Mélanome primitif dont l'épaisseur ne peut être évaluée" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+            <concept code="MED-943" displayName="Pas de mélanome primitif évident (ex. mélanome entièrement régressif)" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+            <concept code="8720/2" displayName="Mélanome in situ" codeSystem="2.16.840.1.113883.6.43.1" level="0" type="L"/>
+            <concept code="MED-945" displayName="Mélanome d'épaisseur inférieure ou égale à 1,0 mm (statut ulcération inconnu)" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+            <concept code="MED-946" displayName="Mélanome &lt; 0,8 mm d'épaisseur sans ulcération" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+            <concept code="MED-947" displayName="Mélanome &lt; 0,8 mm d'épaisseur avec ulcération ou mélanome de 0,8 à 1,0 mm d'épaisseur avec ou sans ulcération" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+            <concept code="MED-948" displayName="Mélanome &gt; 1,0 &lt;= 2,0 mm d'épaisseur (statut ulcération inconnu)" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+            <concept code="MED-949" displayName="Mélanome &gt; 1,0 &lt;= 2,0 mm d'épaisseur sans ulcération" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+            <concept code="MED-950" displayName="Mélanome &gt; 1,0 &lt;= 2,0 mm d'épaisseur avec ulcération" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+            <concept code="MED-951" displayName="Mélanome &gt; 2,0 &lt;= 4,0 mm d'épaisseur (statut ulcération inconnu)" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+            <concept code="MED-952" displayName="Mélanome &gt; 2,0 &lt;= 4,0 mm d'épaisseur sans ulcération" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+            <concept code="MED-953" displayName="Mélanome &gt; 2,0 &lt;= 4,0 mm d'épaisseur avec ulcération" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+            <concept code="MED-954" displayName="Mélanome &gt; 4,0 mm d'épaisseur (statut ulcération inconnu)" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+            <concept code="MED-955" displayName="Mélanome &gt; 4,0 mm d'épaisseur sans ulcération" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+            <concept code="MED-956" displayName="Mélanome &gt; 4,0 mm d'épaisseur avec ulcération" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+</valueSets>

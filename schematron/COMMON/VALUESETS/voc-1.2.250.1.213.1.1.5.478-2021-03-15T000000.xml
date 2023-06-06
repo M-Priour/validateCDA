@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <valueSet xmlns="" id="1.2.250.1.213.1.1.5.478" name="JDV_TypeTraitementPPS-CISIS" displayName="JDV_TypeTraitementPPS-CISIS" effectiveDate="2021-03-15T00:00:00" statusCode="final" versionLabel="1.0">
+        <sourceCodeSystem id="2.16.840.1.113883.3.26.1.1" identifierName="NCI&#160;Thesaurus" canonicalUri="urn:oid:2.16.840.1.113883.3.26.1.1" canonicalUriDSTU2="urn:oid:2.16.840.1.113883.3.26.1.1" canonicalUriSTU3="urn:oid:2.16.840.1.113883.3.26.1.1" canonicalUriR4="urn:oid:2.16.840.1.113883.3.26.1.1"/>
+        <sourceCodeSystem id="1.2.250.1.213.1.1.4.322" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriDSTU2="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriSTU3="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriR4="urn:oid:1.2.250.1.213.1.1.4.322"/>
+        <publishingAuthority name="Stéphane Croci"/>
+        <conceptList>
+            <concept code="C15329" displayName="Chirurgie" codeSystem="2.16.840.1.113883.3.26.1.1" level="0" type="L"/>
+            <concept code="C15313" displayName="Radiothérapie" codeSystem="2.16.840.1.113883.3.26.1.1" level="0" type="L"/>
+            <concept code="C15195" displayName="Curiethérapie" codeSystem="2.16.840.1.113883.3.26.1.1" level="0" type="L"/>
+            <concept code="C15632" displayName="Chimiothérapie conventionnelle" codeSystem="2.16.840.1.113883.3.26.1.1" level="0" type="L"/>
+            <concept code="C93352" displayName="Thérapies ciblées" codeSystem="2.16.840.1.113883.3.26.1.1" level="0" type="L"/>
+            <concept code="C547" displayName="Hormonothérapie" codeSystem="2.16.840.1.113883.3.26.1.1" level="0" type="L"/>
+            <concept code="C15262" displayName="Immunothérapie" codeSystem="2.16.840.1.113883.3.26.1.1" level="0" type="L"/>
+            <concept code="C63334" displayName="Radiologie interventionnelle" codeSystem="2.16.840.1.113883.3.26.1.1" level="0" type="L"/>
+            <concept code="MED-556" displayName="Fenêtre thérapeutique" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+            <concept code="MED-226" displayName="Surveillance seule" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+            <concept code="MED-227" displayName="Surveillance active" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+            <concept code="C16546" displayName="Endoscopie interventionnelle" codeSystem="2.16.840.1.113883.3.26.1.1" level="0" type="L"/>
+            <concept code="MED-232" displayName="Irathérapie" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+            <concept code="MED-126" displayName="Allogreffe / Autogreffe" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+            <concept code="MED-124" displayName="Autres traitements (à préciser)" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+</valueSets>

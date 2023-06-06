@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <valueSet xmlns="" id="1.2.250.1.213.1.1.5.515" name="JDV_ProtheseObjetPersonnel-CISIS" displayName="JDV_ProtheseObjetPersonnel-CISIS" statusCode="final" versionLabel="1.0" effectiveDate="2022-12-06T10:35:42">
+        <sourceCodeSystem id="1.2.250.1.213.2.68" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.2.68" canonicalUriDSTU2="urn:oid:1.2.250.1.213.2.68" canonicalUriSTU3="urn:oid:1.2.250.1.213.2.68" canonicalUriR4="urn:oid:1.2.250.1.213.2.68"/>
+        <sourceCodeSystem id="1.2.250.1.213.1.1.4.322" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriDSTU2="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriSTU3="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriR4="urn:oid:1.2.250.1.213.1.1.4.322"/>
+        <publishingAuthority name="Stéphane Croci"/>
+        <conceptList>
+            <concept code="Q021003" codeSystem="1.2.250.1.213.2.68" displayName="LUNETTES PRÊTES À PORTER (OU LUNETTES MONTÉES)" level="0" type="L"/>
+            <concept code="P0102" codeSystem="1.2.250.1.213.2.68" displayName="PROTHÈSES DENTAIRES" level="0" type="L"/>
+            <concept code="Y2145" codeSystem="1.2.250.1.213.2.68" displayName="DISPOSITIFS ACCOUSTIQUES D'AIDE À L'AUDITION" level="0" type="L"/>
+            <concept code="GEN-092" codeSystem="1.2.250.1.213.1.1.4.322" displayName="Autre" level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+</valueSets>

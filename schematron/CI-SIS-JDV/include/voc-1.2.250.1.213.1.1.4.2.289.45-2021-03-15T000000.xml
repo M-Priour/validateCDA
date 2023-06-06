@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <valueSet xmlns="" id="1.2.250.1.213.1.1.4.2.289.45" name="JDV_GroupeRhesus-CISIS" displayName="JDV_GroupeRhesus-CISIS" effectiveDate="2021-03-15T00:00:00" statusCode="final" versionLabel="1.0">
+        <sourceCodeSystem id="1.2.250.1.213.1.1.4.2.289" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.1.1.4.2.289" canonicalUriDSTU2="urn:oid:1.2.250.1.213.1.1.4.2.289" canonicalUriSTU3="urn:oid:1.2.250.1.213.1.1.4.2.289" canonicalUriR4="urn:oid:1.2.250.1.213.1.1.4.2.289"/>
+        <publishingAuthority name="Stéphane Croci"/>
+        <conceptList>
+            <concept code="OBS_261" displayName="O Positif" codeSystem="1.2.250.1.213.1.1.4.2.289" level="0" type="L"/>
+            <concept code="OBS_262" displayName="O Négatif" codeSystem="1.2.250.1.213.1.1.4.2.289" level="0" type="L"/>
+            <concept code="OBS_263" displayName="A Positif" codeSystem="1.2.250.1.213.1.1.4.2.289" level="0" type="L"/>
+            <concept code="OBS_264" displayName="A Négatif" codeSystem="1.2.250.1.213.1.1.4.2.289" level="0" type="L"/>
+            <concept code="OBS_265" displayName="B Positif" codeSystem="1.2.250.1.213.1.1.4.2.289" level="0" type="L"/>
+            <concept code="OBS_266" displayName="B Négatif" codeSystem="1.2.250.1.213.1.1.4.2.289" level="0" type="L"/>
+            <concept code="OBS_267" displayName="AB Positif" codeSystem="1.2.250.1.213.1.1.4.2.289" level="0" type="L"/>
+            <concept code="OBS_268" displayName="AB Négatif" codeSystem="1.2.250.1.213.1.1.4.2.289" level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+</valueSets>

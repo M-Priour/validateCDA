@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <valueSet xmlns="" id="1.2.250.1.213.1.1.5.180" name="JDV_NIHSSLocqInt-CISIS" displayName="JDV_NIHSSLocqInt-CISIS" statusCode="deprecated" versionLabel="1.0" effectiveDate="2021-03-15T00:00:00">
+        <sourceCodeSystem id="1.2.250.1.213.1.1.4.322" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriDSTU2="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriSTU3="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriR4="urn:oid:1.2.250.1.213.1.1.4.322"/>
+        <sourceCodeSystem id="2.16.840.1.113883.6.1" identifierName="Logical&#160;Observation&#160;Identifier&#160;Names&#160;and&#160;Codes" canonicalUri="http://loinc.org" canonicalUriDSTU2="http://loinc.org" canonicalUriSTU3="http://loinc.org" canonicalUriR4="http://loinc.org"/>
+        <publishingAuthority name="Stéphane Croci"/>
+        <conceptList>
+            <concept code="MED-399" displayName="Répond aux deux questions correctement." codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+            <concept code="LA18440-0" displayName="Répond aux deux questions correctement." codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+            <concept code="LA18441-8" displayName="Ne répond correctement qu'à une seule question." codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+            <concept code="LA18442-6" displayName="Ne répond correctement à aucune des deux questions." codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+</valueSets>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <valueSet xmlns="" id="2.16.840.1.113883.5.4.642.3.289" name="JDV_HL7_ImmunizationRouteCodes-CISIS" displayName="JDV_HL7_ImmunizationRouteCodes-CISIS" statusCode="deprecated" versionLabel="1.0" effectiveDate="2021-03-15T00:00:00">
+        <sourceCodeSystem id="2.16.840.1.113883.5.112" identifierName="Route&#160;Of&#160;Administration" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-RouteOfAdministration" canonicalUriDSTU2="http://hl7.org/fhir/v3/RouteOfAdministration" canonicalUriSTU3="http://hl7.org/fhir/v3/RouteOfAdministration" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-RouteOfAdministration"/>
+        <publishingAuthority name="Stéphane Croci"/>
+        <conceptList>
+            <concept code="IM" displayName="Injection intramusculaire" codeSystem="2.16.840.1.113883.5.112" level="0" type="L"/>
+            <concept code="INDINJ" displayName="Injection intradermique" codeSystem="2.16.840.1.113883.5.112" level="0" type="L"/>
+            <concept code="NASINHLC" displayName="Par inhalation" codeSystem="2.16.840.1.113883.5.112" level="0" type="L"/>
+            <concept code="PO" displayName="Prendre par la bouche" codeSystem="2.16.840.1.113883.5.112" level="0" type="L"/>
+            <concept code="SQ" displayName="Injection sous-cutanée" codeSystem="2.16.840.1.113883.5.112" level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+</valueSets>

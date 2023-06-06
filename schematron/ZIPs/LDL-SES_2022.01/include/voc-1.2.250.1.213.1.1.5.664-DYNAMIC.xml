@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <valueSet xmlns="" id="1.2.250.1.213.1.1.5.664" name="JDV_AbsentOrUnknownMedication-CISIS" displayName="JDV_AbsentOrUnknownMedication-CISIS" effectiveDate="2021-03-15T00:00:00" statusCode="final" versionLabel="1.0" ident="CI-SIS-JDV-" url="https://o3sis.esante.gouv.fr/decor/services/" referencedFrom="BBR-">
+        <sourceCodeSystem id="2.16.840.1.113883.5.1150.1" identifierName="" canonicalUri="urn:oid:2.16.840.1.113883.5.1150.1" canonicalUriDSTU2="urn:oid:2.16.840.1.113883.5.1150.1" canonicalUriSTU3="urn:oid:2.16.840.1.113883.5.1150.1" canonicalUriR4="urn:oid:2.16.840.1.113883.5.1150.1"/>
+        <publishingAuthority name="nar"/>
+        <conceptList>
+            <concept code="no-medication-info" displayName="Pas d'information sur les traitements médicamenteux" codeSystem="2.16.840.1.113883.5.1150.1" level="0" type="L"/>
+            <concept code="no-known-medications" displayName="Pas de traitement médicamenteux connu" codeSystem="2.16.840.1.113883.5.1150.1" level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+</valueSets>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <valueSet xmlns="" id="1.2.250.1.213.1.1.5.676" name="JDV_ImmunizationRouteCodes-CISIS" displayName="JDV_ImmunizationRouteCodes-CISIS" effectiveDate="2021-03-15T00:00:00" statusCode="final" versionLabel="1.0" ident="CI-SIS-JDV-" url="https://o3sis.esante.gouv.fr/decor/services/" referencedFrom="BBR-">
+        <sourceCodeSystem id="0.4.0.127.0.16.1.1.2.1" identifierName="" canonicalUri="urn:oid:0.4.0.127.0.16.1.1.2.1" canonicalUriDSTU2="urn:oid:0.4.0.127.0.16.1.1.2.1" canonicalUriSTU3="urn:oid:0.4.0.127.0.16.1.1.2.1" canonicalUriR4="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+        <publishingAuthority name="nar"/>
+        <conceptList>
+            <concept code="20035000" displayName="Voie intramusculaire" codeSystem="0.4.0.127.0.16.1.1.2.1" level="0" type="L"/>
+            <concept code="20030000" displayName="Voie intradermique" codeSystem="0.4.0.127.0.16.1.1.2.1" level="0" type="L"/>
+            <concept code="20020000" displayName="Voie inhalée" codeSystem="0.4.0.127.0.16.1.1.2.1" level="0" type="L"/>
+            <concept code="20053000" displayName="Voie orale" codeSystem="0.4.0.127.0.16.1.1.2.1" level="0" type="L"/>
+            <concept code="20066000" displayName="Voie sous-cutanée" codeSystem="0.4.0.127.0.16.1.1.2.1" level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+</valueSets>

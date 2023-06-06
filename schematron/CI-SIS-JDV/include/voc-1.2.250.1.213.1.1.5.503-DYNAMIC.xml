@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <valueSet xmlns="" id="1.2.250.1.213.1.1.5.503" name="JDV_MediaType-ObservationMedia-CISIS" displayName="JDV_MediaType-ObservationMedia-CISIS" effectiveDate="2021-03-15T00:00:00" statusCode="final" versionLabel="1.0">
+        <sourceCodeSystem id="2.16.840.1.113883.5.79" identifierName="Media&#160;Type" canonicalUri="urn:oid:2.16.840.1.113883.5.79" canonicalUriDSTU2="urn:oid:2.16.840.1.113883.5.79" canonicalUriSTU3="urn:oid:2.16.840.1.113883.5.79" canonicalUriR4="urn:oid:2.16.840.1.113883.5.79"/>
+        <sourceCodeSystem id="2.16.840.1.113883.5.80" identifierName="MessageCondition" canonicalUri="urn:oid:2.16.840.1.113883.5.80" canonicalUriDSTU2="urn:oid:2.16.840.1.113883.5.80" canonicalUriSTU3="urn:oid:2.16.840.1.113883.5.80" canonicalUriR4="urn:oid:2.16.840.1.113883.5.80"/>
+        <sourceCodeSystem id="2.16.840.1.113883.5.81" identifierName="ModifyIndicator" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-ModifyIndicator" canonicalUriDSTU2="http://hl7.org/fhir/v3/ModifyIndicator" canonicalUriSTU3="http://hl7.org/fhir/v3/ModifyIndicator" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-ModifyIndicator"/>
+        <sourceCodeSystem id="2.16.840.1.113883.5.82" identifierName="" canonicalUri="urn:oid:2.16.840.1.113883.5.82" canonicalUriDSTU2="urn:oid:2.16.840.1.113883.5.82" canonicalUriSTU3="urn:oid:2.16.840.1.113883.5.82" canonicalUriR4="urn:oid:2.16.840.1.113883.5.82"/>
+        <sourceCodeSystem id="2.16.840.1.113883.5.83" identifierName="Observation&#160;Interpretation" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation" canonicalUriDSTU2="http://hl7.org/fhir/v3/ObservationInterpretation" canonicalUriSTU3="http://hl7.org/fhir/v3/ObservationInterpretation" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+        <sourceCodeSystem id="2.16.840.1.113883.5.84" identifierName="Observation&#160;Method" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-ObservationMethod" canonicalUriDSTU2="http://hl7.org/fhir/v3/ObservationMethod" canonicalUriSTU3="http://hl7.org/fhir/v3/ObservationMethod" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-ObservationMethod"/>
+        <sourceCodeSystem id="2.16.840.1.113883.5.85" identifierName="Orderable&#160;Drug&#160;Form" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm" canonicalUriDSTU2="http://hl7.org/fhir/v3/orderableDrugForm" canonicalUriSTU3="http://hl7.org/fhir/v3/orderableDrugForm" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm"/>
+        <sourceCodeSystem id="2.16.840.1.113883.5.86" identifierName="" canonicalUri="urn:oid:2.16.840.1.113883.5.86" canonicalUriDSTU2="urn:oid:2.16.840.1.113883.5.86" canonicalUriSTU3="urn:oid:2.16.840.1.113883.5.86" canonicalUriR4="urn:oid:2.16.840.1.113883.5.86"/>
+        <sourceCodeSystem id="2.16.840.1.113883.5.87" identifierName="ParameterizedDataType" canonicalUri="urn:oid:2.16.840.1.113883.5.87" canonicalUriDSTU2="urn:oid:2.16.840.1.113883.5.87" canonicalUriSTU3="urn:oid:2.16.840.1.113883.5.87" canonicalUriR4="urn:oid:2.16.840.1.113883.5.87"/>
+        <sourceCodeSystem id="2.16.840.1.113883.5.88" identifierName="Participation&#160;Function" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-ParticipationFunction" canonicalUriDSTU2="http://hl7.org/fhir/v3/ParticipationFunction" canonicalUriSTU3="http://hl7.org/fhir/v3/ParticipationFunction" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-ParticipationFunction"/>
+        <sourceCodeSystem id="2.16.840.1.113883.5.89" identifierName="Participation&#160;Signature" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-ParticipationSignature" canonicalUriDSTU2="http://hl7.org/fhir/v3/ParticipationSignature" canonicalUriSTU3="http://hl7.org/fhir/v3/ParticipationSignature" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-ParticipationSignature"/>
+        <sourceCodeSystem id="2.16.840.1.113883.5.90" identifierName="ParticipationType" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-ParticipationType" canonicalUriDSTU2="http://hl7.org/fhir/v3/ParticipationType" canonicalUriSTU3="http://hl7.org/fhir/v3/ParticipationType" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
+        <sourceCodeSystem id="2.16.840.1.113883.5.91" identifierName="PaymentTerms" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-PaymentTerms" canonicalUriDSTU2="http://hl7.org/fhir/v3/PaymentTerms" canonicalUriSTU3="http://hl7.org/fhir/v3/PaymentTerms" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-PaymentTerms"/>
+        <sourceCodeSystem id="2.16.840.1.113883.5.92" identifierName="" canonicalUri="urn:oid:2.16.840.1.113883.5.92" canonicalUriDSTU2="urn:oid:2.16.840.1.113883.5.92" canonicalUriSTU3="urn:oid:2.16.840.1.113883.5.92" canonicalUriR4="urn:oid:2.16.840.1.113883.5.92"/>
+        <publishingAuthority name="Stéphane Croci"/>
+        <conceptList>
+            <concept code="application/dicom" displayName="DICOM" codeSystem="2.16.840.1.113883.5.79" level="0" type="L"/>
+            <concept code="application/msword" displayName="MSWORD" codeSystem="2.16.840.1.113883.5.80" level="0" type="L"/>
+            <concept code="application/pdf" displayName="PDF" codeSystem="2.16.840.1.113883.5.81" level="0" type="L"/>
+            <concept code="audio/basic" displayName="Basic Audio" codeSystem="2.16.840.1.113883.5.82" level="0" type="L"/>
+            <concept code="audio/k32adpcm" displayName="K32ADPCM Audio" codeSystem="2.16.840.1.113883.5.83" level="0" type="L"/>
+            <concept code="audio/mpeg" displayName="MPEG audio layer 3 MP3 Audio" codeSystem="2.16.840.1.113883.5.84" level="0" type="L"/>
+            <concept code="image/gif" displayName="GIF Image" codeSystem="2.16.840.1.113883.5.85" level="0" type="L"/>
+            <concept code="image/jpeg" displayName="JPEG Image" codeSystem="2.16.840.1.113883.5.86" level="0" type="L"/>
+            <concept code="image/png" displayName="PNG Image" codeSystem="2.16.840.1.113883.5.87" level="0" type="L"/>
+            <concept code="image/tiff" displayName="TIFF Image" codeSystem="2.16.840.1.113883.5.88" level="0" type="L"/>
+            <concept code="text/html" displayName="HTML Text" codeSystem="2.16.840.1.113883.5.89" level="0" type="L"/>
+            <concept code="text/plain" displayName="Plain Text" codeSystem="2.16.840.1.113883.5.90" level="0" type="L"/>
+            <concept code="text/rtf" displayName="RTF Text" codeSystem="2.16.840.1.113883.5.91" level="0" type="L"/>
+            <concept code="text/xml" displayName="XML Text" codeSystem="2.16.840.1.113883.5.92" level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+</valueSets>

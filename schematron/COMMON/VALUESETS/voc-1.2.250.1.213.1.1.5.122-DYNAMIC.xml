@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <valueSet xmlns="" id="1.2.250.1.213.1.1.5.122" name="JDV_AntecedentsObstetricaux-CISIS" displayName="JDV_AntecedentsObstetricaux-CISIS" effectiveDate="2021-03-15T00:00:00" statusCode="final" versionLabel="1.0">
+        <sourceCodeSystem id="2.16.840.1.113883.6.1" identifierName="Logical&#160;Observation&#160;Identifier&#160;Names&#160;and&#160;Codes" canonicalUri="http://loinc.org" canonicalUriDSTU2="http://loinc.org" canonicalUriSTU3="http://loinc.org" canonicalUriR4="http://loinc.org"/>
+        <sourceCodeSystem id="1.2.250.1.213.2.12" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.2.12" canonicalUriDSTU2="urn:oid:1.2.250.1.213.2.12" canonicalUriSTU3="urn:oid:1.2.250.1.213.2.12" canonicalUriR4="urn:oid:1.2.250.1.213.2.12"/>
+        <sourceCodeSystem id="1.2.250.1.213.1.1.4.322" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriDSTU2="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriSTU3="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriR4="urn:oid:1.2.250.1.213.1.1.4.322"/>
+        <publishingAuthority name="Stéphane Croci"/>
+        <conceptList>
+            <concept code="29463-7" displayName="Poids habituel de la mère (en dehors de la grossesse)" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+            <concept code="8302-2" displayName="Taille (de la mère)" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+            <concept code="11636-8" displayName="Nombre d'enfants nés vivants et décédés avant 28 jours" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+            <concept code="11637-6" displayName="Nombre d'enfants prématurés (nés avant 37 semaines)" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+            <concept code="11977-6" displayName="Parité (nombre total d'accouchements y compris actuel)" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+            <concept code="11996-6" displayName="Gestité (nombre total de grossesses y compris actuelle)" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+            <concept code="D8-11000" displayName="HTA (hypertension dans un contexte obstétrical)" codeSystem="1.2.250.1.213.2.12" level="0" type="L"/>
+            <concept code="D8-11120" displayName="HTA traitée" codeSystem="1.2.250.1.213.2.12" level="0" type="L"/>
+            <concept code="D8-11210" displayName="Prééclampsie" codeSystem="1.2.250.1.213.2.12" level="0" type="L"/>
+            <concept code="D8-12000" displayName="MAP (menace d'accouchement prématuré)" codeSystem="1.2.250.1.213.2.12" level="0" type="L"/>
+            <concept code="D8-20432" displayName="Antécédents de césarienne" codeSystem="1.2.250.1.213.2.12" level="0" type="L"/>
+            <concept code="DB-61400" displayName="Diabète gestationnel" codeSystem="1.2.250.1.213.2.12" level="0" type="L"/>
+            <concept code="D8-70110" displayName="PAG (petit poids pour l'âge gestationnel)" codeSystem="1.2.250.1.213.2.12" level="0" type="L"/>
+            <concept code="MED-159" displayName="Nombre d'enfants pesant moins de 2500 g" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+            <concept code="MED-160" displayName="Nombre d'enfants mort-nés" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+            <concept code="MED-164" displayName="Pathologie en cours de grossesse" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+            <concept code="MED-165" displayName="Autre pathologie en cours de grossesse" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+            <concept code="ORG-076" displayName="Date de la première consultation (déclaration de grossesse)" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+            <concept code="ORG-077" displayName="Hospitalisation y compris à domicile (nb de jours)" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+            <concept code="ORG-078" displayName="Autre motif d'hospitalisation" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+</valueSets>

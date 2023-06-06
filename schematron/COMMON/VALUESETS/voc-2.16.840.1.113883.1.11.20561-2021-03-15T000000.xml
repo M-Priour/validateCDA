@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <valueSet xmlns="" id="2.16.840.1.113883.1.11.20561" name="JDV_HL7_WorkSchedule-CISIS" displayName="JDV_HL7_WorkSchedule-CISIS" effectiveDate="2021-03-15T00:00:00" statusCode="final" versionLabel="1.0">
+        <sourceCodeSystem id="2.16.840.1.113883.5.1063" identifierName="Observation&#160;Value" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-ObservationValue" canonicalUriDSTU2="http://hl7.org/fhir/v3/ObservationValue" canonicalUriSTU3="http://hl7.org/fhir/v3/ObservationValue" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+        <publishingAuthority name="Stéphane Croci"/>
+        <conceptList>
+            <concept code="DS" displayName="Journée (par exemple : entre 6h et 18h)" codeSystem="2.16.840.1.113883.5.1063" level="0" type="L"/>
+            <concept code="EMS" displayName="Matin (entre 2h et 14h)" codeSystem="2.16.840.1.113883.5.1063" level="0" type="L"/>
+            <concept code="ES" displayName="Après-midi (entre 14h et minuit)" codeSystem="2.16.840.1.113883.5.1063" level="0" type="L"/>
+            <concept code="NS" displayName="Nuit (entre 21h et 8h)" codeSystem="2.16.840.1.113883.5.1063" level="0" type="L"/>
+            <concept code="RSWN" displayName="Variable (journées, soirées, avec parfois des nuits)" codeSystem="2.16.840.1.113883.5.1063" level="0" type="L"/>
+            <concept code="RSWON" displayName="Variable (journées, soirées, sans nuits ni soirées)" codeSystem="2.16.840.1.113883.5.1063" level="0" type="L"/>
+            <concept code="SS" displayName="Journée avec coupure de 2 à 4 heures." codeSystem="2.16.840.1.113883.5.1063" level="0" type="L"/>
+            <concept code="VLS" displayName="Horaires de longue durée (17h ou plus)" codeSystem="2.16.840.1.113883.5.1063" level="0" type="L"/>
+            <concept code="VS" displayName="Irrégulier avec information à court terme" codeSystem="2.16.840.1.113883.5.1063" level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+</valueSets>

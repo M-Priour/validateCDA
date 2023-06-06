@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <valueSet xmlns="" id="1.2.250.1.213.1.1.5.150" name="JDV_Gene-CISIS" displayName="JDV_Gene-CISIS" effectiveDate="2021-03-15T00:00:00" statusCode="final" versionLabel="1.0">
+        <sourceCodeSystem id="1.2.250.1.213.2.60" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.2.60" canonicalUriDSTU2="urn:oid:1.2.250.1.213.2.60" canonicalUriSTU3="urn:oid:1.2.250.1.213.2.60" canonicalUriR4="urn:oid:1.2.250.1.213.2.60"/>
+        <sourceCodeSystem id="1.2.250.1.213.1.1.4.322" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriDSTU2="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriSTU3="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriR4="urn:oid:1.2.250.1.213.1.1.4.322"/>
+        <publishingAuthority name="Stéphane Croci"/>
+        <conceptList>
+            <concept code="AKT1" displayName="AKT1" codeSystem="1.2.250.1.213.2.60" level="0" type="L"/>
+            <concept code="ALK" displayName="ALK" codeSystem="1.2.250.1.213.2.60" level="0" type="L"/>
+            <concept code="BRAF" displayName="BRAF" codeSystem="1.2.250.1.213.2.60" level="0" type="L"/>
+            <concept code="EGFR" displayName="EGFR" codeSystem="1.2.250.1.213.2.60" level="0" type="L"/>
+            <concept code="ERBB2 (HER2)" displayName="ERBB2 (HER2)" codeSystem="1.2.250.1.213.2.60" level="0" type="L"/>
+            <concept code="ERBB4" displayName="ERBB4" codeSystem="1.2.250.1.213.2.60" level="0" type="L"/>
+            <concept code="FGFR2" displayName="FGFR2" codeSystem="1.2.250.1.213.2.60" level="0" type="L"/>
+            <concept code="FGFR3" displayName="FGFR3" codeSystem="1.2.250.1.213.2.60" level="0" type="L"/>
+            <concept code="HRAS" displayName="HRAS" codeSystem="1.2.250.1.213.2.60" level="0" type="L"/>
+            <concept code="KIT" displayName="KIT" codeSystem="1.2.250.1.213.2.60" level="0" type="L"/>
+            <concept code="KRAS" displayName="KRAS" codeSystem="1.2.250.1.213.2.60" level="0" type="L"/>
+            <concept code="MAP2K1 (MEK1)" displayName="MAP2K1 (MEK1)" codeSystem="1.2.250.1.213.2.60" level="0" type="L"/>
+            <concept code="MET" displayName="MET" codeSystem="1.2.250.1.213.2.60" level="0" type="L"/>
+            <concept code="NRAS" displayName="NRAS" codeSystem="1.2.250.1.213.2.60" level="0" type="L"/>
+            <concept code="PDGFRA" displayName="PDGFRA" codeSystem="1.2.250.1.213.2.60" level="0" type="L"/>
+            <concept code="PIK3CA" displayName="PIK3CA" codeSystem="1.2.250.1.213.2.60" level="0" type="L"/>
+            <concept code="CDKN2A" displayName="CDKN2A" codeSystem="1.2.250.1.213.2.60" level="0" type="L"/>
+            <concept code="CTNNB1" displayName="CTNNB1" codeSystem="1.2.250.1.213.2.60" level="0" type="L"/>
+            <concept code="DDR2" displayName="DDR2" codeSystem="1.2.250.1.213.2.60" level="0" type="L"/>
+            <concept code="H3F3A" displayName="H3F3A" codeSystem="1.2.250.1.213.2.60" level="0" type="L"/>
+            <concept code="HIST1H3B" displayName="HIST1H3B" codeSystem="1.2.250.1.213.2.60" level="0" type="L"/>
+            <concept code="IDH1" displayName="IDH1" codeSystem="1.2.250.1.213.2.60" level="0" type="L"/>
+            <concept code="IDH2" displayName="IDH2" codeSystem="1.2.250.1.213.2.60" level="0" type="L"/>
+            <concept code="PIK3R1" displayName="PIK3R1" codeSystem="1.2.250.1.213.2.60" level="0" type="L"/>
+            <concept code="GEN-092" displayName="Autre" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+</valueSets>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <valueSet xmlns="" id="2.16.840.1.113883.5.90" name="TRE_A13-HL7ParticipationType" displayName="TRE_A13-HL7ParticipationType" effectiveDate="2021-03-15T00:00:00" statusCode="final" versionLabel="1.0" ident="CI-SIS-JDV-" url="https://o3sis.esante.gouv.fr/decor/services/" referencedFrom="IMG-DA-IMG_2022-">
+        <sourceCodeSystem id="2.16.840.1.113883.5.90" identifierName="ParticipationType" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-ParticipationType" canonicalUriDSTU2="http://hl7.org/fhir/v3/ParticipationType" canonicalUriSTU3="http://hl7.org/fhir/v3/ParticipationType" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
+        <publishingAuthority name="sbm"/>
+        <conceptList>
+            <concept code="ADM" displayName="Responsable de l'admission" codeSystem="2.16.840.1.113883.5.90" level="0" type="L"/>
+            <concept code="ALY" displayName="Cible d'une observation (substance ou composant le plus spécifique)" codeSystem="2.16.840.1.113883.5.90" level="0" type="L"/>
+            <concept code="ATND" displayName="Superviseur / Responsable des soins" codeSystem="2.16.840.1.113883.5.90" level="0" type="L"/>
+            <concept code="AUT" displayName="Auteur" codeSystem="2.16.840.1.113883.5.90" level="0" type="L"/>
+            <concept code="AUTHEN" displayName="Valideur des résultats (ex : un biologiste ou un système expert)" codeSystem="2.16.840.1.113883.5.90" level="0" type="L"/>
+            <concept code="BBY" displayName="Nouveau né" codeSystem="2.16.840.1.113883.5.90" level="0" type="L"/>
+            <concept code="BEN" displayName="Bénéficiaire" codeSystem="2.16.840.1.113883.5.90" level="0" type="L"/>
+            <concept code="CAGNT" displayName="Agent causal" codeSystem="2.16.840.1.113883.5.90" level="0" type="L"/>
+            <concept code="CALLBCK" displayName="Contact à  rappeler" codeSystem="2.16.840.1.113883.5.90" level="0" type="L"/>
+            <concept code="CAT" displayName="Catalyseur" codeSystem="2.16.840.1.113883.5.90" level="0" type="L"/>
+            <concept code="CON" displayName="Consultant" codeSystem="2.16.840.1.113883.5.90" level="0" type="L"/>
+            <concept code="COV" displayName="Partie couverte (titulaire ou bénéficiaire)" codeSystem="2.16.840.1.113883.5.90" level="0" type="L"/>
+            <concept code="CSM" displayName="Consommable" codeSystem="2.16.840.1.113883.5.90" level="0" type="L"/>
+            <concept code="CST" displayName="Responsable de l'information" codeSystem="2.16.840.1.113883.5.90" level="0" type="L"/>
+            <concept code="DEV" displayName="Dispositif automatique impliqué dans la production des résultats (ex : un analyseur)" codeSystem="2.16.840.1.113883.5.90" level="0" type="L"/>
+            <concept code="DIR" displayName="Participant direct" codeSystem="2.16.840.1.113883.5.90" level="0" type="L"/>
+            <concept code="DIS" displayName="Responsable de la sortie" codeSystem="2.16.840.1.113883.5.90" level="0" type="L"/>
+            <concept code="DIST" displayName="Distributeur" codeSystem="2.16.840.1.113883.5.90" level="0" type="L"/>
+            <concept code="DON" displayName="Donneur" codeSystem="2.16.840.1.113883.5.90" level="0" type="L"/>
+            <concept code="DST" displayName="Destination" codeSystem="2.16.840.1.113883.5.90" level="0" type="L"/>
+            <concept code="ELOC" displayName="Emplacement où les données sont saisies" codeSystem="2.16.840.1.113883.5.90" level="0" type="L"/>
+            <concept code="ENT" displayName="Transcripteur du contenu à  partir d'une autre forme (par exemple dictée vocale ou numérique)" codeSystem="2.16.840.1.113883.5.90" level="0" type="L"/>
+            <concept code="ESC" displayName="Accompagnateur" codeSystem="2.16.840.1.113883.5.90" level="0" type="L"/>
+            <concept code="EXPAGNT" displayName="Agent de l'exposition" codeSystem="2.16.840.1.113883.5.90" level="0" type="L"/>
+            <concept code="EXPART" displayName="Partie de l'exposition" codeSystem="2.16.840.1.113883.5.90" level="0" type="L"/>
+            <concept code="EXSRC" displayName="Source de l'exposition" codeSystem="2.16.840.1.113883.5.90" level="0" type="L"/>
+            <concept code="EXPTRGT" displayName="Cible de l'exposition" codeSystem="2.16.840.1.113883.5.90" level="0" type="L"/>
+            <concept code="GUAR" displayName="Garant" codeSystem="2.16.840.1.113883.5.90" level="0" type="L"/>
+            <concept code="HLD" displayName="Souscripteur" codeSystem="2.16.840.1.113883.5.90" level="0" type="L"/>
+            <concept code="IND" displayName="Cible indirecte" codeSystem="2.16.840.1.113883.5.90" level="0" type="L"/>
+            <concept code="INF" displayName="Informateur" codeSystem="2.16.840.1.113883.5.90" level="0" type="L"/>
+            <concept code="IRCP" displayName="Destinataire de l'information" codeSystem="2.16.840.1.113883.5.90" level="0" type="L"/>
+            <concept code="LA" displayName="Responsable légal de l'acte" codeSystem="2.16.840.1.113883.5.90" level="0" type="L"/>
+            <concept code="LOC" displayName="Emplacement principal" codeSystem="2.16.840.1.113883.5.90" level="0" type="L"/>
+            <concept code="NRD" displayName="Dispositif non réutilisable" codeSystem="2.16.840.1.113883.5.90" level="0" type="L"/>
+            <concept code="NOT" displayName="Personne à prévenir en cas d'urgence" codeSystem="2.16.840.1.113883.5.90" level="0" type="L"/>
+            <concept code="ORG" displayName="Lieu d'origine" codeSystem="2.16.840.1.113883.5.90" level="0" type="L"/>
+            <concept code="PART" displayName="Participant" codeSystem="2.16.840.1.113883.5.90" level="0" type="L"/>
+            <concept code="PPRF" displayName="Exécutant principal" codeSystem="2.16.840.1.113883.5.90" level="0" type="L"/>
+            <concept code="PRCP" displayName="Destinataire principal de l'information" codeSystem="2.16.840.1.113883.5.90" level="0" type="L"/>
+            <concept code="PRD" displayName="Produit" codeSystem="2.16.840.1.113883.5.90" level="0" type="L"/>
+            <concept code="PRF" displayName="Exécutant" codeSystem="2.16.840.1.113883.5.90" level="0" type="L"/>
+            <concept code="RCT" displayName="Dossier médical" codeSystem="2.16.840.1.113883.5.90" level="0" type="L"/>
+            <concept code="RDV" displayName="Dispositif réutilisable" codeSystem="2.16.840.1.113883.5.90" level="0" type="L"/>
+            <concept code="REF" displayName="Référent / Prescripteur" codeSystem="2.16.840.1.113883.5.90" level="0" type="L"/>
+            <concept code="REFB" displayName="Personne ayant adressé le patient" codeSystem="2.16.840.1.113883.5.90" level="0" type="L"/>
+            <concept code="REFT" displayName="Personne recevant le patient" codeSystem="2.16.840.1.113883.5.90" level="0" type="L"/>
+            <concept code="RESP" displayName="Responsable de l'acte" codeSystem="2.16.840.1.113883.5.90" level="0" type="L"/>
+            <concept code="RML" displayName="Emplacement distant" codeSystem="2.16.840.1.113883.5.90" level="0" type="L"/>
+            <concept code="SBJ" displayName="Sujet" codeSystem="2.16.840.1.113883.5.90" level="0" type="L"/>
+            <concept code="SPC" displayName="Echantillon" codeSystem="2.16.840.1.113883.5.90" level="0" type="L"/>
+            <concept code="SPRF" displayName="Exécutant secondaire" codeSystem="2.16.840.1.113883.5.90" level="0" type="L"/>
+            <concept code="TRANS" displayName="Transcripteur" codeSystem="2.16.840.1.113883.5.90" level="0" type="L"/>
+            <concept code="TRC" displayName="Personne recevant une copie de l'information" codeSystem="2.16.840.1.113883.5.90" level="0" type="L"/>
+            <concept code="VIA" displayName="Emplacement intermédiaire" codeSystem="2.16.840.1.113883.5.90" level="0" type="L"/>
+            <concept code="VRF" displayName="Vérificateur" codeSystem="2.16.840.1.113883.5.90" level="0" type="L"/>
+            <concept code="WIT" displayName="Témoin" codeSystem="2.16.840.1.113883.5.90" level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+</valueSets>

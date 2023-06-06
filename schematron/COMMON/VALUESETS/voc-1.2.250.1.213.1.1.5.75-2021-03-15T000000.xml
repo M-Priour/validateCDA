@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <valueSet xmlns="" id="1.2.250.1.213.1.1.5.75" name="JDV_ModeAdministration-CISIS" displayName="JDV_ModeAdministration-CISIS" effectiveDate="2021-03-15T00:00:00" statusCode="final" versionLabel="1.0">
+        <sourceCodeSystem id="1.2.250.1.213.1.1.4.322" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriDSTU2="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriSTU3="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriR4="urn:oid:1.2.250.1.213.1.1.4.322"/>
+        <sourceCodeSystem id="2.16.840.1.113883.5.112" identifierName="Route&#160;Of&#160;Administration" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-RouteOfAdministration" canonicalUriDSTU2="http://hl7.org/fhir/v3/RouteOfAdministration" canonicalUriSTU3="http://hl7.org/fhir/v3/RouteOfAdministration" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-RouteOfAdministration"/>
+        <publishingAuthority name="Stéphane Croci"/>
+        <conceptList>
+            <concept code="GEN-092" displayName="Autre" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+            <concept code="IM" displayName="Injection intramusculaire" codeSystem="2.16.840.1.113883.5.112" level="0" type="L"/>
+            <concept code="INDINJ" displayName="Injection intradermique" codeSystem="2.16.840.1.113883.5.112" level="0" type="L"/>
+            <concept code="IVING" displayName="Injection intraveineuse" codeSystem="2.16.840.1.113883.5.112" level="0" type="L"/>
+            <concept code="SQ" displayName="Injection sous-cutanée" codeSystem="2.16.840.1.113883.5.112" level="0" type="L"/>
+            <concept code="PO" displayName="Voie orale" codeSystem="2.16.840.1.113883.5.112" level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+</valueSets>

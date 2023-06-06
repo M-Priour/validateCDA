@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <valueSet xmlns="" id="2.16.840.1.113883.5.1070" name="JDV_HL7_ActSubstanceAdminSubstitutionCode-CISIS" displayName="JDV_HL7_ActSubstanceAdminSubstitutionCode-CISIS" effectiveDate="2021-03-15T00:00:00" statusCode="final" versionLabel="1.0">
+        <sourceCodeSystem id="2.16.840.1.113883.5.1070" identifierName="Substance&#160;Admin&#160;Substitution" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution" canonicalUriDSTU2="http://hl7.org/fhir/v3/substanceAdminSubstitution" canonicalUriSTU3="http://hl7.org/fhir/v3/substanceAdminSubstitution" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution"/>
+        <publishingAuthority name="Stéphane Croci"/>
+        <conceptList>
+            <concept code="N" displayName="Aucune substitution permise" codeSystem="2.16.840.1.113883.5.1070" level="0" type="L"/>
+            <concept code="G" displayName="Substitution autorisée par un produit générique" codeSystem="2.16.840.1.113883.5.1070" level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+</valueSets>

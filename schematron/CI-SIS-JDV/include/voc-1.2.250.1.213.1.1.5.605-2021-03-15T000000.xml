@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <valueSet xmlns="" id="1.2.250.1.213.1.1.5.605" name="JDV_J150-MethodBP-ENS" displayName="JDV_J150-MethodBP-ENS" effectiveDate="2021-03-15T00:00:00" statusCode="final" versionLabel="1.0">
+        <sourceCodeSystem id="2.16.840.1.113883.3.26.1.1" identifierName="NCI&#160;Thesaurus" canonicalUri="urn:oid:2.16.840.1.113883.3.26.1.1" canonicalUriDSTU2="urn:oid:2.16.840.1.113883.3.26.1.1" canonicalUriSTU3="urn:oid:2.16.840.1.113883.3.26.1.1" canonicalUriR4="urn:oid:2.16.840.1.113883.3.26.1.1"/>
+        <sourceCodeSystem id="1.2.250.1.213.1.1.4.322" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriDSTU2="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriSTU3="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriR4="urn:oid:1.2.250.1.213.1.1.4.322"/>
+        <publishingAuthority name="Stéphane Croci"/>
+        <conceptList>
+            <concept code="C69319" displayName="Tensiomètre automatique avec brassard adapté" codeSystem="2.16.840.1.113883.3.26.1.1" level="0" type="L"/>
+            <concept code="C69318" displayName="Tensiomètre manuel" codeSystem="2.16.840.1.113883.3.26.1.1" level="0" type="L"/>
+            <concept code="MED-875" displayName="MAPA : mesure automatisée de la pression artérielle" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+            <concept code="C153216" displayName="Objet connecté" codeSystem="2.16.840.1.113883.3.26.1.1" level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+</valueSets>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <valueSet xmlns="" id="2.16.840.1.113883.4.642.3.1372" name="JDV_HL7_allergyintolerance-clinical-CISIS" displayName="JDV_HL7_allergyintolerance-clinical-CISIS" effectiveDate="2021-03-15T00:00:00" statusCode="final" versionLabel="1.0">
+        <sourceCodeSystem id="2.16.840.1.113883.4.642.4.1373" identifierName="" canonicalUri="urn:oid:2.16.840.1.113883.4.642.4.1373" canonicalUriDSTU2="urn:oid:2.16.840.1.113883.4.642.4.1373" canonicalUriSTU3="urn:oid:2.16.840.1.113883.4.642.4.1373" canonicalUriR4="urn:oid:2.16.840.1.113883.4.642.4.1373"/>
+        <publishingAuthority name="Stéphane Croci"/>
+        <conceptList>
+            <concept code="active" displayName="Actif" codeSystem="2.16.840.1.113883.4.642.4.1373" level="0" type="L"/>
+            <concept code="inactive" displayName="Inactif" codeSystem="2.16.840.1.113883.4.642.4.1373" level="0" type="L"/>
+            <concept code="resolved" displayName="Résolu" codeSystem="2.16.840.1.113883.4.642.4.1373" level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+</valueSets>

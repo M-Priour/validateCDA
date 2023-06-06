@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <valueSet xmlns="" id="1.2.250.1.213.1.1.5.66" name="JDV_Readaptation-CISIS" displayName="JDV_Readaptation-CISIS" effectiveDate="2021-03-15T00:00:00" statusCode="final" versionLabel="1.0">
+        <sourceCodeSystem id="1.2.250.1.213.1.1.4.5" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.1.1.4.5" canonicalUriDSTU2="urn:oid:1.2.250.1.213.1.1.4.5" canonicalUriSTU3="urn:oid:1.2.250.1.213.1.1.4.5" canonicalUriR4="urn:oid:1.2.250.1.213.1.1.4.5"/>
+        <publishingAuthority name="Stéphane Croci"/>
+        <conceptList>
+            <concept code="G15_60" displayName="Infirmier" codeSystem="1.2.250.1.213.1.1.4.5" level="0" type="L"/>
+            <concept code="G15_70" displayName="Kinésithérapeute" codeSystem="1.2.250.1.213.1.1.4.5" level="0" type="L"/>
+            <concept code="G15_94" displayName="Ergothérapeute" codeSystem="1.2.250.1.213.1.1.4.5" level="0" type="L"/>
+            <concept code="G15_91" displayName="Orthophoniste" codeSystem="1.2.250.1.213.1.1.4.5" level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+</valueSets>

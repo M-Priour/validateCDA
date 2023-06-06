@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <valueSet xmlns="" id="1.2.250.1.213.1.1.5.182" name="JDV_NIHSSOculInt-CISIS" displayName="JDV_NIHSSOculInt-CISIS" statusCode="final" versionLabel="1.0" effectiveDate="2022-11-17T11:24:07">
+        <sourceCodeSystem id="2.16.840.1.113883.6.1" identifierName="Logical&#160;Observation&#160;Identifier&#160;Names&#160;and&#160;Codes" canonicalUri="http://loinc.org" canonicalUriDSTU2="http://loinc.org" canonicalUriSTU3="http://loinc.org" canonicalUriR4="http://loinc.org"/>
+        <publishingAuthority name="Stéphane Croci"/>
+        <conceptList>
+            <concept code="LA6626-1" codeSystem="2.16.840.1.113883.6.1" displayName="normal" level="0" type="L"/>
+            <concept code="LA18446-7" codeSystem="2.16.840.1.113883.6.1" displayName="Paralysie partielle (ce score est attribué quand l'oculomotricité est anormale pour 1 ou 2 yeux, mais sans déviation forcée, ni paralysie complète)." level="0" type="L"/>
+            <concept code="LA18447-5" codeSystem="2.16.840.1.113883.6.1" displayName="Déviation forcée ou paralysie complète non vaincue par les manouvres oculo céphaliques." level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+</valueSets>

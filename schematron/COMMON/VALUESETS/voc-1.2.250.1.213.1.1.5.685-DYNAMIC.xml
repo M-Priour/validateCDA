@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <valueSet xmlns="" id="1.2.250.1.213.1.1.5.685" name="JDV_infoPriseEnCharge-CISIS" displayName="JDV_infoPriseEnCharge-CISIS" effectiveDate="2021-03-15T00:00:00" statusCode="final" versionLabel="1.0">
+        <sourceCodeSystem id="2.16.840.1.113883.6.3" identifierName="ICD10" canonicalUri="http://hl7.org/fhir/sid/icd-10" canonicalUriDSTU2="http://hl7.org/fhir/sid/icd-10" canonicalUriSTU3="http://hl7.org/fhir/sid/icd-10" canonicalUriR4="http://hl7.org/fhir/sid/icd-10"/>
+        <sourceCodeSystem id="1.2.250.1.213.1.1.4.322" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriDSTU2="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriSTU3="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriR4="urn:oid:1.2.250.1.213.1.1.4.322"/>
+        <publishingAuthority name="Stéphane Croci"/>
+        <conceptList>
+            <concept code="U83.71" displayName="Bactérie multirésistante [BMR]" codeSystem="2.16.840.1.113883.6.3" level="0" type="L"/>
+            <concept code="MED-1124" displayName="Patient nécessitant un accompagnement par un tiers" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+            <concept code="Z74.0" displayName="Besoin d'assistance du fait de mobilité restreinte" codeSystem="2.16.840.1.113883.6.3" level="0" type="L"/>
+            <concept code="MED-1125" displayName="Patient potentiellement non-coopérant (déficience mentale, etc.)" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+            <concept code="MED-1123" displayName="Patient porteur d'un germe à transmission aérienne" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+</valueSets>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <valueSet xmlns="" id="1.2.250.1.213.1.1.5.620" name="JDV_QuantiteExpositionRayonnements-CISIS" displayName="JDV_QuantiteExpositionRayonnements-CISIS" effectiveDate="2021-03-15T00:00:00" statusCode="final" versionLabel="1.0">
+        <sourceCodeSystem id="1.2.840.10008.2.16.4" identifierName="DICOM&#160;Controlled&#160;Terminology" canonicalUri="http://dicom.nema.org/resources/ontology/DCM" canonicalUriDSTU2="http://nema.org/dicom/dicm" canonicalUriSTU3="http://dicom.nema.org/resources/ontology/DCM" canonicalUriR4="http://dicom.nema.org/resources/ontology/DCM"/>
+        <publishingAuthority name="Stéphane Croci"/>
+        <conceptList>
+            <concept code="111636" displayName="Dose dans l'air à l'entrée du patient (Kerma dans l'air)" codeSystem="1.2.840.10008.2.16.4" level="0" type="L"/>
+            <concept code="111637" displayName="DGM total : Dose Glandulaire Moyenne Total" codeSystem="1.2.840.10008.2.16.4" level="0" type="L"/>
+            <concept code="113722" displayName="PDS Total : Produit Dose Surface Total" codeSystem="1.2.840.10008.2.16.4" level="0" type="L"/>
+            <concept code="113726" displayName="PDS de Scopie Total : Produit Dose Surface de Scopie Total" codeSystem="1.2.840.10008.2.16.4" level="0" type="L"/>
+            <concept code="113727" displayName="PDS de Graphie Total : Produit Dose Surface de Graphie Total" codeSystem="1.2.840.10008.2.16.4" level="0" type="L"/>
+            <concept code="113730" displayName="Temps total de scopie" codeSystem="1.2.840.10008.2.16.4" level="0" type="L"/>
+            <concept code="113731" displayName="Nombre total d'images radiographiques" codeSystem="1.2.840.10008.2.16.4" level="0" type="L"/>
+            <concept code="113507" displayName="Activité administrée" codeSystem="1.2.840.10008.2.16.4" level="0" type="L"/>
+            <concept code="113813" displayName="PDL Total : Produit Dose Longueur Total" codeSystem="1.2.840.10008.2.16.4" level="0" type="L"/>
+            <concept code="113830" displayName="IDSV Moyen : Indice de Dose Scanographique Volumique" codeSystem="1.2.840.10008.2.16.4" level="0" type="L"/>
+            <concept code="113839" displayName="E : Dose efficace" codeSystem="1.2.840.10008.2.16.4" level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+</valueSets>

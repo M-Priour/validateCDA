@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <valueSet xmlns="" id="1.2.250.1.213.3.3.16" name="JDV_J11-RelationPatient-CISIS" displayName="JDV_J11-RelationPatient-CISIS" effectiveDate="2021-03-15T00:00:00" statusCode="final" versionLabel="1.0">
+        <sourceCodeSystem id="2.16.840.1.113883.5.111" identifierName="Role&#160;Code" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-RoleCode" canonicalUriDSTU2="http://hl7.org/fhir/v3/RoleCode" canonicalUriSTU3="http://hl7.org/fhir/v3/RoleCode" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+        <sourceCodeSystem id="1.2.250.1.213.1.1.4.327" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.1.1.4.327" canonicalUriDSTU2="urn:oid:1.2.250.1.213.1.1.4.327" canonicalUriSTU3="urn:oid:1.2.250.1.213.1.1.4.327" canonicalUriR4="urn:oid:1.2.250.1.213.1.1.4.327"/>
+        <publishingAuthority name="Stéphane Croci"/>
+        <conceptList>
+            <concept code="MTH" displayName="Mère" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="FTH" displayName="Père" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="NMTH" displayName="Mère biologique" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="NFTH" displayName="Père biologique" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="STPMTH" displayName="Belle-mère - épouse du père ou de la mère" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="STPFTH" displayName="Beau-père - époux du père ou de la mère" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="GRMTH" displayName="Grand-mère" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="GRFTH" displayName="Grand-père" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="GGRMTH" displayName="Arrière-grand-mère" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="GGRFTH" displayName="Arrière-grand-père" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="DAU" displayName="Fille biologique" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="SON" displayName="Fils biologique" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="BRO" displayName="Frère" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="SIS" displayName="Soeur" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="HBRO" displayName="Demi-frère" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="HSIS" displayName="Demi-soeur" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="GRNDDAU" displayName="Petite-fille" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="GRNDSO" displayName="Petit-fils" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="UNCLE" displayName="Oncle" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="AUNT" displayName="Tante" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="NEPHEW" displayName="Neveu" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="NIECE" displayName="Nièce" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="HUSB" displayName="Epoux" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="WIFE" displayName="Epouse" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="DOMPART" displayName="Concubin(e) ou partenaire PACS" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="ROOM" displayName="Personne vivant sous le même toit" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="FRND" displayName="Autre proche" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="NBOR" displayName="Voisin(e)" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="FAMMEMB" displayName="Autre membre de la famille" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="CHILD" displayName="Enfant" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="COUSN" displayName="Cousin(e)" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="SIGOTHR" displayName="Conjoint" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="DAUC" displayName="Fille" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="SONC" displayName="Fils" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+            <concept code="TUTEUR" displayName="Tuteur" codeSystem="1.2.250.1.213.1.1.4.327" level="0" type="L"/>
+            <concept code="CURATEUR" displayName="Curateur" codeSystem="1.2.250.1.213.1.1.4.327" level="0" type="L"/>
+            <concept code="MSVG" displayName="Mandataire de sauvegarde" codeSystem="1.2.250.1.213.1.1.4.327" level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+</valueSets>

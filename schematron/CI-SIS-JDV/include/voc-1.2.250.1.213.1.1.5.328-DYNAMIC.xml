@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <valueSet xmlns="" id="1.2.250.1.213.1.1.5.328" name="JDV_Levres-cavite-buccale-Observation-anatomie-pathologique-CISIS" displayName="JDV_Levres-cavite-buccale-Observation-anatomie-pathologique-CISIS" effectiveDate="2021-03-15T00:00:00" statusCode="final" versionLabel="1.0">
+        <sourceCodeSystem id="1.3.6.1.4.1.19376.1.8.2.1" identifierName="PathLex&#160;Anatomic&#160;Pathology&#160;Lexicon" canonicalUri="urn:oid:1.3.6.1.4.1.19376.1.8.2.1" canonicalUriDSTU2="urn:oid:1.3.6.1.4.1.19376.1.8.2.1" canonicalUriSTU3="urn:oid:1.3.6.1.4.1.19376.1.8.2.1" canonicalUriR4="urn:oid:1.3.6.1.4.1.19376.1.8.2.1"/>
+        <publishingAuthority name="Stéphane Croci"/>
+        <conceptList>
+            <concept code="85" displayName="Lèvres, cavité buccale-pT (carcinome (sauf mélanome muqueux malin))" codeSystem="1.3.6.1.4.1.19376.1.8.2.1" level="0" type="L"/>
+            <concept code="249" displayName="lèvres, cavité buccale-Atteinte des limites de résection par la tumeur in situ" codeSystem="1.3.6.1.4.1.19376.1.8.2.1" level="0" type="L"/>
+            <concept code="250" displayName="Lèvres, cavité buccale-Atteinte des limites de résection par la tumeur in situ (NON PRIS EN COMPTE FINALEMENT)" codeSystem="1.3.6.1.4.1.19376.1.8.2.1" level="0" type="L"/>
+            <concept code="251" displayName="Lèvres, cavité buccale-Atteinte des limites de résection par la tumeur maligne invasive" codeSystem="1.3.6.1.4.1.19376.1.8.2.1" level="0" type="L"/>
+            <concept code="252" displayName="Lèvres, cavité buccale-Distance tumeur in situ/plus proche limite de résection" codeSystem="1.3.6.1.4.1.19376.1.8.2.1" level="0" type="L"/>
+            <concept code="253" displayName="Lèvres, cavité buccale-Distance tumeur maligne invasive/plus proche limite de résection" codeSystem="1.3.6.1.4.1.19376.1.8.2.1" level="0" type="L"/>
+            <concept code="254" displayName="Lèvres, cavité buccale-Emboles vasculaires" codeSystem="1.3.6.1.4.1.19376.1.8.2.1" level="0" type="L"/>
+            <concept code="255" displayName="Lèvres, cavité buccale-Extension microscopique et macroscopique de la tumeur" codeSystem="1.3.6.1.4.1.19376.1.8.2.1" level="0" type="L"/>
+            <concept code="256" displayName="Lèvres, cavité buccale-Infiltration péri-nerveuse" codeSystem="1.3.6.1.4.1.19376.1.8.2.1" level="0" type="L"/>
+            <concept code="257" displayName="Lèvres, cavité buccale-Invasion de la capsule" codeSystem="1.3.6.1.4.1.19376.1.8.2.1" level="0" type="L"/>
+            <concept code="258" displayName="Lèvres, cavité buccale-Localisation de(s) ganglion(s)" codeSystem="1.3.6.1.4.1.19376.1.8.2.1" level="0" type="L"/>
+            <concept code="259" displayName="Lèvres, cavité buccale-Nombre de ganglion(s) envahi(s)" codeSystem="1.3.6.1.4.1.19376.1.8.2.1" level="0" type="L"/>
+            <concept code="260" displayName="Lèvres, cavité buccale-Nombre de ganglion(s) examiné(s)" codeSystem="1.3.6.1.4.1.19376.1.8.2.1" level="0" type="L"/>
+            <concept code="261" displayName="Lèvres, cavité buccale-Organe-region-prelevement-CISIS" codeSystem="1.3.6.1.4.1.19376.1.8.2.1" level="0" type="L"/>
+            <concept code="262" displayName="Lèvres, cavité buccale-pN" codeSystem="1.3.6.1.4.1.19376.1.8.2.1" level="0" type="L"/>
+            <concept code="263" displayName="Lèvres, cavité buccale-Procédure de prélèvement" codeSystem="1.3.6.1.4.1.19376.1.8.2.1" level="0" type="L"/>
+            <concept code="264" displayName="Lèvres, cavité buccale-pT (mélanome muqueux malin)" codeSystem="1.3.6.1.4.1.19376.1.8.2.1" level="0" type="L"/>
+            <concept code="265" displayName="Lèvres, cavité buccale-Taille de la métastase ganglionnaire de plus grande taille" codeSystem="1.3.6.1.4.1.19376.1.8.2.1" level="0" type="L"/>
+            <concept code="266" displayName="Lèvres, cavité buccale-Taille de tumeur maligne invasive (plus grande dimension)" codeSystem="1.3.6.1.4.1.19376.1.8.2.1" level="0" type="L"/>
+            <concept code="267" displayName="Lèvres, cavité buccale-Taille du prélèvement (plus grande dimension)" codeSystem="1.3.6.1.4.1.19376.1.8.2.1" level="0" type="L"/>
+            <concept code="268" displayName="Lèvres, cavité buccale-Type-histologique-lesion-neoplasique-maligne-invasive-CISIS" codeSystem="1.3.6.1.4.1.19376.1.8.2.1" level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+</valueSets>
