@@ -100,7 +100,7 @@ import java.util.regex.Pattern;
 import  org.apache.commons.lang3.StringUtils;
 import java.util.concurrent.TimeUnit;
 import java.io.*;
-/* 
+
 import com.helger.schematron.pure.SchematronResourcePure; 
 import com.helger.schematron.sch.SchematronResourceSCH;
 import com.helger.schematron.*;
@@ -115,7 +115,7 @@ import com.helger.schematron.pure.preprocess.PSPreprocessor;
 import com.helger.xml.serialize.read.DOMReader;
 import com.helger.schematron.pure.bound.IPSBoundSchema;
 import com.helger.commons.io.file.FileHelper;
-*/
+
 public class validate {
 
     public   static void  writeReports (String contentLocation, String nameFile, long iTime,String nameCDAFile) {
@@ -141,8 +141,8 @@ public class validate {
             //transformer.transform(new DOMSource(contentResponse), new StreamResult(outStream));
 
             System.out.println("Write NameFile "  + nameFile);
-            final Source xmlSource = new javax.xml.transform.stream.StreamSource(new File(nameFile));
-            final Source xsltSource = new javax.xml.transform.stream.StreamSource(new File("svrl-to-html.xsl"));
+            final Source xmlSource = new javax.xml.transform.stream.StreamSource(new FileInputStream(nameFile));
+            final Source xsltSource = new javax.xml.transform.stream.StreamSource(new FileInputStream("svrl-to-html.xsl"));
             final Result result = new javax.xml.transform.stream.StreamResult(nameFile+".html");
     
             transformer = tf.newTransformer(xsltSource);
@@ -235,7 +235,7 @@ public class validate {
 
     public   static Document validatePhCda(String pathCda, String fileShematron) {
        
-       /* File fCda = new File(pathCda);
+        File fCda = new File(pathCda);
         long startTime = System.currentTimeMillis();
         boolean modePure = true;
         ISchematronResource aResPure;
@@ -256,7 +256,7 @@ public class validate {
             System.out.print("Parse error: ");
             System.out.println(exception.getMessage());
         }
-       */
+       
         return null;
     }
 
