@@ -390,7 +390,7 @@ public class validate {
                     try{
                         //Validation avec PH-Shematron structuration minimale
                         //validator = "ANS-Structuration_minimale";
-                        String fileShematron = "../schematrons/CI-SIS_" + validator+ ".sch";
+                        String fileShematron = "../testContenuCDA/schematrons/CI-SIS_" + validator+ ".sch";
                         File fShematron = new File(fileShematron);
                         if(!fShematron.exists())
                             validator = "ANS-Structuration_minimale";
