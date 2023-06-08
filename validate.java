@@ -392,8 +392,11 @@ public class validate {
                         //validator = "ANS-Structuration_minimale";
                         String fileShematron = "../testContenuCDA/schematrons/CI-SIS_" + validator+ ".sch";
                         File fShematron = new File(fileShematron);
-                        if(!fShematron.exists())
-                            validator = "ANS-Structuration_minimale";
+                        if(!fShematron.exists()){
+                            //validator = "ANS-Structuration_minimale";
+
+                        }
+
                         System.out.println("Schematron : " + fileShematron);
                         //Chemin d'écriture du rapport de validation
                         Path path = Paths.get(file.getAbsolutePath());
