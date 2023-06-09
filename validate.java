@@ -423,7 +423,7 @@ public class validate {
     ;
                         transformer = tf.newTransformer(xsltSource2);
                         transformer.setParameter("title",file.getName()); 
-                        transformer.setParameter("Validateur", "Test contenu CDA " + fShematron); 
+                        transformer.setParameter("Validateur", "testContenuCDA : CI-SIS_StructurationMinimale.sch "); 
                         transformer.setParameter("elapsedTime", TimeUnit.MILLISECONDS.toSeconds(estimatedTime));
                         transformer.transform(xmlSource2, result2);
             
@@ -478,7 +478,7 @@ public class validate {
     ;
                         transformer = tf.newTransformer(xsltSource2);
                         transformer.setParameter("title",file.getName()); 
-                        transformer.setParameter("Validateur", "Test contenu CDA " + fShematron); 
+                        transformer.setParameter("Validateur", "testContenuCDA : CI-SIS_Modeles_ANS.sch"); 
                         transformer.setParameter("elapsedTime", TimeUnit.MILLISECONDS.toSeconds(estimatedTime));
                         transformer.transform(xmlSource2, result2);
             
@@ -532,7 +532,7 @@ public class validate {
     ;
                         transformer = tf.newTransformer(xsltSource2);
                         transformer.setParameter("title",file.getName()); 
-                        transformer.setParameter("Validateur", "Test contenu CDA " + fShematron); 
+                        transformer.setParameter("Validateur", "testContenuCDA : CI-SIS_ModelesDeContenusCDA.sch "); 
                         transformer.setParameter("elapsedTime", TimeUnit.MILLISECONDS.toSeconds(estimatedTime));
                         transformer.transform(xmlSource2, result2);
             
@@ -587,7 +587,7 @@ public class validate {
     ;
                         transformer = tf.newTransformer(xsltSource2);
                         transformer.setParameter("title",file.getName()); 
-                        transformer.setParameter("Validateur", "Test contenu CDA " + fShematron); 
+                        transformer.setParameter("Validateur", "testContenuCDA : IHE.sch"); 
                         transformer.setParameter("elapsedTime", TimeUnit.MILLISECONDS.toSeconds(estimatedTime));
                         transformer.transform(xmlSource2, result2);
             
@@ -641,7 +641,7 @@ public class validate {
     ;
                         transformer = tf.newTransformer(xsltSource2);
                         transformer.setParameter("title",file.getName()); 
-                        transformer.setParameter("Validateur", "Test contenu CDA " + fShematron); 
+                        transformer.setParameter("Validateur", "testContenuCDA : IHE_XDS-SD.sch " ); 
                         transformer.setParameter("elapsedTime", TimeUnit.MILLISECONDS.toSeconds(estimatedTime));
                         transformer.transform(xmlSource2, result2);
             
@@ -697,7 +697,7 @@ public class validate {
     ;
                         transformer = tf.newTransformer(xsltSource2);
                         transformer.setParameter("title",file.getName()); 
-                        transformer.setParameter("Validateur", "Test contenu CDA " + fShematron); 
+                        transformer.setParameter("Validateur", "testContenuCDA :   " + fShematron); 
                         transformer.setParameter("elapsedTime", TimeUnit.MILLISECONDS.toSeconds(estimatedTime));
                         transformer.transform(xmlSource2, result2);
             
@@ -796,7 +796,7 @@ public class validate {
                         TransformerFactory tFactory = TransformerFactory.newInstance();
                         transformer = tf.newTransformer(xsltSource);
                         transformer.setParameter("title",file.getName()); 
-                        transformer.setParameter("Validateur",validator); 
+                        transformer.setParameter("Validateur","PH-SHematron : " + validator); 
                         transformer.setParameter("elapsedTime", TimeUnit.MILLISECONDS.toSeconds(estimatedTime));
                         transformer.transform(xmlSource, result);
             
