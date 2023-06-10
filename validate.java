@@ -124,6 +124,7 @@ public class validate {
         System.out.println("namefile :" +nameFile);
         try{
             CloseableHttpClient httpClient = HttpClients.custom().build();
+            System.out.println("url :" + contentLocation);
             final var post = new HttpGet(contentLocation);
             post.setHeader("Accept", "application/xml");
            // post.setHeader("Content-type", "application/xml");
