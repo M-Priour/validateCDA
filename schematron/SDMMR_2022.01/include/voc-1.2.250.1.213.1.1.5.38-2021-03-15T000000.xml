@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+   <valueSet xmlns="" id="1.2.250.1.213.1.1.5.38" name="JDV_PatientAdressePar-CISIS" displayName="JDV_PatientAdressePar-CISIS" effectiveDate="2021-03-15T00:00:00" statusCode="final" versionLabel="1.0" ident="CI-SIS-JDV-" url="https://o3sis.esante.gouv.fr/decor/services/" referencedFrom="SDMMR-">
+      <sourceCodeSystem id="1.2.250.1.213.1.1.4.5" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.1.1.4.5" canonicalUriDSTU2="urn:oid:1.2.250.1.213.1.1.4.5" canonicalUriSTU3="urn:oid:1.2.250.1.213.1.1.4.5" canonicalUriR4="urn:oid:1.2.250.1.213.1.1.4.5"/>
+      <sourceCodeSystem id="1.2.250.1.213.1.1.4.322" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriDSTU2="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriSTU3="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriR4="urn:oid:1.2.250.1.213.1.1.4.322"/>
+      <publishingAuthority name="nma" inherited="project"/>
+      <conceptList>
+         <concept code="G15_10/C23" displayName="Gynéco/obstétricien" codeSystem="1.2.250.1.213.1.1.4.5" level="0" type="L"/>
+         <concept code="G15_10/C72" displayName="Généticien" codeSystem="1.2.250.1.213.1.1.4.5" level="0" type="L"/>
+         <concept code="G15_10/SM54" displayName="Généraliste" codeSystem="1.2.250.1.213.1.1.4.5" level="0" type="L"/>
+         <concept code="ORG-019" displayName="Venu de lui-même" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="ORG-020" displayName="Association de patients" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="ORG-021" displayName="Pédiatre ville" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="ORG-022" displayName="Pédiatre hôpital" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="ORG-023" displayName="Centre de protection maternelle et infantile" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="GEN-092.05.02" displayName="Autre spécialiste" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="ORG-025" displayName="Site de prise en charge" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="ORG-026" displayName="Centre pluridisciplinaire de diagnostic prénatal" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="ORG-182" displayName="Centre de référence maladies rares (CRM)" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="ORG-183" displayName="Centre de compétences maladies rares (CCM)" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="GEN-092.05.01" displayName="Autre personne" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+      </conceptList>
+   </valueSet>
+</valueSets>

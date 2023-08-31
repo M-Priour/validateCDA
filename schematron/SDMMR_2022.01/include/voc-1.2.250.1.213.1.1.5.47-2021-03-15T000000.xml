@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+   <valueSet xmlns="" id="1.2.250.1.213.1.1.5.47" name="JDV_InvestigationsRealisees-CISIS" displayName="JDV_InvestigationsRealisees-CISIS" effectiveDate="2021-03-15T00:00:00" statusCode="final" versionLabel="1.0" ident="CI-SIS-JDV-" url="https://o3sis.esante.gouv.fr/decor/services/" referencedFrom="SDMMR-">
+      <sourceCodeSystem id="1.2.250.1.213.2.12" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.2.12" canonicalUriDSTU2="urn:oid:1.2.250.1.213.2.12" canonicalUriSTU3="urn:oid:1.2.250.1.213.2.12" canonicalUriR4="urn:oid:1.2.250.1.213.2.12"/>
+      <sourceCodeSystem id="1.2.250.1.213.1.1.4.322" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriDSTU2="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriSTU3="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriR4="urn:oid:1.2.250.1.213.1.1.4.322"/>
+      <publishingAuthority name="nma" inherited="project"/>
+      <conceptList>
+         <concept code="G-A304" displayName="Clinique" codeSystem="1.2.250.1.213.2.12" level="0" type="L"/>
+         <concept code="G-B001" displayName="Biologique" codeSystem="1.2.250.1.213.2.12" level="0" type="L"/>
+         <concept code="G-B017" displayName="Biochimique" codeSystem="1.2.250.1.213.2.12" level="0" type="L"/>
+         <concept code="GEN-036" displayName="Imagerie" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="MED-101" displayName="Génétique moléculaire" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="MED-102" displayName="Cytogénétique" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="MED-477" displayName="Exploration fonctionnelle" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="MED-478" displayName="Anatomopathologie" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="GEN-092.04.03" displayName="Autres investigations" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+      </conceptList>
+   </valueSet>
+</valueSets>

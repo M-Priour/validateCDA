@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+   <valueSet xmlns="" id="1.2.250.1.213.1.1.5.625" name="JDV_TypeDeVerresPrescrits-CISIS" displayName="JDV_TypeDeVerresPrescrits-CISIS" effectiveDate="2021-03-15T00:00:00" statusCode="final" versionLabel="1.0" ident="CI-SIS-JDV-" url="https://o3sis.esante.gouv.fr/decor/services/" referencedFrom="OPHT-BR-">
+      <sourceCodeSystem id="1.2.250.1.213.1.1.4.322" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriDSTU2="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriSTU3="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriR4="urn:oid:1.2.250.1.213.1.1.4.322"/>
+      <publishingAuthority name="jem" inherited="project"/>
+      <conceptList>
+         <concept code="MED-905" displayName="Verres de près (X)" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="MED-906" displayName="Verres de loin" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="MED-907" displayName="Verres progressifs" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="MED-908" displayName="Verres dégressifs" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="MED-909" displayName="Verres bi-focaux" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="MED-910" displayName="Verres tri-focaux" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="MED-911" displayName="2 paires (de près et de loin)" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+      </conceptList>
+   </valueSet>
+</valueSets>

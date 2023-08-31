@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:local="http://art-decor.org/functions">
+   <valueSet xmlns="" id="1.2.250.1.213.1.1.5.498" name="JDV_NVPO-CISIS" displayName="JDV_NVPO-CISIS" effectiveDate="2021-03-15T00:00:00" statusCode="final" versionLabel="1.0" ident="CI-SIS-JDV-" url="https://o3sis.esante.gouv.fr/decor/services/" referencedFrom="CR-Anesthesie-">
+      <sourceCodeSystem id="1.2.250.1.213.1.1.4.322" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriDSTU2="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriSTU3="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriR4="urn:oid:1.2.250.1.213.1.1.4.322"/>
+      <publishingAuthority name="nma" inherited="project"/>
+      <conceptList>
+         <concept code="MED-627" displayName="1 - Rien" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="MED-628" displayName="2 - Nausées modéréés" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="MED-629" displayName="3 - Nausées intenses" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="MED-630" displayName="4 - Vomissements" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="MED-631" displayName="5 - Vomissement répétés ou incoercibles" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="MED-659" displayName="Non évaluable" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+      </conceptList>
+   </valueSet>
+</valueSets>

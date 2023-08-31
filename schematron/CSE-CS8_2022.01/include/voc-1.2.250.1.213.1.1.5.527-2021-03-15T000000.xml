@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+   <valueSet xmlns="" id="1.2.250.1.213.1.1.5.527" name="JDV_EvenementsAccouchement-CISIS" displayName="JDV_EvenementsAccouchement-CISIS" effectiveDate="2021-03-15T00:00:00" statusCode="final" versionLabel="1.0" ident="CI-SIS-JDV-" url="https://o3sis.esante.gouv.fr/decor/services/" referencedFrom="CSE-CS8-">
+      <sourceCodeSystem id="2.16.840.1.113883.6.1" identifierName="Logical Observation Identifier Names and Codes" canonicalUri="http://loinc.org" canonicalUriDSTU2="http://loinc.org" canonicalUriSTU3="http://loinc.org" canonicalUriR4="http://loinc.org" hl7v2table0396="LN"/>
+      <sourceCodeSystem id="1.2.250.1.213.1.1.4.322" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriDSTU2="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriSTU3="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriR4="urn:oid:1.2.250.1.213.1.1.4.322"/>
+      <publishingAuthority name="Medecin" inherited="project"/>
+      <conceptList>
+         <concept code="11878-6" displayName="Nombre de fotus (pour la grossesse actuelle)" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+         <concept code="11884-4" displayName="Age gestationnel (semaine d'amenorrhée révolues)" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+         <concept code="11876-0" displayName="Présentation fotale (palpation)" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+         <concept code="11877-8" displayName="Présentation fotale (ultrason)" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+         <concept code="MED-162" displayName="Rang de naissance" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="MED-166" displayName="Rupture membranaire plus de 12 h avant l'accouchement" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="73813-8" displayName="Caractéristiques du travail" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+         <concept code="MED-168" displayName="Analgésie au cours du travail" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="57071-3" displayName="Méthode d'accouchement" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+         <concept code="MED-600" displayName="Cause de la césarienne" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+      </conceptList>
+   </valueSet>
+</valueSets>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+   <valueSet xmlns="" id="1.2.250.1.213.1.1.5.41" name="JDV_ObjectifActivite-CISIS" displayName="JDV_ObjectifActivite-CISIS" effectiveDate="2021-03-15T00:00:00" statusCode="final" versionLabel="1.0" ident="CI-SIS-JDV-" url="https://o3sis.esante.gouv.fr/decor/services/" referencedFrom="SDMMR-">
+      <sourceCodeSystem id="1.2.250.1.213.1.1.4.322" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriDSTU2="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriSTU3="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriR4="urn:oid:1.2.250.1.213.1.1.4.322"/>
+      <publishingAuthority name="nma" inherited="project"/>
+      <conceptList>
+         <concept code="ORG-164" displayName="Education thérapeutique" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="MED-097" displayName="Diagnostic" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="MED-098" displayName="Conseil génétique" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="MED-099" displayName="Diagnostic prénatal" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="MED-100" displayName="Diagnostic préimplantatoire" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="ORG-046" displayName="Mise en place de la prise en charge" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="ORG-047" displayName="Suivi" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="ORG-048" displayName="Prise en charge en urgence" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="ORG-049" displayName="Protocole de recherche" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="ORG-031" displayName="Acte médical" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="ORG-123" displayName="Consultation de transition enfant/adulte" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+      </conceptList>
+   </valueSet>
+</valueSets>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:local="http://art-decor.org/functions">
+   <valueSet xmlns="" id="1.2.250.1.213.1.1.5.83" name="JDV_MotifMiseAJour-CISIS" displayName="JDV_MotifMiseAJour-CISIS" effectiveDate="2021-03-15T00:00:00" statusCode="final" versionLabel="1.0" ident="CI-SIS-JDV-" url="https://o3sis.esante.gouv.fr/decor/services/" referencedFrom="PPS-CANCER-">
+      <sourceCodeSystem id="2.16.840.1.113883.3.26.1.1" identifierName="NCI Thesaurus" canonicalUri="urn:oid:2.16.840.1.113883.3.26.1.1" canonicalUriDSTU2="urn:oid:2.16.840.1.113883.3.26.1.1" canonicalUriSTU3="urn:oid:2.16.840.1.113883.3.26.1.1" canonicalUriR4="urn:oid:2.16.840.1.113883.3.26.1.1"/>
+      <sourceCodeSystem id="1.2.250.1.213.1.1.4.322" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriDSTU2="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriSTU3="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriR4="urn:oid:1.2.250.1.213.1.1.4.322"/>
+      <publishingAuthority name="medecin" inherited="project"/>
+      <conceptList>
+         <concept code="C3352" displayName="Récidive" codeSystem="2.16.840.1.113883.3.26.1.1" level="0" type="L"/>
+         <concept code="MED-103" displayName="Non réponse ou évolution sous traitement" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="MED-104" displayName="Refus de traitement" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="MED-105" displayName="Décision de prise en soins palliatifs" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="MED-556" displayName="Fenêtre thérapeutique" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="MED-560" displayName="Réajustement du programme thérapeutique et de suivi" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="MED-561" displayName="Réajustement des soins de support et accompagnements" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="GEN-175" displayName="Modification d'informations administratives" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="GEN-176" displayName="Modification de calendrier" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="GEN-092.08.02" displayName="Autre motif de mise à jour" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+      </conceptList>
+   </valueSet>
+</valueSets>

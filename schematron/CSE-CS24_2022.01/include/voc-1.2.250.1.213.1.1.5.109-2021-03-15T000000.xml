@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+   <valueSet xmlns="" id="1.2.250.1.213.1.1.5.109" name="JDV_Profession-CISIS" displayName="JDV_Profession-CISIS" effectiveDate="2021-03-15T00:00:00" statusCode="final" versionLabel="1.0" ident="CI-SIS-JDV-" url="https://o3sis.esante.gouv.fr/decor/services/" referencedFrom="CSE-CS24-">
+      <sourceCodeSystem id="1.2.250.1.213.2.13" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.2.13" canonicalUriDSTU2="urn:oid:1.2.250.1.213.2.13" canonicalUriSTU3="urn:oid:1.2.250.1.213.2.13" canonicalUriR4="urn:oid:1.2.250.1.213.2.13"/>
+      <publishingAuthority name="Medecin" inherited="project"/>
+      <conceptList>
+         <concept code="1" displayName="Agriculteur exploitant" codeSystem="1.2.250.1.213.2.13" level="0" type="L"/>
+         <concept code="2" displayName="Artisan, commerçant ou chef d'entreprise" codeSystem="1.2.250.1.213.2.13" level="0" type="L"/>
+         <concept code="3" displayName="Cadre ou profession intellectuelle supérieure" codeSystem="1.2.250.1.213.2.13" level="0" type="L"/>
+         <concept code="4" displayName="Profession intermédiaire" codeSystem="1.2.250.1.213.2.13" level="0" type="L"/>
+         <concept code="5" displayName="Employé" codeSystem="1.2.250.1.213.2.13" level="0" type="L"/>
+         <concept code="6" displayName="Ouvrier" codeSystem="1.2.250.1.213.2.13" level="0" type="L"/>
+      </conceptList>
+   </valueSet>
+</valueSets>

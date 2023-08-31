@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:local="http://art-decor.org/functions">
+   <valueSet xmlns="" id="2.16.840.1.113883.1.11.16866" name="JDV_HL7_ActPriority-CISIS" displayName="JDV_HL7_ActPriority-CISIS" effectiveDate="2021-03-15T00:00:00" statusCode="final" versionLabel="1.0" ident="CI-SIS-JDV-" url="https://o3sis.esante.gouv.fr/decor/services/" referencedFrom="BBR-">
+      <sourceCodeSystem id="2.16.840.1.113883.5.7" identifierName="Act Priority" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-ActPriority" canonicalUriDSTU2="http://hl7.org/fhir/v3/ActPriority" canonicalUriSTU3="http://hl7.org/fhir/v3/ActPriority" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-ActPriority"/>
+      <publishingAuthority name="nar" inherited="project"/>
+      <conceptList>
+         <concept code="A" displayName="Aussi vite que possible" codeSystem="2.16.840.1.113883.5.7" level="0" type="L"/>
+         <concept code="CR" displayName="A contacter dès que les résultats sont disponibles" codeSystem="2.16.840.1.113883.5.7" level="0" type="L"/>
+         <concept code="EL" displayName="Bénéfique pour le patient mais pas essentiel pour sa survie" codeSystem="2.16.840.1.113883.5.7" level="0" type="L"/>
+         <concept code="EM" displayName="Très urgent" codeSystem="2.16.840.1.113883.5.7" level="0" type="L"/>
+         <concept code="P" displayName="A réaliser avant l'intervention" codeSystem="2.16.840.1.113883.5.7" level="0" type="L"/>
+         <concept code="PRN" displayName="Si nécessaire" codeSystem="2.16.840.1.113883.5.7" level="0" type="L"/>
+         <concept code="R" displayName="A réaliser aux heures ouvrées" codeSystem="2.16.840.1.113883.5.7" level="0" type="L"/>
+         <concept code="RR" displayName="Compte-rendu urgent" codeSystem="2.16.840.1.113883.5.7" level="0" type="L"/>
+         <concept code="S" displayName="Immédiatement" codeSystem="2.16.840.1.113883.5.7" level="0" type="L"/>
+         <concept code="T" displayName="Plannification à respecter" codeSystem="2.16.840.1.113883.5.7" level="0" type="L"/>
+         <concept code="UD" displayName="Médicament à utiliser selon les directives du prescripteur" codeSystem="2.16.840.1.113883.5.7" level="0" type="L"/>
+         <concept code="UR" displayName="Urgent" codeSystem="2.16.840.1.113883.5.7" level="0" type="L"/>
+      </conceptList>
+   </valueSet>
+</valueSets>

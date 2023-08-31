@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:local="http://art-decor.org/functions">
+   <valueSet xmlns="" id="1.2.250.1.213.1.1.4.2.289.12" name="JDV_OBP_DiabeteGrossesse-CISIS" displayName="JDV_OBP_DiabeteGrossesse-CISIS" effectiveDate="2021-03-15T00:00:00" statusCode="final" versionLabel="1.0" ident="CI-SIS-JDV-" url="https://o3sis.esante.gouv.fr/decor/services/" referencedFrom="ObstetriqueEtPerinataliteOBP-">
+      <sourceCodeSystem id="2.16.840.1.113883.6.3" identifierName="ICD10" canonicalUri="http://hl7.org/fhir/sid/icd-10" canonicalUriDSTU2="http://hl7.org/fhir/sid/icd-10" canonicalUriSTU3="http://hl7.org/fhir/sid/icd-10" canonicalUriR4="http://hl7.org/fhir/sid/icd-10"/>
+      <publishingAuthority name="Medecin" inherited="project"/>
+      <conceptList>
+         <concept code="O24.0" displayName="Diabète sucré préexistant, de type 1" codeSystem="2.16.840.1.113883.6.3" level="0" type="L"/>
+         <concept code="O24.1" displayName="Diabète sucré préexistant, de type 2" codeSystem="2.16.840.1.113883.6.3" level="0" type="L"/>
+         <concept code="O24.4" displayName="Diabète sucré survenant au cours de la grossesse" codeSystem="2.16.840.1.113883.6.3" level="0" type="L"/>
+      </conceptList>
+   </valueSet>
+</valueSets>

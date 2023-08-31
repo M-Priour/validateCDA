@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+   <valueSet xmlns="" id="1.2.250.1.213.1.1.4.2.10" name="JDV_UFCV_CompProt-CISIS" displayName="JDV_UFCV_CompProt-CISIS" effectiveDate="2021-03-15T00:00:00" statusCode="final" versionLabel="1.0" ident="CI-SIS-JDV-" url="https://o3sis.esante.gouv.fr/decor/services/" referencedFrom="F-PRC-PPV-">
+      <sourceCodeSystem id="1.2.250.1.213.1.1.4.2" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.1.1.4.2" canonicalUriDSTU2="urn:oid:1.2.250.1.213.1.1.4.2" canonicalUriSTU3="urn:oid:1.2.250.1.213.1.1.4.2" canonicalUriR4="urn:oid:1.2.250.1.213.1.1.4.2"/>
+      <publishingAuthority name="nbs" inherited="project"/>
+      <conceptList>
+         <concept code="D0012-1" displayName="Homogreffe" codeSystem="1.2.250.1.213.1.1.4.2" level="0" type="L"/>
+         <concept code="D0012-2" displayName="Autogreffe" codeSystem="1.2.250.1.213.1.1.4.2" level="0" type="L"/>
+      </conceptList>
+   </valueSet>
+</valueSets>

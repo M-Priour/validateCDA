@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:local="http://art-decor.org/functions">
+   <valueSet xmlns="" id="1.2.250.1.213.1.1.4.2.289.2" name="JDV_AntecedentsObstetricaux_OBP-CISIS" displayName="JDV_AntecedentsObstetricaux_OBP-CISIS" statusCode="final" versionLabel="1.0" lastModifiedDate="2023-05-11T13:14:57" effectiveDate="2023-05-11T13:14:32" ident="CI-SIS-JDV-" url="https://o3sis.esante.gouv.fr/decor/services/" referencedFrom="ObstetriqueEtPerinataliteOBP-">
+      <sourceCodeSystem id="2.16.840.1.113883.6.1" identifierName="Logical Observation Identifier Names and Codes" canonicalUri="http://loinc.org" canonicalUriDSTU2="http://loinc.org" canonicalUriSTU3="http://loinc.org" canonicalUriR4="http://loinc.org" hl7v2table0396="LN"/>
+      <sourceCodeSystem id="2.16.840.1.113883.6.3" identifierName="ICD10" canonicalUri="http://hl7.org/fhir/sid/icd-10" canonicalUriDSTU2="http://hl7.org/fhir/sid/icd-10" canonicalUriSTU3="http://hl7.org/fhir/sid/icd-10" canonicalUriR4="http://hl7.org/fhir/sid/icd-10"/>
+      <sourceCodeSystem id="1.2.250.1.213.1.1.4.322" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriDSTU2="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriSTU3="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriR4="urn:oid:1.2.250.1.213.1.1.4.322"/>
+      <sourceCodeSystem id="1.2.250.1.213.1.1.4.2.289" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.1.1.4.2.289" canonicalUriDSTU2="urn:oid:1.2.250.1.213.1.1.4.2.289" canonicalUriSTU3="urn:oid:1.2.250.1.213.1.1.4.2.289" canonicalUriR4="urn:oid:1.2.250.1.213.1.1.4.2.289"/>
+      <publishingAuthority name="Medecin" inherited="project"/>
+      <conceptList>
+         <concept code="11884-4" codeSystem="2.16.840.1.113883.6.1" displayName="Age gestationnel du fotus (estimation clinique)" level="0" type="L"/>
+         <concept code="O72" codeSystem="2.16.840.1.113883.6.3" displayName="Hémorragie post-partum" level="0" type="L"/>
+         <concept code="MED-164" codeSystem="1.2.250.1.213.1.1.4.322" displayName="Pathologie en cours de grossesse" level="0" type="L"/>
+         <concept code="63893-2" codeSystem="2.16.840.1.113883.6.1" displayName="Issue de la grossesse" level="0" type="L"/>
+         <concept code="OBS_003" codeSystem="1.2.250.1.213.1.1.4.2.289" displayName="Etat du périnée" level="0" type="L"/>
+         <concept code="63962-5" codeSystem="2.16.840.1.113883.6.1" displayName="Numéro de grossesse" level="0" type="L"/>
+         <concept code="11638-4" codeSystem="2.16.840.1.113883.6.1" displayName="Nombre d'enfants" level="0" type="L"/>
+      </conceptList>
+   </valueSet>
+</valueSets>

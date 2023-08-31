@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+   <valueSet xmlns="" id="1.2.250.1.213.1.1.5.110" name="JDV_Activite-CISIS" displayName="JDV_Activite-CISIS" effectiveDate="2021-03-15T00:00:00" statusCode="final" versionLabel="1.0" ident="CI-SIS-JDV-" url="https://o3sis.esante.gouv.fr/decor/services/" referencedFrom="CSE-CS24-">
+      <sourceCodeSystem id="1.2.250.1.213.1.1.4.322" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriDSTU2="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriSTU3="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriR4="urn:oid:1.2.250.1.213.1.1.4.322"/>
+      <publishingAuthority name="Medecin" inherited="project"/>
+      <conceptList>
+         <concept code="PAT-040" displayName="Activité salariée" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="PAT-042" displayName="Retraité" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="PAT-043" displayName="Au foyer" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="PAT-044" displayName="Congé parental" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="PAT-045" displayName="Chômeur" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="PAT-046" displayName="Elève, étudiant ou en formation" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="GEN-092.05.06" displayName="Autre inactif" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="GEN-092.05.05" displayName="Autre activité" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+      </conceptList>
+   </valueSet>
+</valueSets>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+   <valueSet xmlns="" id="1.2.250.1.213.1.1.5.655" name="JDV_MesureLentillePrescrite-CISIS" displayName="JDV_MesureLentillePrescrite-CISIS" effectiveDate="2021-03-15T00:00:00" statusCode="final" versionLabel="1.0" ident="CI-SIS-JDV-" url="https://o3sis.esante.gouv.fr/decor/services/" referencedFrom="BBR-">
+      <sourceCodeSystem id="1.2.250.1.213.1.1.4.322" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriDSTU2="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriSTU3="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriR4="urn:oid:1.2.250.1.213.1.1.4.322"/>
+      <sourceCodeSystem id="2.16.840.1.113883.6.1" identifierName="Logical Observation Identifier Names and Codes" canonicalUri="http://loinc.org" canonicalUriDSTU2="http://loinc.org" canonicalUriSTU3="http://loinc.org" canonicalUriR4="http://loinc.org" hl7v2table0396="LN"/>
+      <sourceCodeSystem id="2.16.840.1.113883.3.26.1.1" identifierName="NCI Thesaurus" canonicalUri="urn:oid:2.16.840.1.113883.3.26.1.1" canonicalUriDSTU2="urn:oid:2.16.840.1.113883.3.26.1.1" canonicalUriSTU3="urn:oid:2.16.840.1.113883.3.26.1.1" canonicalUriR4="urn:oid:2.16.840.1.113883.3.26.1.1"/>
+      <publishingAuthority name="nar" inherited="project"/>
+      <conceptList>
+         <concept code="MED-897" displayName="Prise en charge LPP" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="MED-1083" displayName="Prescription pour primo porteur de lentille de contact" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="74712-1" displayName="Date de fin d'adaptation" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+         <concept code="91909-2" displayName="Date de fin de validité" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+         <concept code="80418-7" displayName="Produit d'entretien" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+         <concept code="69730-0" displayName="Consignes et conseils" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+         <concept code="28866-2" displayName="Type de lentille" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+         <concept code="GEN-292" displayName="Commentaire" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="C53610" displayName="Renouvellement" codeSystem="2.16.840.1.113883.3.26.1.1" level="0" type="L"/>
+         <concept code="C43383" displayName="Marque et Modèle" codeSystem="2.16.840.1.113883.3.26.1.1" level="0" type="L"/>
+         <concept code="C48187" displayName="Matériau" codeSystem="2.16.840.1.113883.3.26.1.1" level="0" type="L"/>
+         <concept code="MED-1084" displayName="Diamètre lentille - lentille prescrite" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="MED-1085" displayName="Rayon 1 lentille - lentille prescrite" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="MED-1086" displayName="Rayon 2 lentille - lentille prescrite" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="GEN-092.08.04" displayName="Autre(s) paramètre(s)" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="MED-1065" displayName="Valeur de la kératométrie dans l'axe le plus plat" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="MED-1066" displayName="Valeur de la kératométrie dans l'axe le plus cambré" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="95300-0" displayName="Axe du K" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+         <concept code="MED-1087" displayName="Puissance de la sphère - lentille prescrite" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="MED-1088" displayName="Puissance du cylindre - lentille prescrite" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="95325-7" displayName="Axe en degrés des lentilles" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+         <concept code="28814-2" displayName="Addition - grandeur" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+         <concept code="28815-9" displayName="Addition - valeur" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+      </conceptList>
+   </valueSet>
+</valueSets>

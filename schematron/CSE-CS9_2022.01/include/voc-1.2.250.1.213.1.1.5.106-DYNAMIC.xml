@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+   <valueSet xmlns="" id="1.2.250.1.213.1.1.5.106" name="JDV_VaccinCSE9-CISIS" displayName="JDV_VaccinCSE9-CISIS" effectiveDate="2021-03-15T00:00:00" statusCode="final" versionLabel="1.0" ident="CI-SIS-JDV-" url="https://o3sis.esante.gouv.fr/decor/services/" referencedFrom="CSE-CS9-">
+      <sourceCodeSystem id="2.16.840.1.113883.6.73" identifierName="WHO Anatomical Therapeutic Chemical classification" canonicalUri="http://www.whocc.no/atc" canonicalUriDSTU2="http://www.whocc.no/atc" canonicalUriSTU3="http://www.whocc.no/atc" canonicalUriR4="http://www.whocc.no/atc" hl7v2table0396="WC"/>
+      <publishingAuthority name="Medecin" inherited="project"/>
+      <conceptList>
+         <concept code="J07CA01" displayName="Vaccin diphtérie-polyomielite-tétanos" codeSystem="2.16.840.1.113883.6.73" level="0" type="L"/>
+         <concept code="J07AJ" displayName="Vaccin contre la coqueluche" codeSystem="2.16.840.1.113883.6.73" level="0" type="L"/>
+         <concept code="J07AG" displayName="Vaccin anti haemophilus influenzae B" codeSystem="2.16.840.1.113883.6.73" level="0" type="L"/>
+         <concept code="J07BC01" displayName="Vaccin contre l'hépatite B" codeSystem="2.16.840.1.113883.6.73" level="0" type="L"/>
+         <concept code="J07AL" displayName="Vaccin antipneumococcique" codeSystem="2.16.840.1.113883.6.73" level="0" type="L"/>
+         <concept code="J07AN" displayName="Vaccin antituberculeux" codeSystem="2.16.840.1.113883.6.73" level="0" type="L"/>
+         <concept code="J07X" displayName="Autres vaccins" codeSystem="2.16.840.1.113883.6.73" level="0" type="L"/>
+         <concept code="J07AH07" displayName="Vaccin contre le méningocoque C" codeSystem="2.16.840.1.113883.6.73" level="0" type="L"/>
+      </conceptList>
+   </valueSet>
+</valueSets>

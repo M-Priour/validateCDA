@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+   <valueSet xmlns="" id="2.16.840.1.113883.1.11.13955" name="JDV_HL7_ActEncounterCode-CISIS" displayName="JDV_HL7_ActEncounterCode-CISIS" effectiveDate="2021-03-15T00:00:00" statusCode="final" versionLabel="1.0" ident="CI-SIS-JDV-" url="https://o3sis.esante.gouv.fr/decor/services/" referencedFrom="BBR-">
+      <sourceCodeSystem id="2.16.840.1.113883.5.4" identifierName="Act Code" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-ActCode" canonicalUriDSTU2="http://hl7.org/fhir/v3/ActCode" canonicalUriSTU3="http://hl7.org/fhir/v3/ActCode" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-ActCode" hl7v2table0396="ACTCODE"/>
+      <publishingAuthority name="nar" inherited="project"/>
+      <conceptList>
+         <concept code="AMB" displayName="Ambulatoire" codeSystem="2.16.840.1.113883.5.4" level="0" type="L"/>
+         <concept code="EMER" displayName="Urgence" codeSystem="2.16.840.1.113883.5.4" level="0" type="L"/>
+         <concept code="FLD" displayName="Sur le terrain (hors structure de soins et domicile du patient)" codeSystem="2.16.840.1.113883.5.4" level="0" type="L"/>
+         <concept code="HH" displayName="A domicile" codeSystem="2.16.840.1.113883.5.4" level="0" type="L"/>
+         <concept code="IMP" displayName="Hospitalisation" codeSystem="2.16.840.1.113883.5.4" level="0" type="L"/>
+         <concept code="OBSENC" displayName="Observation" codeSystem="2.16.840.1.113883.5.4" level="0" type="L"/>
+         <concept code="PRENC" displayName="Pré-admission" codeSystem="2.16.840.1.113883.5.4" level="0" type="L"/>
+         <concept code="SS" displayName="Hospitalisation de jour" codeSystem="2.16.840.1.113883.5.4" level="0" type="L"/>
+         <concept code="VR" displayName="Téléconsultation" codeSystem="2.16.840.1.113883.5.4" level="0" type="L"/>
+      </conceptList>
+   </valueSet>
+</valueSets>

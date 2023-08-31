@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+   <valueSet xmlns="" id="1.2.250.1.213.1.1.5.126" name="JDV_Lien-Assure-Beneficiaire-CISIS" displayName="JDV_Lien-Assure-Beneficiaire-CISIS" effectiveDate="2021-03-15T00:00:00" statusCode="final" versionLabel="1.0" ident="CI-SIS-JDV-" url="https://o3sis.esante.gouv.fr/decor/services/" referencedFrom="BBR-">
+      <sourceCodeSystem id="2.16.840.1.113883.5.111" identifierName="Role Code" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-RoleCode" canonicalUriDSTU2="http://hl7.org/fhir/v3/RoleCode" canonicalUriSTU3="http://hl7.org/fhir/v3/RoleCode" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-RoleCode" hl7v2table0396="ROLECODE"/>
+      <publishingAuthority name="nar" inherited="project"/>
+      <conceptList>
+         <concept code="FAMDEP" displayName="Couverture familiale" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+         <concept code="STUD" displayName="Couverture étudiante" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+         <concept code="SELF" displayName="Couverture personnelle" codeSystem="2.16.840.1.113883.5.111" level="0" type="L"/>
+      </conceptList>
+   </valueSet>
+</valueSets>

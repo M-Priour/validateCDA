@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+   <valueSet xmlns="" id="1.2.250.1.213.1.1.5.642" name="JDV_TypeDeMesureAcuiteVisuelle-CISIS" displayName="JDV_TypeDeMesureAcuiteVisuelle-CISIS" effectiveDate="2021-03-15T00:00:00" statusCode="final" versionLabel="1.0" ident="CI-SIS-JDV-" url="https://o3sis.esante.gouv.fr/decor/services/" referencedFrom="BBR-">
+      <sourceCodeSystem id="2.16.840.1.113883.6.1" identifierName="Logical Observation Identifier Names and Codes" canonicalUri="http://loinc.org" canonicalUriDSTU2="http://loinc.org" canonicalUriSTU3="http://loinc.org" canonicalUriR4="http://loinc.org" hl7v2table0396="LN"/>
+      <publishingAuthority name="nar" inherited="project"/>
+      <conceptList>
+         <concept code="28711-0" displayName="Acuité visuelle - vision de loin" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+         <concept code="64841-0" displayName="Acuité visuelle - ETDRS" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+         <concept code="98475-7" displayName="Acuité visuelle - vision de près" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+         <concept code="95320-8" displayName="Puissance de la sphère - acuité visuelle" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+         <concept code="95322-4" displayName="Puissance du cylindre - acuité visuelle" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+         <concept code="95321-6" displayName="Axe en degrés - acuité visuelle" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+         <concept code="96052-6" displayName="Addition" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+         <concept code="95323-2" displayName="Prisme - puissance - acuité visuelle" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+         <concept code="96051-8" displayName="Prisme - orientation base - acuité visuelle" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+         <concept code="95324-0" displayName="Prisme - axe en degrés - acuité visuelle" codeSystem="2.16.840.1.113883.6.1" level="0" type="L"/>
+      </conceptList>
+   </valueSet>
+</valueSets>

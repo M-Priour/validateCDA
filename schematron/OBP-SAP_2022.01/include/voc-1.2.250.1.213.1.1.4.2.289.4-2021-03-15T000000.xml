@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:local="http://art-decor.org/functions">
+   <valueSet xmlns="" id="1.2.250.1.213.1.1.4.2.289.4" name="JDV_EtatPerinee-CISIS" displayName="JDV_EtatPerinee-CISIS" effectiveDate="2021-03-15T00:00:00" statusCode="final" versionLabel="1.0" ident="CI-SIS-JDV-" url="https://o3sis.esante.gouv.fr/decor/services/" referencedFrom="ObstetriqueEtPerinataliteOBP-">
+      <sourceCodeSystem id="1.2.250.1.213.1.1.4.2.289" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.1.1.4.2.289" canonicalUriDSTU2="urn:oid:1.2.250.1.213.1.1.4.2.289" canonicalUriSTU3="urn:oid:1.2.250.1.213.1.1.4.2.289" canonicalUriR4="urn:oid:1.2.250.1.213.1.1.4.2.289"/>
+      <sourceCodeSystem id="1.2.250.1.213.2.12" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.2.12" canonicalUriDSTU2="urn:oid:1.2.250.1.213.2.12" canonicalUriSTU3="urn:oid:1.2.250.1.213.2.12" canonicalUriR4="urn:oid:1.2.250.1.213.2.12"/>
+      <publishingAuthority name="Medecin" inherited="project"/>
+      <conceptList>
+         <concept code="OBS_106" displayName="Périnée intact" codeSystem="1.2.250.1.213.1.1.4.2.289" level="0" type="L"/>
+         <concept code="OBS_107" displayName="Déchirure périnéale simple (1er et 2ème degré)" codeSystem="1.2.250.1.213.1.1.4.2.289" level="0" type="L"/>
+         <concept code="OBS_108" displayName="Déchirure sphinctérienne (périnée complet et compliqué = 3ème et 4ème degré)" codeSystem="1.2.250.1.213.1.1.4.2.289" level="0" type="L"/>
+         <concept code="P1-86130" displayName="Episiotomie" codeSystem="1.2.250.1.213.2.12" level="0" type="L"/>
+      </conceptList>
+   </valueSet>
+</valueSets>

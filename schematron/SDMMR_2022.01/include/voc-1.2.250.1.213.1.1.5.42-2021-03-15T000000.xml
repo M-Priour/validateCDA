@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+   <valueSet xmlns="" id="1.2.250.1.213.1.1.5.42" name="JDV_ProfessionPersonnelActivite-CISIS" displayName="JDV_ProfessionPersonnelActivite-CISIS" effectiveDate="2021-03-15T00:00:00" statusCode="final" versionLabel="1.0" ident="CI-SIS-JDV-" url="https://o3sis.esante.gouv.fr/decor/services/" referencedFrom="SDMMR-">
+      <sourceCodeSystem id="1.2.250.1.213.1.1.4.5" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.1.1.4.5" canonicalUriDSTU2="urn:oid:1.2.250.1.213.1.1.4.5" canonicalUriSTU3="urn:oid:1.2.250.1.213.1.1.4.5" canonicalUriR4="urn:oid:1.2.250.1.213.1.1.4.5"/>
+      <sourceCodeSystem id="1.2.250.1.213.1.1.4.322" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriDSTU2="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriSTU3="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriR4="urn:oid:1.2.250.1.213.1.1.4.322"/>
+      <sourceCodeSystem id="1.2.250.1.213.1.6.1.4" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.1.6.1.4" canonicalUriDSTU2="urn:oid:1.2.250.1.213.1.6.1.4" canonicalUriSTU3="urn:oid:1.2.250.1.213.1.6.1.4" canonicalUriR4="urn:oid:1.2.250.1.213.1.6.1.4"/>
+      <sourceCodeSystem id="1.2.250.1.213.1.6.1.109" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.1.6.1.109" canonicalUriDSTU2="urn:oid:1.2.250.1.213.1.6.1.109" canonicalUriSTU3="urn:oid:1.2.250.1.213.1.6.1.109" canonicalUriR4="urn:oid:1.2.250.1.213.1.6.1.109"/>
+      <publishingAuthority name="nma" inherited="project"/>
+      <conceptList>
+         <concept code="G15_10" displayName="Médecin" codeSystem="1.2.250.1.213.1.1.4.5" level="0" type="L"/>
+         <concept code="G15_60" displayName="Infirmier" codeSystem="1.2.250.1.213.1.1.4.5" level="0" type="L"/>
+         <concept code="G15_70" displayName="Kinésithérapeute" codeSystem="1.2.250.1.213.1.1.4.5" level="0" type="L"/>
+         <concept code="G15_91" displayName="Orthophoniste" codeSystem="1.2.250.1.213.1.1.4.5" level="0" type="L"/>
+         <concept code="G15_94" displayName="Ergothérapeute" codeSystem="1.2.250.1.213.1.1.4.5" level="0" type="L"/>
+         <concept code="G15_95" displayName="Diététicien(ne)" codeSystem="1.2.250.1.213.1.1.4.5" level="0" type="L"/>
+         <concept code="G15_96" displayName="Psychomotricien(ne)" codeSystem="1.2.250.1.213.1.1.4.5" level="0" type="L"/>
+         <concept code="GEN-092.05.03" displayName="Autre professionnel(le)" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+         <concept code="41" displayName="Assistant de service social" codeSystem="1.2.250.1.213.1.6.1.4" level="0" type="L"/>
+         <concept code="93" displayName="Psychologue" codeSystem="1.2.250.1.213.1.6.1.109" level="0" type="L"/>
+         <concept code="97" displayName="Conseiller(e) en génétique" codeSystem="1.2.250.1.213.1.6.1.109" level="0" type="L"/>
+         <concept code="51" displayName="Educateur spécialisé" codeSystem="1.2.250.1.213.1.6.1.4" level="0" type="L"/>
+      </conceptList>
+   </valueSet>
+</valueSets>

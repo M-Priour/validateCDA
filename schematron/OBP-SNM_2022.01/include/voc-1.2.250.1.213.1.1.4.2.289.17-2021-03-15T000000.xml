@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:local="http://art-decor.org/functions">
+   <valueSet xmlns="" id="1.2.250.1.213.1.1.4.2.289.17" name="JDV_OBP_TypeActePostPartum-CISIS" displayName="JDV_OBP_TypeActePostPartum-CISIS" effectiveDate="2021-03-15T00:00:00" statusCode="final" versionLabel="1.0" ident="CI-SIS-JDV-" url="https://o3sis.esante.gouv.fr/decor/services/" referencedFrom="SyntheseSalleNaissanceMereOBPSNM-">
+      <sourceCodeSystem id="1.2.250.1.213.2.5" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.2.5" canonicalUriDSTU2="urn:oid:1.2.250.1.213.2.5" canonicalUriSTU3="urn:oid:1.2.250.1.213.2.5" canonicalUriR4="urn:oid:1.2.250.1.213.2.5"/>
+      <sourceCodeSystem id="1.2.250.1.213.1.1.4.2.289" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.1.1.4.2.289" canonicalUriDSTU2="urn:oid:1.2.250.1.213.1.1.4.2.289" canonicalUriSTU3="urn:oid:1.2.250.1.213.1.1.4.2.289" canonicalUriR4="urn:oid:1.2.250.1.213.1.1.4.2.289"/>
+      <sourceCodeSystem id="1.2.250.1.213.2.12" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.2.12" canonicalUriDSTU2="urn:oid:1.2.250.1.213.2.12" canonicalUriSTU3="urn:oid:1.2.250.1.213.2.12" canonicalUriR4="urn:oid:1.2.250.1.213.2.12"/>
+      <sourceCodeSystem id="1.2.250.1.213.1.1.4.322" identifierName="" canonicalUri="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriDSTU2="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriSTU3="urn:oid:1.2.250.1.213.1.1.4.322" canonicalUriR4="urn:oid:1.2.250.1.213.1.1.4.322"/>
+      <publishingAuthority name="medecin" inherited="project"/>
+      <conceptList>
+         <concept code="JNFA001" displayName="Hystérectomie pour complications obstétricales, par laparotomie" codeSystem="1.2.250.1.213.2.5" level="0" type="L"/>
+         <concept code="JPGD001" displayName="Délivrance artificielle (+ révision utérine)" codeSystem="1.2.250.1.213.2.5" level="0" type="L"/>
+         <concept code="OBS_210" displayName="Révision utérine isolée" codeSystem="1.2.250.1.213.1.1.4.2.289" level="0" type="L"/>
+         <concept code="P1-30530" displayName="Embolisation artérielle sélective" codeSystem="1.2.250.1.213.2.12" level="0" type="L"/>
+         <concept code="P1-86EA8" displayName="Réduction manuelle d'inversion utérine" codeSystem="1.2.250.1.213.2.12" level="0" type="L"/>
+         <concept code="JNBD002" displayName="Ballonnets intra-utérin" codeSystem="1.2.250.1.213.2.5" level="0" type="L"/>
+         <concept code="GEN-092.04.02" displayName="Autre acte réalisé en postpartum immédiat" codeSystem="1.2.250.1.213.1.1.4.322" level="0" type="L"/>
+      </conceptList>
+   </valueSet>
+</valueSets>
