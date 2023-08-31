@@ -4,5 +4,5 @@
     Status: draft
 -->
 <rule xmlns="http://purl.oclc.org/dsdl/schematron" abstract="true" id="ENXP" see="https://art-decor.org/mediawiki/index.php?title=DTr1_ENXP">
-    <extends rule="ST"/>
+   <extends rule="ST"/>
 </rule>

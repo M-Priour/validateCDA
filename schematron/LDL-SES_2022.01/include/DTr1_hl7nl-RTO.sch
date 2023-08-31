@@ -4,5 +4,5 @@
     Status: draft
 -->
 <rule xmlns="http://purl.oclc.org/dsdl/schematron" abstract="true" id="hl7nl-RTO" see="https://art-decor.org/mediawiki/index.php?title=DTr1_hl7nl:RTO">
-    <extends rule="QTY"/>
+   <extends rule="QTY"/>
 </rule>

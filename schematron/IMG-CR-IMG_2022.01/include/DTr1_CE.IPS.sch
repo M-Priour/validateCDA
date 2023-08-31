@@ -4,6 +4,6 @@
     Status: draft
 -->
 <rule xmlns="http://purl.oclc.org/dsdl/schematron" abstract="true" id="CE.IPS">
-    <extends rule="CD.IPS"/>
-    <assert role="error" test="not(hl7:qualifier)" see="https://art-decor.org/mediawiki/index.php?title=DTr1_CD.IPS">dtr1-1-CE.IPS: cannot have qualifier</assert>
+   <extends rule="CD.IPS"/>
+   <assert role="error" test="not(hl7:qualifier)" see="https://art-decor.org/mediawiki/index.php?title=DTr1_CD.IPS">dtr1-1-CE.IPS: cannot have qualifier</assert>
 </rule>

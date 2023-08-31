@@ -32,21 +32,19 @@
   will have different names, but will have the exact same rules (same template, same rules) hence only the first match is needed for validation.
   
 - As final fallback, when no template-id is found in the instance, code should rely on root element of the instance to determine the Schematron file name ... --><!-- template name: OBP-SCE -->
-    <map model="OBP-SCE" rootelement="ClinicalDocument" namespace="urn:hl7-org:v3" templateRoot="2.16.840.1.113883.2.8.2.1" sch="OBP-SCE-OBP-SCE.sch" schsvrl="OBP-SCE-OBP-SCE.xsl" xsd="ClinicalDocument.xsd"/>
-    <map model="OBP-SCE" rootelement="ClinicalDocument" namespace="urn:hl7-org:v3" templateRoot="1.2.250.1.213.1.1.1.1" sch="OBP-SCE-OBP-SCE.sch" schsvrl="OBP-SCE-OBP-SCE.xsl" xsd="ClinicalDocument.xsd"/>
-    <map model="OBP-SCE" rootelement="ClinicalDocument" namespace="urn:hl7-org:v3" templateRoot="1.2.250.1.213.1.1.1.12.5" sch="OBP-SCE-OBP-SCE.sch" schsvrl="OBP-SCE-OBP-SCE.xsl" xsd="ClinicalDocument.xsd"/>
-    <map model="OBP-SCE" rootelement="ClinicalDocument" namespace="urn:hl7-org:v3" sch="OBP-SCE-OBP-SCE.sch" schsvrl="OBP-SCE-OBP-SCE.xsl" xsd="ClinicalDocument.xsd"/>
-    
-    <!-- Chapter 3: Mapping based on representing templates -->
-    <!-- ========= -->
-    <!-- Used to map a representing template to a specific Schematron. How to read:
+   <map model="OBP-SCE" rootelement="ClinicalDocument" namespace="urn:hl7-org:v3" templateRoot="2.16.840.1.113883.2.8.2.1" sch="OBP-SCE-OBP-SCE.sch" schsvrl="OBP-SCE-OBP-SCE.xsl" xsd="ClinicalDocument.xsd"/>
+   <map model="OBP-SCE" rootelement="ClinicalDocument" namespace="urn:hl7-org:v3" templateRoot="1.2.250.1.213.1.1.1.1" sch="OBP-SCE-OBP-SCE.sch" schsvrl="OBP-SCE-OBP-SCE.xsl" xsd="ClinicalDocument.xsd"/>
+   <map model="OBP-SCE" rootelement="ClinicalDocument" namespace="urn:hl7-org:v3" templateRoot="1.2.250.1.213.1.1.1.12.5" sch="OBP-SCE-OBP-SCE.sch" schsvrl="OBP-SCE-OBP-SCE.xsl" xsd="ClinicalDocument.xsd"/>
+   <map model="OBP-SCE" rootelement="ClinicalDocument" namespace="urn:hl7-org:v3" sch="OBP-SCE-OBP-SCE.sch" schsvrl="OBP-SCE-OBP-SCE.xsl" xsd="ClinicalDocument.xsd"/>
+   <!-- Chapter 3: Mapping based on representing templates -->
+   <!-- ========= -->
+   <!-- Used to map a representing template to a specific Schematron. How to read:
 - For every representing template the schematron file and sch svrl xsl conversion file is mentioned
 - The corresponding root element plus its namespace is mentioned 
 - Every transaction represented by this template is named-->
-    <template id="1.2.250.1.213.1.1.1.12.5" effectiveDate="" sch="OBP-SCE-OBP-SCE.sch" schsvrl="OBP-SCE-OBP-SCE.xsl">
-        <root rootelement="ClinicalDocument" namespace="urn:hl7-org:v3"/>
-        <transaction id="1.2.250.1.213.1.1.1.12.5.4.2" effectiveDate="2021-10-07T14:55:52" statusCode="draft" versionLabel="V1" name="Initial"/>
-    </template>
-    
-    <!-- Chapter 4: Schematron parameters that were used for this compilation -->
+   <template id="1.2.250.1.213.1.1.1.12.5" effectiveDate="" sch="OBP-SCE-OBP-SCE.sch" schsvrl="OBP-SCE-OBP-SCE.xsl">
+      <root rootelement="ClinicalDocument" namespace="urn:hl7-org:v3"/>
+      <transaction id="1.2.250.1.213.1.1.1.12.5.4.2" effectiveDate="2021-10-07T14:55:52" statusCode="draft" versionLabel="V1" name="Initial"/>
+   </template>
+   <!-- Chapter 4: Schematron parameters that were used for this compilation -->
 </mappings>

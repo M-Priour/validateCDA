@@ -4,5 +4,5 @@
     Status: draft
 -->
 <rule xmlns="http://purl.oclc.org/dsdl/schematron" abstract="true" id="GLIST" see="https://art-decor.org/mediawiki/index.php?title=DTr1_GLIST">
-    <extends rule="ANY"/>
+   <extends rule="ANY"/>
 </rule>

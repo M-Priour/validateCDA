@@ -32,20 +32,18 @@
   will have different names, but will have the exact same rules (same template, same rules) hence only the first match is needed for validation.
   
 - As final fallback, when no template-id is found in the instance, code should rely on root element of the instance to determine the Schematron file name ... --><!-- template name: PPS-PAERPA_2022.01 -->
-    <map model="PPS-PAERPA" rootelement="ClinicalDocument" namespace="urn:hl7-org:v3" templateRoot="2.16.840.1.113883.2.8.2.1" sch="PPS-PAERPA-PPS-PAERPA.sch" schsvrl="PPS-PAERPA-PPS-PAERPA.xsl" xsd="ClinicalDocument.xsd"/>
-    <map model="PPS-PAERPA" rootelement="ClinicalDocument" namespace="urn:hl7-org:v3" templateRoot="1.2.250.1.213.1.1.1.1" sch="PPS-PAERPA-PPS-PAERPA.sch" schsvrl="PPS-PAERPA-PPS-PAERPA.xsl" xsd="ClinicalDocument.xsd"/>
-    <map model="PPS-PAERPA" rootelement="ClinicalDocument" namespace="urn:hl7-org:v3" sch="PPS-PAERPA-PPS-PAERPA.sch" schsvrl="PPS-PAERPA-PPS-PAERPA.xsl" xsd="ClinicalDocument.xsd"/>
-    
-    <!-- Chapter 3: Mapping based on representing templates -->
-    <!-- ========= -->
-    <!-- Used to map a representing template to a specific Schematron. How to read:
+   <map model="PPS-PAERPA" rootelement="ClinicalDocument" namespace="urn:hl7-org:v3" templateRoot="2.16.840.1.113883.2.8.2.1" sch="PPS-PAERPA-PPS-PAERPA.sch" schsvrl="PPS-PAERPA-PPS-PAERPA.xsl" xsd="ClinicalDocument.xsd"/>
+   <map model="PPS-PAERPA" rootelement="ClinicalDocument" namespace="urn:hl7-org:v3" templateRoot="1.2.250.1.213.1.1.1.1" sch="PPS-PAERPA-PPS-PAERPA.sch" schsvrl="PPS-PAERPA-PPS-PAERPA.xsl" xsd="ClinicalDocument.xsd"/>
+   <map model="PPS-PAERPA" rootelement="ClinicalDocument" namespace="urn:hl7-org:v3" sch="PPS-PAERPA-PPS-PAERPA.sch" schsvrl="PPS-PAERPA-PPS-PAERPA.xsl" xsd="ClinicalDocument.xsd"/>
+   <!-- Chapter 3: Mapping based on representing templates -->
+   <!-- ========= -->
+   <!-- Used to map a representing template to a specific Schematron. How to read:
 - For every representing template the schematron file and sch svrl xsl conversion file is mentioned
 - The corresponding root element plus its namespace is mentioned 
 - Every transaction represented by this template is named-->
-    <template id="1.2.250.1.213.1.1.1.20" effectiveDate="" sch="PPS-PAERPA-PPS-PAERPA.sch" schsvrl="PPS-PAERPA-PPS-PAERPA.xsl">
-        <root rootelement="ClinicalDocument" namespace="urn:hl7-org:v3"/>
-        <transaction id="1.2.250.1.213.1.1.1.20.4.2" effectiveDate="2021-08-26T15:17:42" statusCode="draft" versionLabel="V1" name="Initial"/>
-    </template>
-    
-    <!-- Chapter 4: Schematron parameters that were used for this compilation -->
+   <template id="1.2.250.1.213.1.1.1.20" effectiveDate="" sch="PPS-PAERPA-PPS-PAERPA.sch" schsvrl="PPS-PAERPA-PPS-PAERPA.xsl">
+      <root rootelement="ClinicalDocument" namespace="urn:hl7-org:v3"/>
+      <transaction id="1.2.250.1.213.1.1.1.20.4.2" effectiveDate="2021-08-26T15:17:42" statusCode="draft" versionLabel="V1" name="Initial"/>
+   </template>
+   <!-- Chapter 4: Schematron parameters that were used for this compilation -->
 </mappings>

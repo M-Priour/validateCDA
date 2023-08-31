@@ -32,21 +32,19 @@
   will have different names, but will have the exact same rules (same template, same rules) hence only the first match is needed for validation.
   
 - As final fallback, when no template-id is found in the instance, code should rely on root element of the instance to determine the Schematron file name ... --><!-- template name: ANEST-CR-ANEST -->
-    <map rootelement="ClinicalDocument" namespace="urn:hl7-org:v3" templateRoot="2.16.840.1.113883.2.8.2.1" sch="CR-Anesthesie-V1.sch" schsvrl="CR-Anesthesie-V1.xsl" xsd="ClinicalDocument.xsd"/>
-    <map rootelement="ClinicalDocument" namespace="urn:hl7-org:v3" templateRoot="1.2.250.1.213.1.1.1.1" sch="CR-Anesthesie-V1.sch" schsvrl="CR-Anesthesie-V1.xsl" xsd="ClinicalDocument.xsd"/>
-    <map rootelement="ClinicalDocument" namespace="urn:hl7-org:v3" templateRoot="1.2.250.1.213.1.1.1.40" templateExt="2022.01" sch="CR-Anesthesie-V1.sch" schsvrl="CR-Anesthesie-V1.xsl" xsd="ClinicalDocument.xsd"/>
-    <map rootelement="ClinicalDocument" namespace="urn:hl7-org:v3" sch="CR-Anesthesie-V1.sch" schsvrl="CR-Anesthesie-V1.xsl" xsd="ClinicalDocument.xsd"/>
-    
-    <!-- Chapter 3: Mapping based on representing templates -->
-    <!-- ========= -->
-    <!-- Used to map a representing template to a specific Schematron. How to read:
+   <map rootelement="ClinicalDocument" namespace="urn:hl7-org:v3" templateRoot="2.16.840.1.113883.2.8.2.1" sch="CR-Anesthesie-V1.sch" schsvrl="CR-Anesthesie-V1.xsl" xsd="ClinicalDocument.xsd"/>
+   <map rootelement="ClinicalDocument" namespace="urn:hl7-org:v3" templateRoot="1.2.250.1.213.1.1.1.1" sch="CR-Anesthesie-V1.sch" schsvrl="CR-Anesthesie-V1.xsl" xsd="ClinicalDocument.xsd"/>
+   <map rootelement="ClinicalDocument" namespace="urn:hl7-org:v3" templateRoot="1.2.250.1.213.1.1.1.40" templateExt="2022.01" sch="CR-Anesthesie-V1.sch" schsvrl="CR-Anesthesie-V1.xsl" xsd="ClinicalDocument.xsd"/>
+   <map rootelement="ClinicalDocument" namespace="urn:hl7-org:v3" sch="CR-Anesthesie-V1.sch" schsvrl="CR-Anesthesie-V1.xsl" xsd="ClinicalDocument.xsd"/>
+   <!-- Chapter 3: Mapping based on representing templates -->
+   <!-- ========= -->
+   <!-- Used to map a representing template to a specific Schematron. How to read:
 - For every representing template the schematron file and sch svrl xsl conversion file is mentioned
 - The corresponding root element plus its namespace is mentioned 
 - Every transaction represented by this template is named-->
-    <template id="1.2.250.1.213.1.1.1.40" effectiveDate="" sch="CR-Anesthesie-V1.sch" schsvrl="CR-Anesthesie-V1.xsl">
-        <root rootelement="ClinicalDocument" namespace="urn:hl7-org:v3"/>
-        <transaction id="1.2.250.1.213.1.1.1.40.4.2" effectiveDate="2021-01-06T14:36:11" statusCode="draft" versionLabel="V1" name="Initial"/>
-    </template>
-    
-    <!-- Chapter 4: Schematron parameters that were used for this compilation -->
+   <template id="1.2.250.1.213.1.1.1.40" effectiveDate="" sch="CR-Anesthesie-V1.sch" schsvrl="CR-Anesthesie-V1.xsl">
+      <root rootelement="ClinicalDocument" namespace="urn:hl7-org:v3"/>
+      <transaction id="1.2.250.1.213.1.1.1.40.4.2" effectiveDate="2021-01-06T14:36:11" statusCode="draft" versionLabel="V1" name="Initial"/>
+   </template>
+   <!-- Chapter 4: Schematron parameters that were used for this compilation -->
 </mappings>

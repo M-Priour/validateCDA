@@ -5,5 +5,5 @@
 -->
 <rule xmlns="http://purl.oclc.org/dsdl/schematron" abstract="true" id="SD.TEXT" see="https://art-decor.org/mediawiki/index.php?title=DTr1_SD.TEXT">
     <!-- SD.TEXT (StrucDoc.Text) does not extend or restrict anything -->
-    <extends rule="ANY"/>
+   <extends rule="ANY"/>
 </rule>
