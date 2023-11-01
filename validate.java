@@ -245,7 +245,7 @@ public class validate {
         if(modePure)
              aResPure = SchematronResourcePure.fromFile (fileShematron);
         else 		
-             aResPure = SchematronResourceXSLT.fromFile (fileShematron);
+             aResPure = SchematronResourceSCH.fromFile (fileShematron);
         if(!aResPure.isValidSchematron ())
             throw new IllegalArgumentException ("Invalid Schematron!");
         long estimatedTime = System.currentTimeMillis() - startTime;
