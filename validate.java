@@ -789,7 +789,7 @@ public class validate {
 
 
                         startTime = System.currentTimeMillis();
-                        final Document aDoc = validatePhCda(file.getAbsolutePath(), fileShematron, false);
+                        final Document aDoc = validatePhCda(file.getAbsolutePath(), fileShematron, true);
                         estimatedTime = System.currentTimeMillis() - startTime;
                         System.out.println("Validation par ph-schematron : " + estimatedTime);
             
