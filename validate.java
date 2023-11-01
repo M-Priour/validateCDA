@@ -245,7 +245,7 @@ public class validate {
         if(modePure)
              aResPure = SchematronResourcePure.fromFile (fileShematron);
         else 		
-             aResPure = SchematronResourceSCH.fromFile (fileShematron);
+             aResPure = SchematronResourceXSLT.fromFile (fileShematron);
         if(!aResPure.isValidSchematron ())
             throw new IllegalArgumentException ("Invalid Schematron!");
         long estimatedTime = System.currentTimeMillis() - startTime;
@@ -785,7 +785,7 @@ public class validate {
 
 
                         startTime = System.currentTimeMillis();
-                        final Document aDoc = validatePhCda(file.getAbsolutePath(), fileShematron, true);
+                        final Document aDoc = validatePhCda(file.getAbsolutePath(), fileShematron, false);
                         estimatedTime = System.currentTimeMillis() - startTime;
                         System.out.println("Validation par ph-schematron : " + estimatedTime);
             
