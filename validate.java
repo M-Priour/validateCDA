@@ -103,6 +103,7 @@ import java.io.*;
 
 import com.helger.schematron.pure.SchematronResourcePure; 
 import com.helger.schematron.sch.SchematronResourceSCH;
+import com.helger.schematron.schxslt.xslt2.SchematronResourceSchXslt_XSLT2;
 import com.helger.schematron.*;
 import com.helger.schematron.pure.model.*;
 import com.helger.schematron.pure.exchange.PSReader;
@@ -244,8 +245,9 @@ public class validate {
               
         if(modePure)
              aResPure = SchematronResourcePure.fromFile (fileShematron);
-        else 		
-             aResPure = SchematronResourceSCH.fromFile (fileShematron);
+        else 	
+		aResPure = SchematronResourceSchXslt_XSLT2.fromFile (fileShematron);	
+             //aResPure = SchematronResourceSCH.fromFile (fileShematron);
         if(!aResPure.isValidSchematron ())
             throw new IllegalArgumentException ("Invalid Schematron!");
         long estimatedTime = System.currentTimeMillis() - startTime;
