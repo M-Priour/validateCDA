@@ -358,7 +358,7 @@ public class validate {
 
 
     
-                String validator = ".Structuration minimale des documents de santé v1.12";
+                String validator = ".Structuration minimale des documents de santé v1.14";
 
                 
                 //Chargement du XMl pour récuper le valdiator
