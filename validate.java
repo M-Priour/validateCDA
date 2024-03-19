@@ -748,7 +748,7 @@ public class validate {
                         String init ="Echec :  " + file.getName() + "("+ validator +")";
                         Files.write( Paths.get(pathtoWrite+ "."  + "semReports.xml"), init.getBytes());
                         Files.write( Paths.get(pathtoWrite+ "."  + "semReports.xml.html"), init.getBytes());
-                        validatorB = ".Validation sémantique (bêta)";
+                        validatorB = "Validation FTS(Beta)";
                         startTime = System.currentTimeMillis();
                         contentLocation = validateCda (cdaFile,file.getName(),validatorB) ; 
                         estimatedTime = System.currentTimeMillis() - startTime;
