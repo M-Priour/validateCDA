@@ -785,7 +785,7 @@ public class validate {
                         Transformer transformer; 
                         transformer = tf.newTransformer();
 
-                        FileOutputStream outStream = new FileOutputStream(pathtoWrite2); 
+                        /*FileOutputStream outStream = new FileOutputStream(pathtoWrite2); 
 
 
                         startTime = System.currentTimeMillis();
@@ -812,7 +812,7 @@ public class validate {
                         
                     
 
-                        fileConsolidate.write(Files.readAllBytes( Paths.get(pathtoWrite + "report.svrl.html")));     
+                        fileConsolidate.write(Files.readAllBytes( Paths.get(pathtoWrite + "report.svrl.html")));   */  
 
                     } catch (Exception exception) {
                         System.out.print("Parse error: ");
