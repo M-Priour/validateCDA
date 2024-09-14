@@ -395,7 +395,7 @@ public class validate {
                     try{
                         //Validation avec PH-Shematron structuration minimale
                         //validator = "ANS-Structuration_minimale";
-                        String fileShematron = "../testContenuCDA/schematrons/profils/CI-SIS_StructurationMinimale.sch";
+                        String fileShematron = "../testContenuCDA/schematrons/profils/structurationMinimale/ASIP-STRUCT-MIN-StrucMin.sch";
                         File fShematron = new File(fileShematron);
                         if(!fShematron.exists()){
                             //validator = "ANS-Structuration_minimale";
@@ -428,7 +428,7 @@ public class validate {
     ;
                         transformer = tf.newTransformer(xsltSource2);
                         transformer.setParameter("title",file.getName()); 
-                        transformer.setParameter("Validateur", "testContenuCDA : CI-SIS_StructurationMinimale.sch "); 
+                        transformer.setParameter("Validateur", "testContenuCDA : ASIP-STRUCT-MIN-StrucMin.sch "); 
                         transformer.setParameter("elapsedTime", TimeUnit.MILLISECONDS.toSeconds(estimatedTime));
                         transformer.transform(xmlSource2, result2);
             
