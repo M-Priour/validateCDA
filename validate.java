@@ -720,7 +720,7 @@ public class validate {
                         System.out.println(exception.getMessage());
                      }
 
-                    try{
+                  /*  try{
                         //String contentResponse = IOUtils.toString(response.getEntity().getContent(), StandardCharsets.UTF_8);
                         String init ="Echec :  " + file.getName() + "("+ validator +")";
                         Files.write( Paths.get(pathtoWrite+ "."  + "cdaReports.xml"), init.getBytes());
@@ -765,7 +765,7 @@ public class validate {
                         System.out.print("Parse error: ");
                         System.out.println(exception.getMessage());
                      }
-
+*/
 
                     //Validation avec PH-Shematron
                     //validator = "ANS-Structuration_minimale";
