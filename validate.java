@@ -610,7 +610,7 @@ public class validate {
                         System.out.println(exception.getMessage());
                      }
 
-                     try{
+   /*                  try{
                         //Validation avec PH-Shematron structuration minimale
                         //validator = "ANS-Structuration_minimale";
                         String fileShematron = "../testContenuCDA/schematrons/profils/IHE_XDS-SD.sch";
@@ -663,7 +663,7 @@ public class validate {
                         System.out.print("Parse error: ");
                         System.out.println(exception.getMessage());
                      }
-
+*/
 
 
                     try{
