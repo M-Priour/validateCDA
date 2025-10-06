@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:cml="http://www.xml-cml.org/schema" xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:cml="http://www.xml-cml.org/schema" 
+ xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
   xmlns="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
 
 <xsl:param name="title" />
@@ -12,7 +13,7 @@
 
   <xsl:template match="svrl:schematron-output">
 
-<xsl:variable name="nbErreur"  select="count(//svrl:failed-assert[@role!='warning' and not( contains(svrl:text, 'SHALL be distinct')) and not( contains(svrl:text, 'SHALL NOT have nullFlavor'))]) " />
+<xsl:variable name="nbErreur"  select="count(//svrl:failed-assert) " />
 
 
   <div class="accordion-item">
@@ -21,8 +22,7 @@
       <xsl:when test="$nbErreur=0">
         <button class="accordion-button collapsed" style="background-color:#438552;color:white" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsexxxxx" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
          <xsl:value-of select="$Validateur" />
-                 <br/>Nombre d'erreurs : <xsl:value-of select="count(//svrl:failed-assert[@role!='warning' and not( contains(svrl:text, 'SHALL be distinct')) and not( contains(svrl:text, 'SHALL NOT have nullFlavor'))]) " />
- <br/>Nombre de warnings :  <xsl:value-of select="count(//svrl:failed-assert[@role='warning'])" />
+                 <br/>Nombre d'erreurs : <xsl:value-of select="count(//svrl:failed-assert) " />
         <br/>Temps d'execution :  <xsl:value-of select="$elapsedTime"/>
 
         </button>
@@ -30,8 +30,7 @@
        <xsl:otherwise>
         <button class="accordion-button collapsed" style="background-color:#894f55;color:white" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsexxxxx" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
         <xsl:value-of select="$Validateur" />
-                <br/>Nombre d'erreurs : <xsl:value-of select="count(//svrl:failed-assert[@role!='warning' and not( contains(svrl:text, 'SHALL be distinct')) and not( contains(svrl:text, 'SHALL NOT have nullFlavor'))]) " />
-   <br/>Nombre de warnings :  <xsl:value-of select="count(//svrl:failed-assert[@role='warning'])" />
+                <br/>Nombre d'erreurs : <xsl:value-of select="count(//svrl:failed-assert) " />
         <br/>Temps d'execution :  <xsl:value-of select="$elapsedTime"/>
 
         </button>
@@ -53,7 +52,7 @@
     </tr>
   </thead>
   <tbody>
-		<xsl:apply-templates />
+    	<xsl:apply-templates />
 		
   </tbody>
 </table>		
@@ -64,14 +63,13 @@
   </xsl:template>
 
   <xsl:template match="svrl:failed-assert">
-  <xsl:if test="not( contains(svrl:text, 'SHALL be distinct'))">
-	<xsl:if test="not( contains(svrl:text, 'SHALL NOT have nullFlavor'))">
+
 
 
 
   <tr>
       <td>	  
-		  <xsl:value-of select="@role" /></td>
+		Erreur</td>
       <td class=".small"><small>
 		  <xsl:call-template name="break">
 		<xsl:with-param name="text" select="svrl:text" />
@@ -91,9 +89,6 @@
 
 
 
-
-		</xsl:if>
-</xsl:if>
 
 
     <xsl:apply-templates />
