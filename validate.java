@@ -665,61 +665,61 @@ public class validate {
                      }
 */
 
-
-                    try{
-                        //Validation avec PH-Shematron structuration minimale
-                        //validator = "ANS-Structuration_minimale";
-                        String fileShematron = "../testContenuCDA/schematrons/CI-SIS_" + validator+ ".sch";
-                        File fShematron = new File(fileShematron);
-                        if(!fShematron.exists()){
-                            //validator = "ANS-Structuration_minimale";
-
-                        }
-
-                        System.out.println("Schematron : " + fileShematron);
-                        //Chemin d'écriture du rapport de validation
-                        Path path = Paths.get(file.getAbsolutePath());
-
-                        String pathtoWrite2 = pathtoWrite+ "."  + "testC.phschematron.svrl" ;
-
-                        System.setProperty ("javax.XML.transformer.TransformerFactory", " net.sf.Saxon.TransformerFactoryImpl");
-                        TransformerFactory tf = TransformerFactory.newInstance();
-                        Transformer transformer = tf.newTransformer();
-
-                        FileOutputStream outStream = new FileOutputStream(pathtoWrite2); 
-
-
-                        startTime = System.currentTimeMillis();
-                        final Document aDoc2 = validatePhCda(file.getAbsolutePath(), fileShematron, false);
-                        estimatedTime = System.currentTimeMillis() - startTime;
-                        System.out.println("Validation par ph-schematron : " + estimatedTime);
-            
-                        //Ecriture du rapport de validation
-                        transformer.transform(new DOMSource(aDoc2), new StreamResult(outStream));
-                        final Source xmlSource2 = new javax.xml.transform.stream.StreamSource(pathtoWrite2);
-                        final Source xsltSource2 = new javax.xml.transform.stream.StreamSource("./ph-svrl-to-html.xsl");
-                        final Result result2 = new javax.xml.transform.stream.StreamResult(new File(pathtoWrite2 + "testC.report.svrl.html"));
-    ;
-                        transformer = tf.newTransformer(xsltSource2);
-                        transformer.setParameter("title",file.getName()); 
-                        transformer.setParameter("Validateur", "testContenuCDA :   " + fShematron); 
-                        transformer.setParameter("elapsedTime", TimeUnit.MILLISECONDS.toSeconds(estimatedTime));
-                        transformer.transform(xmlSource2, result2);
-            
-                        
-                        content = new String(Files.readAllBytes(Paths.get(pathtoWrite2 + "testC.report.svrl.html")), "UTF-8");
-                        content = content.replaceAll("panelsStayOpen-collapsexxxxx", "panelsStayOpen-collapse"+ UUID.randomUUID().toString());
-                        Files.write(Paths.get(pathtoWrite2 + "testC.report.svrl.html"), content.getBytes("UTF-8"));  
-                        
-                    
-
-                        fileConsolidate.write(Files.readAllBytes( Paths.get(pathtoWrite2 + "testC.report.svrl.html")));     
-
-                    } catch (Exception exception) {
-                        System.out.print("Parse error: ");
-                        System.out.println(exception.getMessage());
-                     }
-
+					if(validator != ".Structuration minimale des documents de santé v1.15") {
+	                    try{
+	                        //Validation avec PH-Shematron structuration minimale
+	                        //validator = "ANS-Structuration_minimale";
+	                        String fileShematron = "../testContenuCDA/schematrons/CI-SIS_" + validator+ ".sch";
+	                        File fShematron = new File(fileShematron);
+	                        if(!fShematron.exists()){
+	                            //validator = "ANS-Structuration_minimale";
+	
+	                        }
+	
+	                        System.out.println("Schematron : " + fileShematron);
+	                        //Chemin d'écriture du rapport de validation
+	                        Path path = Paths.get(file.getAbsolutePath());
+	
+	                        String pathtoWrite2 = pathtoWrite+ "."  + "testC.phschematron.svrl" ;
+	
+	                        System.setProperty ("javax.XML.transformer.TransformerFactory", " net.sf.Saxon.TransformerFactoryImpl");
+	                        TransformerFactory tf = TransformerFactory.newInstance();
+	                        Transformer transformer = tf.newTransformer();
+	
+	                        FileOutputStream outStream = new FileOutputStream(pathtoWrite2); 
+	
+	
+	                        startTime = System.currentTimeMillis();
+	                        final Document aDoc2 = validatePhCda(file.getAbsolutePath(), fileShematron, false);
+	                        estimatedTime = System.currentTimeMillis() - startTime;
+	                        System.out.println("Validation par ph-schematron : " + estimatedTime);
+	            
+	                        //Ecriture du rapport de validation
+	                        transformer.transform(new DOMSource(aDoc2), new StreamResult(outStream));
+	                        final Source xmlSource2 = new javax.xml.transform.stream.StreamSource(pathtoWrite2);
+	                        final Source xsltSource2 = new javax.xml.transform.stream.StreamSource("./ph-svrl-to-html.xsl");
+	                        final Result result2 = new javax.xml.transform.stream.StreamResult(new File(pathtoWrite2 + "testC.report.svrl.html"));
+	    ;
+	                        transformer = tf.newTransformer(xsltSource2);
+	                        transformer.setParameter("title",file.getName()); 
+	                        transformer.setParameter("Validateur", "testContenuCDA :   " + fShematron); 
+	                        transformer.setParameter("elapsedTime", TimeUnit.MILLISECONDS.toSeconds(estimatedTime));
+	                        transformer.transform(xmlSource2, result2);
+	            
+	                        
+	                        content = new String(Files.readAllBytes(Paths.get(pathtoWrite2 + "testC.report.svrl.html")), "UTF-8");
+	                        content = content.replaceAll("panelsStayOpen-collapsexxxxx", "panelsStayOpen-collapse"+ UUID.randomUUID().toString());
+	                        Files.write(Paths.get(pathtoWrite2 + "testC.report.svrl.html"), content.getBytes("UTF-8"));  
+	                        
+	                    
+	
+	                        fileConsolidate.write(Files.readAllBytes( Paths.get(pathtoWrite2 + "testC.report.svrl.html")));     
+	
+	                    } catch (Exception exception) {
+	                        System.out.print("Parse error: ");
+	                        System.out.println(exception.getMessage());
+	                     }
+					}
                   /*  try{
                         //String contentResponse = IOUtils.toString(response.getEntity().getContent(), StandardCharsets.UTF_8);
                         String init ="Echec :  " + file.getName() + "("+ validator +")";
