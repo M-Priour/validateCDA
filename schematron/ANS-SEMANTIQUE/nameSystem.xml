@@ -1,0 +1,28 @@
+<terminologies>
+<terminologie>
+    <oid>2.16.840.1.113883.6.3</oid>
+    <system>https://smt.esante.gouv.fr/terminologie-cim-10</system>
+</terminologie>
+<terminologie>
+    <oid>2.16.840.1.113883.6.73</oid>
+    <system>https://smt.esante.gouv.fr/terminologie-atc</system>
+</terminologie>
+<terminologie>
+    <oid>2.16.840.1.113883.6.139</oid>
+    <system>https://smt.esante.gouv.fr/terminologie-cisp</system>
+</terminologie>
+<terminologie>
+    <oid>1.2.250.1.213.2.65</oid>
+    <system>https://smt.esante.gouv.fr/terminologie-cladimed</system>
+</terminologie>
+<terminologie>
+    <oid>0.4.0.127.0.16.1.1.2.1</oid>
+    <system>https://smt.esante.gouv.fr/terminologie-standardterms</system>
+</terminologie>
+<terminologie>
+    <oid>1.2.250.1.213.2.68</oid>
+    <system>https://smt.esante.gouv.fr/terminologie-emdn</system>
+</terminologie>
+
+
+</terminologies>
