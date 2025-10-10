@@ -770,7 +770,7 @@ public class validate {
                     //Validation avec PH-Shematron
                     //validator = "ANS-Structuration_minimale";
                     try{
-                        validator = "STRUCT-MIN-1.15";
+                        validator = "ANS-STruct-Min-1.16";
                         String fileShematron = "./schematron/" + validator + "/schematron.sch";
                         File fShematron = new File(fileShematron);
                         if(!fShematron.exists())
