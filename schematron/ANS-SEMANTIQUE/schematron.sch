@@ -55,7 +55,7 @@
 	<let name="systemFromParameter" value='if (exists(doc($path_terminologie)//oid[text()= string($theCodeSystem)])) then doc($path_terminologie)//oid[text()= string($theCodeSystem)]/../system  else "" '/>
 	<let name="system" value='if ($systemFromSmt !="") then   $systemFromSmt  else $systemFromParameter' />
 
-	 <assert role="warning"  test=' not(($system !="")  and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml&displayLanguage=FR"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))'>
+	 <assert role="warning"  test=' not(($system !="")  and (doc-available(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))) and (doc(concat("https://smt.esante.gouv.fr/fhir//CodeSystem/$lookup?system=",$system,"&amp;code=",$theCode,"&amp;_format=xml"))//fhir:parameter/fhir:name[@value="display"]/../fhir:valueString/@value != $thenNameCode))'>
 	  -Validation  sémantique : libellé incorrect  <![CDATA[<br />]]> 
 	  CodeSystem : "<value-of select="$theCodeSystem"/>" <![CDATA[<br />]]> 
 	  CodeFile  : "<value-of select="doc($path_terminologie)//oid[text()= string($theCodeSystem)]"/> "<![CDATA[<br />]]> 
