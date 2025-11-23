@@ -336,9 +336,44 @@ def insert_validation_results(html_file, validation_html, filename):
 
 def main():
     """Fonction principale du script."""
+    import argparse
+
+    # Parser les arguments de ligne de commande
+    parser = argparse.ArgumentParser(
+        description='Insere les resultats de validation FHIR dans un rapport HTML.',
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog='''
+Exemples d'utilisation:
+  # Utilisation par defaut (fichiers dans le repertoire courant)
+  python insert_validation_results.py
+
+  # Specifier les fichiers explicitement
+  python insert_validation_results.py --xml validation11.xml --html "Rapport de validation.html"
+
+  # Avec chemins absolus
+  python insert_validation_results.py --xml "C:/path/to/validation.xml" --html "C:/path/to/rapport.html"
+        '''
+    )
+
+    parser.add_argument(
+        '--xml',
+        type=str,
+        default='validation11.xml',
+        help='Chemin vers le fichier XML de validation FHIR (defaut: validation11.xml)'
+    )
+
+    parser.add_argument(
+        '--html',
+        type=str,
+        default='Rapport de validation.html',
+        help='Chemin vers le fichier HTML du rapport de validation (defaut: Rapport de validation.html)'
+    )
+
+    args = parser.parse_args()
+
     # Chemins des fichiers
-    xml_file = Path(r"C:\Users\maelp\Documents\IG\IG-document-core\validation11.xml")
-    html_file = Path(r"C:\Users\maelp\Documents\IG\IG-document-core\Rapport de validation.html")
+    xml_file = Path(args.xml)
+    html_file = Path(args.html)
 
     # Verifier que les fichiers existent
     if not xml_file.exists():
