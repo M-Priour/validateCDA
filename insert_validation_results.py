@@ -127,9 +127,11 @@ def detect_html_format(html_content):
         str: 'accordion' ou 'simple'
     """
     # Si on trouve des accordeons, c'est le format Rapport de validation.html
-    if '<div class="accordion">' in html_content or '<div class="accordion-item">' in html_content:
+    # Tester avec guillemets simples et doubles
+    if "class='accordion'" in html_content or 'class="accordion"' in html_content or \
+       "class='accordion-item'" in html_content or 'class="accordion-item"' in html_content:
         return 'accordion'
-    # Sinon, c'est le format index.html
+    # Sinon, c'est le format index.html simple
     return 'simple'
 
 
@@ -168,14 +170,15 @@ def find_file_section_in_html(html_content, filename):
         return None
 
     # Format accordion (original)
-    # Rechercher le h4 avec le nom du fichier
-    pattern = rf'<h4 class="text-900[^>]*"[^>]*>\s*{re.escape(filename)}\s*</h4>'
+    # Rechercher le h4 avec le nom du fichier (accepte guillemets simples ou doubles)
+    pattern = r'<h4[^>]*>\s*' + re.escape(filename) + r'\s*</h4>'
     match = re.search(pattern, html_content, re.IGNORECASE)
 
     if match:
         start = match.end()
         # Trouver la fin de cette section (debut de la prochaine section ou fin du fichier)
-        next_section = re.search(r'<div class="col-12 col-xl-10 order-1 order-xl-0">', html_content[start:])
+        # Accepter guillemets simples ou doubles
+        next_section = re.search(r"<div class=['\"]col-12 col-xl-10 order-1 order-xl-0['\"]>", html_content[start:])
 
         if next_section:
             end = start + next_section.start()
@@ -297,43 +300,25 @@ def create_validation_fhir_html(errors, warnings, informations, format_type='acc
     return html
 
 
-def insert_validation_results(html_file, validation_html, filename):
+def insert_validation_in_html_content(html_content, validation_html, filename):
     """
-    Insere les resultats de validation dans le fichier HTML.
+    Insere les resultats de validation dans le contenu HTML (en memoire).
 
     Args:
-        html_file: Chemin vers le fichier HTML
+        html_content: Contenu HTML en memoire
         validation_html: Code HTML a inserer
         filename: Nom du fichier valide (pour trouver la bonne section)
 
     Returns:
-        bool: True si l'insertion a reussi, False sinon
+        tuple: (html_modifie, success) ou (html_original, False) si echec
     """
     try:
-        # Essayer de detecter l'encodage du fichier HTML
-        encodings = ['utf-8', 'latin-1', 'cp1252', 'iso-8859-1']
-        html_content = None
-        detected_encoding = None
-
-        for encoding in encodings:
-            try:
-                with open(html_file, 'r', encoding=encoding) as f:
-                    html_content = f.read()
-                detected_encoding = encoding
-                break
-            except UnicodeDecodeError:
-                continue
-
-        if html_content is None:
-            print(f"Impossible de decoder le fichier HTML avec les encodages testes.")
-            return False
-
         # Trouver la section du fichier
         section = find_file_section_in_html(html_content, filename)
 
         if section is None:
             print(f"Section pour le fichier '{filename}' non trouvee dans le HTML.")
-            return False
+            return html_content, False
 
         start, end = section
 
@@ -346,7 +331,7 @@ def insert_validation_results(html_file, validation_html, filename):
             last_tbody_end = section_content.rfind('</tbody>')
             if last_tbody_end == -1:
                 print("Point d'insertion non trouve (pas de </tbody>).")
-                return False
+                return html_content, False
             insertion_point = start + last_tbody_end
         else:
             # Format accordion (original)
@@ -359,52 +344,24 @@ def insert_validation_results(html_file, validation_html, filename):
                 insertion_point = start + last_div_match.end()
             else:
                 # Sinon, inserer juste apres le debut de la section
-                accordion_start = re.search(r'<div class="accordion">', section_content)
+                # Accepter guillemets simples ou doubles
+                accordion_start = re.search(r"<div class=['\"]accordion['\"]>", section_content)
                 if accordion_start:
                     insertion_point = start + accordion_start.end()
                 else:
                     print("Point d'insertion non trouve.")
-                    return False
+                    return html_content, False
 
-        # Verifier si une validation FHIR existe deja
-        if 'Validation FHIR' in section_content:
-            print(f"  -> Mise a jour de la validation FHIR existante pour '{filename}'")
-            # Supprimer l'ancienne validation
-            old_validation = re.search(
-                r'<div xmlns="http://www\.w3\.org/1999/xhtml"[^>]*class="accordion-item"[^>]*>.*?Validation FHIR.*?</div></div></div>',
-                section_content,
-                re.DOTALL
-            )
-            if old_validation:
-                # Supprimer l'ancienne validation
-                html_content = html_content[:start + old_validation.start()] + html_content[start + old_validation.end():]
-                # Recalculer la section
-                section = find_file_section_in_html(html_content, filename)
-                if section:
-                    start, end = section
-                    section_content = html_content[start:end]
-                    # Recalculer le point d'insertion
-                    last_div_match = None
-                    for match in re.finditer(r'</div></div></div>', section_content):
-                        last_div_match = match
-
-                    if last_div_match:
-                        insertion_point = start + last_div_match.end()
-
-        # Inserer le nouveau contenu
+        # Inserer le nouveau contenu (sans verifier si existe deja)
         new_html = html_content[:insertion_point] + validation_html + html_content[insertion_point:]
 
-        # Ecrire le fichier mis a jour avec le meme encodage detecte
-        with open(html_file, 'w', encoding=detected_encoding) as f:
-            f.write(new_html)
-
-        return True
+        return new_html, True
 
     except Exception as e:
         print(f"Erreur lors de l'insertion dans le HTML: {e}")
         import traceback
         traceback.print_exc()
-        return False
+        return html_content, False
 
 
 def main():
@@ -472,10 +429,12 @@ Exemples d'utilisation:
     try:
         encodings = ['utf-8', 'latin-1', 'cp1252', 'iso-8859-1']
         html_content = None
+        detected_encoding = None
         for encoding in encodings:
             try:
                 with open(html_file, 'r', encoding=encoding) as f:
                     html_content = f.read()
+                detected_encoding = encoding
                 break
             except UnicodeDecodeError:
                 continue
@@ -486,11 +445,13 @@ Exemples d'utilisation:
 
         format_type = detect_html_format(html_content)
         print(f"Format HTML detecte: {format_type}\n")
+        print(f"Encodage detecte: {detected_encoding}\n")
     except Exception as e:
         print(f"Erreur lors de la detection du format: {e}")
         format_type = 'accordion'  # Par defaut
+        detected_encoding = 'utf-8'  # Par defaut
 
-    # Mettre a jour le HTML pour chaque fichier
+    # Mettre a jour le HTML pour chaque fichier (EN MEMOIRE)
     success_count = 0
     for filename, data in results.items():
         error_count = len(data['errors'])
@@ -508,14 +469,26 @@ Exemples d'utilisation:
             format_type
         )
 
-        # Inserer dans le HTML
-        success = insert_validation_results(html_file, validation_html, filename)
+        # Inserer dans le HTML (en memoire)
+        html_content, success = insert_validation_in_html_content(html_content, validation_html, filename)
 
         if success:
             print(f"  -> Insertion reussie\n")
             success_count += 1
         else:
             print(f"  -> Echec de l'insertion\n")
+
+    # Ecrire le fichier HTML modifie UNE SEULE FOIS a la fin
+    if success_count > 0:
+        print(f"\nEcriture du fichier HTML modifie...")
+        try:
+            with open(html_file, 'w', encoding=detected_encoding) as f:
+                f.write(html_content)
+            print(f"Fichier ecrit avec succes ({len(html_content)} caracteres)")
+        except Exception as e:
+            print(f"ERREUR lors de l'ecriture du fichier: {e}")
+            import traceback
+            traceback.print_exc()
 
     print(f"\n{'='*60}")
     print(f"Traitement termine: {success_count}/{len(results)} fichiers mis a jour")
