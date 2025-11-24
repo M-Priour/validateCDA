@@ -119,6 +119,20 @@ def parse_validation_xml_by_file(xml_file):
         return {}
 
 
+def detect_html_format(html_content):
+    """
+    Detecte le format du fichier HTML (accordeon ou simple).
+
+    Returns:
+        str: 'accordion' ou 'simple'
+    """
+    # Si on trouve des accordeons, c'est le format Rapport de validation.html
+    if '<div class="accordion">' in html_content or '<div class="accordion-item">' in html_content:
+        return 'accordion'
+    # Sinon, c'est le format index.html
+    return 'simple'
+
+
 def find_file_section_in_html(html_content, filename):
     """
     Trouve la section correspondant au fichier dans le HTML.
@@ -130,6 +144,30 @@ def find_file_section_in_html(html_content, filename):
     Returns:
         tuple: (position de debut, position de fin) ou None si non trouve
     """
+    format_type = detect_html_format(html_content)
+
+    if format_type == 'simple':
+        # Format index.html : rechercher <h2>nom_fichier.xml</h2>
+        pattern = rf'<h2[^>]*>\s*{re.escape(filename)}\s*</h2>'
+        match = re.search(pattern, html_content, re.IGNORECASE)
+
+        if match:
+            start = match.end()
+            # Trouver la fin : prochaine section <h2> ou </body>
+            next_h2 = re.search(r'<h2[^>]*>', html_content[start:])
+            next_body_end = re.search(r'</body>', html_content[start:])
+
+            if next_h2:
+                end = start + next_h2.start()
+            elif next_body_end:
+                end = start + next_body_end.start()
+            else:
+                end = len(html_content)
+
+            return (start, end)
+        return None
+
+    # Format accordion (original)
     # Rechercher le h4 avec le nom du fichier
     pattern = rf'<h4 class="text-900[^>]*"[^>]*>\s*{re.escape(filename)}\s*</h4>'
     match = re.search(pattern, html_content, re.IGNORECASE)
@@ -149,7 +187,7 @@ def find_file_section_in_html(html_content, filename):
     return None
 
 
-def create_validation_fhir_html(errors, warnings, informations):
+def create_validation_fhir_html(errors, warnings, informations, format_type='accordion'):
     """
     Cree le HTML pour la ligne de validation FHIR avec details.
 
@@ -157,6 +195,7 @@ def create_validation_fhir_html(errors, warnings, informations):
         errors: Liste des erreurs avec details
         warnings: Liste des warnings avec details
         informations: Liste des informations avec details
+        format_type: 'accordion' ou 'simple'
 
     Returns:
         str: Code HTML a inserer
@@ -240,11 +279,20 @@ def create_validation_fhir_html(errors, warnings, informations):
     if info_count > 20:
         all_rows += f'<tr><td colspan="2"><i>... et {info_count - 20} autres informations</i></td></tr>'
 
-    # Generer un ID unique pour l'accordeon
-    import uuid
-    unique_id = str(uuid.uuid4())
+    if format_type == 'simple':
+        # Format simple pour index.html : juste une ligne dans le tableau existant
+        status = "PASSED" if error_count == 0 else "FAILED"
+        html = f'''<tr><td>FHIR validation</td><td class=".small">{status}<table class="table table-striped table-hover">
+        {all_rows}
+    </table></td></tr>
+    '''
+    else:
+        # Format accordion pour Rapport de validation.html
+        # Generer un ID unique pour l'accordeon
+        import uuid
+        unique_id = str(uuid.uuid4())
 
-    html = f'''<div xmlns="http://www.w3.org/1999/xhtml" xmlns:cml="http://www.xml-cml.org/schema" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svrl="http://purl.oclc.org/dsdl/svrl" class="accordion-item"><h2 class="accordion-header"><button class="accordion-button" style="background-color:{color};color:white" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse{unique_id}" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">Validation FHIR<br>Nombre d'erreurs : {error_count}<br>Nombre de warnings : {warning_count}<br>Nombre d'informations : {info_count}</button></h2><div id="panelsStayOpen-collapse{unique_id}" class="accordion-collapse collapse hidden" style=""><div class="accordion-body"><table class="table table-striped table-hover"><thead><tr><th scope="col">Validation</th><th scope="col" style="width: 50%">resulat</th></tr></thead><tbody>{all_rows}</tbody></table></div></div></div>'''
+        html = f'''<div xmlns="http://www.w3.org/1999/xhtml" xmlns:cml="http://www.xml-cml.org/schema" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svrl="http://purl.oclc.org/dsdl/svrl" class="accordion-item"><h2 class="accordion-header"><button class="accordion-button" style="background-color:{color};color:white" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse{unique_id}" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">Validation FHIR<br>Nombre d'erreurs : {error_count}<br>Nombre de warnings : {warning_count}<br>Nombre d'informations : {info_count}</button></h2><div id="panelsStayOpen-collapse{unique_id}" class="accordion-collapse collapse hidden" style=""><div class="accordion-body"><table class="table table-striped table-hover"><thead><tr><th scope="col">Validation</th><th scope="col" style="width: 50%">resulat</th></tr></thead><tbody>{all_rows}</tbody></table></div></div></div>'''
 
     return html
 
@@ -262,8 +310,23 @@ def insert_validation_results(html_file, validation_html, filename):
         bool: True si l'insertion a reussi, False sinon
     """
     try:
-        with open(html_file, 'r', encoding='utf-8') as f:
-            html_content = f.read()
+        # Essayer de detecter l'encodage du fichier HTML
+        encodings = ['utf-8', 'latin-1', 'cp1252', 'iso-8859-1']
+        html_content = None
+        detected_encoding = None
+
+        for encoding in encodings:
+            try:
+                with open(html_file, 'r', encoding=encoding) as f:
+                    html_content = f.read()
+                detected_encoding = encoding
+                break
+            except UnicodeDecodeError:
+                continue
+
+        if html_content is None:
+            print(f"Impossible de decoder le fichier HTML avec les encodages testes.")
+            return False
 
         # Trouver la section du fichier
         section = find_file_section_in_html(html_content, filename)
@@ -274,24 +337,34 @@ def insert_validation_results(html_file, validation_html, filename):
 
         start, end = section
 
-        # Trouver le dernier </div> avant la fin de la section pour inserer avant
+        # Trouver le point d'insertion selon le format
         section_content = html_content[start:end]
+        format_type = detect_html_format(html_content)
 
-        # Chercher la fin de la derniere accordion-item dans cette section
-        last_div_match = None
-        for match in re.finditer(r'</div></div></div>', section_content):
-            last_div_match = match
-
-        if last_div_match:
-            insertion_point = start + last_div_match.end()
-        else:
-            # Sinon, inserer juste apres le debut de la section
-            accordion_start = re.search(r'<div class="accordion">', section_content)
-            if accordion_start:
-                insertion_point = start + accordion_start.end()
-            else:
-                print("Point d'insertion non trouve.")
+        if format_type == 'simple':
+            # Format index.html : inserer avant le dernier </tbody>
+            last_tbody_end = section_content.rfind('</tbody>')
+            if last_tbody_end == -1:
+                print("Point d'insertion non trouve (pas de </tbody>).")
                 return False
+            insertion_point = start + last_tbody_end
+        else:
+            # Format accordion (original)
+            # Chercher la fin de la derniere accordion-item dans cette section
+            last_div_match = None
+            for match in re.finditer(r'</div></div></div>', section_content):
+                last_div_match = match
+
+            if last_div_match:
+                insertion_point = start + last_div_match.end()
+            else:
+                # Sinon, inserer juste apres le debut de la section
+                accordion_start = re.search(r'<div class="accordion">', section_content)
+                if accordion_start:
+                    insertion_point = start + accordion_start.end()
+                else:
+                    print("Point d'insertion non trouve.")
+                    return False
 
         # Verifier si une validation FHIR existe deja
         if 'Validation FHIR' in section_content:
@@ -321,8 +394,8 @@ def insert_validation_results(html_file, validation_html, filename):
         # Inserer le nouveau contenu
         new_html = html_content[:insertion_point] + validation_html + html_content[insertion_point:]
 
-        # Ecrire le fichier mis a jour
-        with open(html_file, 'w', encoding='utf-8') as f:
+        # Ecrire le fichier mis a jour avec le meme encodage detecte
+        with open(html_file, 'w', encoding=detected_encoding) as f:
             f.write(new_html)
 
         return True
@@ -395,6 +468,28 @@ Exemples d'utilisation:
 
     print(f"\n{len(results)} fichiers trouves dans le XML\n")
 
+    # Detecter le format du fichier HTML
+    try:
+        encodings = ['utf-8', 'latin-1', 'cp1252', 'iso-8859-1']
+        html_content = None
+        for encoding in encodings:
+            try:
+                with open(html_file, 'r', encoding=encoding) as f:
+                    html_content = f.read()
+                break
+            except UnicodeDecodeError:
+                continue
+
+        if html_content is None:
+            print("Impossible de lire le fichier HTML pour detecter le format.")
+            return
+
+        format_type = detect_html_format(html_content)
+        print(f"Format HTML detecte: {format_type}\n")
+    except Exception as e:
+        print(f"Erreur lors de la detection du format: {e}")
+        format_type = 'accordion'  # Par defaut
+
     # Mettre a jour le HTML pour chaque fichier
     success_count = 0
     for filename, data in results.items():
@@ -405,11 +500,12 @@ Exemples d'utilisation:
         print(f"Traitement de {filename}:")
         print(f"  Erreurs: {error_count}, Warnings: {warning_count}, Infos: {info_count}")
 
-        # Creer le HTML de validation
+        # Creer le HTML de validation avec le format approprie
         validation_html = create_validation_fhir_html(
             data['errors'],
             data['warnings'],
-            data['informations']
+            data['informations'],
+            format_type
         )
 
         # Inserer dans le HTML
