@@ -215,9 +215,9 @@ def create_validation_fhir_html(errors, warnings, informations, format_type='acc
     else:
         color = "#438552"  # Vert
 
-    # Creer les lignes du tableau pour les erreurs (format correspondant a l'exemple)
+    # Creer les lignes du tableau pour les erreurs (afficher TOUTES les erreurs)
     error_rows = []
-    for err in errors[:50]:  # Limiter a 50 premieres erreurs
+    for err in errors:  # Afficher toutes les erreurs sans limite
         location = err.get('location', '')
         code = err.get('code', '')
         diagnostics = err.get('diagnostics', '').replace('<', '&lt;').replace('>', '&gt;')
@@ -235,9 +235,9 @@ def create_validation_fhir_html(errors, warnings, informations, format_type='acc
         error_rows.append(f'''<tr><td>\t
 \t\tErreur</td><td class=".small"><small><br>\t  {message}</small></td></tr>''')
 
-    # Creer les lignes du tableau pour les warnings
+    # Creer les lignes du tableau pour les warnings (afficher TOUS les warnings)
     warning_rows = []
-    for warn in warnings[:50]:  # Limiter a 50 premiers warnings
+    for warn in warnings:  # Afficher tous les warnings sans limite
         location = warn.get('location', '')
         code = warn.get('code', '')
         diagnostics = warn.get('diagnostics', '').replace('<', '&lt;').replace('>', '&gt;')
@@ -254,9 +254,9 @@ def create_validation_fhir_html(errors, warnings, informations, format_type='acc
         warning_rows.append(f'''<tr><td>\t
 \t\tWarning</td><td class=".small"><small><br>\t  {message}</small></td></tr>''')
 
-    # Creer les lignes du tableau pour les informations (limiter a 20)
+    # Creer les lignes du tableau pour les informations (afficher TOUTES les informations)
     info_rows = []
-    for info in informations[:20]:
+    for info in informations:  # Afficher toutes les informations sans limite
         location = info.get('location', '')
         code = info.get('code', '')
         diagnostics = info.get('diagnostics', '').replace('<', '&lt;').replace('>', '&gt;')
@@ -274,13 +274,6 @@ def create_validation_fhir_html(errors, warnings, informations, format_type='acc
 \t\tInformation</td><td class=".small"><small><br>\t  {message}</small></td></tr>''')
 
     all_rows = ''.join(error_rows + warning_rows + info_rows)
-
-    if error_count > 50:
-        all_rows += f'<tr><td colspan="2"><i>... et {error_count - 50} autres erreurs</i></td></tr>'
-    if warning_count > 50:
-        all_rows += f'<tr><td colspan="2"><i>... et {warning_count - 50} autres warnings</i></td></tr>'
-    if info_count > 20:
-        all_rows += f'<tr><td colspan="2"><i>... et {info_count - 20} autres informations</i></td></tr>'
 
     if format_type == 'simple':
         # Format simple pour index.html : juste une ligne dans le tableau existant
